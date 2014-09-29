@@ -1,0 +1,284 @@
+.header
+	background: #353557 
+	height: 70px
+	position: relative
+	min-width: 1200px 
+	.header__logo
+		float: left
+		height: 70px 
+		padding: 0 30px
+		font-size: 18px  
+		text-transform: uppercase
+		+pbold
+		height: 70px 
+		line-height: 70px 
+		color: #F8CF5E 
+		cursor: pointer
+		span
+			+preg
+			color: #fff 
+		i
+			color: #fff 
+			font-size: 13px 
+			vertical-align: middle
+			margin-left: 4px 
+	.header__exchange
+		float: left
+		padding: 0 23px 0 30px
+		height: 70px  
+		line-height: 70px 
+		border-right: 1px solid #4C4C69 
+		font-size: 13px 
+		color: #fff 
+		i
+			color: #FFF 
+			margin: 0 9px
+			font-size: 10px  
+			color: #414D83 
+			position: relative
+			top: 1px 
+	.header__balances
+		float: left
+		padding: 0 57px
+		height: 70px  
+	.header__tumblr
+		position: relative
+		display: inline-block
+		height: 2px 
+		background: #3E4981
+		width: 25px  
+		margin-right: 48px 
+		cursor: pointer
+		margin-top: 31px 
+		vertical-align: top
+		&.is-on
+			i
+				left: 20px 
+			.header__tumblroff
+				display: block
+			.header__tumblron
+				display: none
+		i
+			height: 10px 
+			width: 10px
+			background: #F7CE67
+			border-radius: 10px
+			position: absolute
+			top: -4px 
+			left: -5px  
+			+transition(all .2s ease)
+		
+		b
+			font-size: 12px 
+			position: absolute
+			padding-top: 10px 
+			color: #fff
+			font-weight: normal 
+			width: 35px
+			left: -5px 
+			text-align: center 
+			&.header__tumblroff
+				display: none
+	.header__currencies
+		display: inline-block
+		vertical-align: middle
+		vertical-align: top
+		
+	.header__balancevalue
+		font-size: 32px 
+		+asemi
+		color: #F8CF5E
+		line-height: 1  
+		display: inline-block
+		margin-top: 17px 
+		vertical-align: top
+		span
+			+preg
+			font-size: 12px 
+			color: #918FA0
+			text-transform: uppercase 
+			cursor: pointer
+			display: block
+			padding-top: 2px 
+			&.is-active
+				color: #F8CF5E 
+	.header__notifications,.header__address
+		float: right
+		
+		height: 70px - 15px
+		border-left: 1px solid #4C4C69 
+		padding: 0 24px
+		padding-top: 15px 
+		font-size: 12px  
+		color: #fff 
+		text-align: center
+		cursor: pointer
+		&:hover
+			background: rgba(#fff,.05) 
+		span
+			display: block
+			margin-top: -7px 
+		i
+			font-size: 26px
+			display: block
+			display: inline-block 
+			position: relative
+			b
+				font-weight: normal
+				font-style: normal
+				text-align: center
+				display: inline-block
+				position: relative
+				min-width: 15px 
+				text-align: center
+				line-height: 15px
+				+asemi
+				font-size: 11px  
+				height: 15px 
+				color: #fff
+				border-radius: 50%
+				background: #D81641  
+				position: absolute
+				right: -6px 
+				top: -4px 
+	.hprofile
+		float: right
+		border-left: 1px solid #4C4C69  
+		height: 70px
+		position: relative
+		.hprofile__drop
+			display: none
+		&.is-open
+			.hprofile__user
+				.hprofile__name
+					color: #353556 
+				i
+					color: #353556 
+				.hprofile__av
+					background-color: #BBC6E5 
+		.hprofile__user
+			height: 70px
+			line-height: 70px
+			padding: 0 40px
+			cursor: pointer
+			z-index: 11 
+			position: relative
+			+areg
+			font-size: 15px 
+			&:hover
+				background: rgba(#fff, .05) 
+			.hprofile__av  
+				height: 25px 
+				width: 25px 
+				display: inline-block
+				vertical-align: middle
+				background: #404D83 
+				border-radius: 25px
+				margin-right: 15px 
+			.hprofile__name
+				color: #fff
+				display: inline-block
+				line-height: 1 
+			i
+				color: #fff 
+				margin-left: 12px 
+				position: relative
+				top: 1px 
+				font-size: 12px 
+		&.is-open
+			.hprofile__drop
+				display: block
+				background: #fff
+				position: absolute
+				top: 0
+				right: 0
+				width: 100%    
+				background: #FAFCFD
+				border: 2px solid #353556  
+				border-bottom-right-radius: 4px 
+				border-bottom-left-radius: 4px 
+				padding-top: 77px 
+				z-index: 10 
+		.hprofile__accounts
+			h3
+				font-weight: normal
+				text-align: center
+				font-size: 12px 
+				text-transform: uppercase
+				letter-spacing: 3px 
+				margin-bottom: 11px 
+				+areg
+				i
+					+svg(cube_logo_dark,26,26)
+					display: inline-block
+					vertical-align: middle
+					margin-right: 10px 
+			.hprofile__accountslist
+				padding: 0 25px 
+				list-style: none
+				li
+					margin-bottom: 16px 
+					text-align: right
+					position: relative
+					line-height: 1 
+					font-size: 15px 
+					+asemi
+					span
+						color: #00BFBC 
+						margin-left: 4px 
+					.hprofile__currency
+						position: absolute
+						left: -5px
+						color: #353458
+						+asemi
+						font-size: 15px 
+		.hprofile__list
+			list-style: none
+			li
+			a
+				display: block
+				height: 39px 
+				line-height: 39px
+				border-top: 1px solid #E6EEF2
+				padding-left: 65px
+				position: relative
+				text-decoration: none
+				color: #353656 
+				+areg
+				font-size: 15px 
+				overflow: hidden
+				&:hover
+					background: rgba(#000, .03) 
+				i
+					position: absolute
+					height: 39px 
+					line-height: 39px
+					left: 25px  
+					top: 0
+					top: 2px 
+					 
+
+			
+//footer
+.footer
+	width: 850px 
+	margin: 0 auto
+	font-size: 13px 
+	+areg
+	padding: 10px 0 
+	color: #353458 
+	+clr
+	.footer__left
+		float: left
+	.footer__links
+		float: right
+		text-align: right
+		list-style: none
+		li
+			display: inline-block
+			margin-right: 10px 
+		a
+			text-decoration: none
+			font-size: 13px 
+			color: #353458
+			 

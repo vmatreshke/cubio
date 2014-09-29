@@ -1,0 +1,182 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="submit"], button { cursor: pointer; }
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+@font-face { font-family: proxima; src: url("fonts/proximanova-regular-webfont.eot"); src: url("fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-regular-webfont.woff") format("woff"), url("fonts/proximanova-regular-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: lite; src: url("fonts/proximanova-light-webfont.eot"); src: url("fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-light-webfont.woff") format("woff"), url("fonts/proximanova-light-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: bold; src: url("fonts/proximanova-bold-webfont.eot"); src: url("fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold-webfont.woff") format("woff"), url("fonts/proximanova-bold-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: semi; src: url("fonts/proximanova-semibold-webfont.eot"); src: url("fonts/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-semibold-webfont.woff") format("woff"), url("fonts/proximanova-semibold-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: areg; src: url("fonts/AvenirNext-Regular.eot"); src: url("fonts/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Regular.woff") format("woff"), url("fonts/AvenirNext-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: alite; src: url("fonts/AvenirNext-UltraLight.eot"); src: url("fonts/AvenirNext-UltraLight.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-UltraLight.woff") format("woff"), url("fonts/AvenirNext-UltraLight.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: abold; src: url("fonts/AvenirNext-Bold.eot"); src: url("fonts/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Bold.woff") format("woff"), url("fonts/AvenirNext-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: asemi; src: url("fonts/AvenirNext-DemiBold.eot"); src: url("fonts/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-DemiBold.woff") format("woff"), url("fonts/AvenirNext-DemiBold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: aital; src: url("fonts/AvenirNext-Italic.eot"); src: url("fonts/AvenirNext-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Italic.woff") format("woff"), url("fonts/AvenirNext-Italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; background: #f8f8f8; }
+
+.header { background: #353557; height: 70px; position: relative; min-width: 1200px; }
+.header .header__logo { float: left; height: 70px; padding: 0 30px; font-size: 18px; text-transform: uppercase; font-family: bold, sans-serif; font-weight: normal; height: 70px; line-height: 70px; color: #f8cf5e; cursor: pointer; }
+.header .header__logo span { font-family: proxima, sans-serif; font-weight: normal; color: white; }
+.header .header__logo i { color: white; font-size: 13px; vertical-align: middle; margin-left: 4px; }
+.header .header__exchange { float: left; padding: 0 23px 0 30px; height: 70px; line-height: 70px; border-right: 1px solid #4c4c69; font-size: 13px; color: white; }
+.header .header__exchange i { color: white; margin: 0 9px; font-size: 10px; color: #414d83; position: relative; top: 1px; }
+.header .header__balances { float: left; padding: 0 57px; height: 70px; }
+.header .header__tumblr { position: relative; display: inline-block; height: 2px; background: #3e4981; width: 25px; margin-right: 48px; cursor: pointer; margin-top: 31px; vertical-align: top; }
+.header .header__tumblr.is-on i { left: 20px; }
+.header .header__tumblr.is-on .header__tumblroff { display: block; }
+.header .header__tumblr.is-on .header__tumblron { display: none; }
+.header .header__tumblr i { height: 10px; width: 10px; background: #f7ce67; border-radius: 10px; position: absolute; top: -4px; left: -5px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+.header .header__tumblr b { font-size: 12px; position: absolute; padding-top: 10px; color: white; font-weight: normal; width: 35px; left: -5px; text-align: center; }
+.header .header__tumblr b.header__tumblroff { display: none; }
+.header .header__currencies { display: inline-block; vertical-align: middle; vertical-align: top; }
+.header .header__balancevalue { font-size: 32px; font-family: asemi, sans-serif; font-weight: normal; color: #f8cf5e; line-height: 1; display: inline-block; margin-top: 17px; vertical-align: top; }
+.header .header__balancevalue span { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; color: #918fa0; text-transform: uppercase; cursor: pointer; display: block; padding-top: 2px; }
+.header .header__balancevalue span.is-active { color: #f8cf5e; }
+.header .header__notifications, .header .header__address { float: right; height: 55px; border-left: 1px solid #4c4c69; padding: 0 24px; padding-top: 15px; font-size: 12px; color: white; text-align: center; cursor: pointer; }
+.header .header__notifications:hover, .header .header__address:hover { background: rgba(255, 255, 255, 0.05); }
+.header .header__notifications span, .header .header__address span { display: block; margin-top: -7px; }
+.header .header__notifications i, .header .header__address i { font-size: 26px; display: block; display: inline-block; position: relative; }
+.header .header__notifications i b, .header .header__address i b { font-weight: normal; font-style: normal; text-align: center; display: inline-block; position: relative; min-width: 15px; text-align: center; line-height: 15px; font-family: asemi, sans-serif; font-weight: normal; font-size: 11px; height: 15px; color: white; border-radius: 50%; background: #d81641; position: absolute; right: -6px; top: -4px; }
+.header .hprofile { float: right; border-left: 1px solid #4c4c69; height: 70px; position: relative; }
+.header .hprofile .hprofile__drop { display: none; }
+.header .hprofile.is-open .hprofile__user .hprofile__name { color: #353556; }
+.header .hprofile.is-open .hprofile__user i { color: #353556; }
+.header .hprofile.is-open .hprofile__user .hprofile__av { background-color: #bbc6e5; }
+.header .hprofile .hprofile__user { height: 70px; line-height: 70px; padding: 0 40px; cursor: pointer; z-index: 11; position: relative; font-family: areg, sans-serif; font-weight: normal; font-size: 15px; }
+.header .hprofile .hprofile__user:hover { background: rgba(255, 255, 255, 0.05); }
+.header .hprofile .hprofile__user .hprofile__av { height: 25px; width: 25px; display: inline-block; vertical-align: middle; background: #404d83; border-radius: 25px; margin-right: 15px; }
+.header .hprofile .hprofile__user .hprofile__name { color: white; display: inline-block; line-height: 1; }
+.header .hprofile .hprofile__user i { color: white; margin-left: 12px; position: relative; top: 1px; font-size: 12px; }
+.header .hprofile.is-open .hprofile__drop { display: block; background: white; position: absolute; top: 0; right: 0; width: 100%; background: #fafcfd; border: 2px solid #353556; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; padding-top: 77px; z-index: 10; }
+.header .hprofile .hprofile__accounts h3 { font-weight: normal; text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 11px; font-family: areg, sans-serif; font-weight: normal; }
+.header .hprofile .hprofile__accounts h3 i { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; margin-right: 10px; }
+.header .hprofile .hprofile__accounts .hprofile__accountslist { padding: 0 25px; list-style: none; }
+.header .hprofile .hprofile__accounts .hprofile__accountslist li { margin-bottom: 16px; text-align: right; position: relative; line-height: 1; font-size: 15px; font-family: asemi, sans-serif; font-weight: normal; }
+.header .hprofile .hprofile__accounts .hprofile__accountslist li span { color: #00bfbc; margin-left: 4px; }
+.header .hprofile .hprofile__accounts .hprofile__accountslist li .hprofile__currency { position: absolute; left: -5px; color: #353458; font-family: asemi, sans-serif; font-weight: normal; font-size: 15px; }
+.header .hprofile .hprofile__list { list-style: none; }
+.header .hprofile .hprofile__list a { display: block; height: 39px; line-height: 39px; border-top: 1px solid #e6eef2; padding-left: 65px; position: relative; text-decoration: none; color: #353656; font-family: areg, sans-serif; font-weight: normal; font-size: 15px; overflow: hidden; }
+.header .hprofile .hprofile__list a:hover { background: rgba(0, 0, 0, 0.03); }
+.header .hprofile .hprofile__list a i { position: absolute; height: 39px; line-height: 39px; left: 25px; top: 0; top: 2px; }
+
+.footer { width: 850px; margin: 0 auto; font-size: 13px; font-family: areg, sans-serif; font-weight: normal; padding: 10px 0; color: #353458; *zoom: 1; }
+.footer:after { content: " "; display: table; clear: both; }
+.footer .footer__left { float: left; }
+.footer .footer__links { float: right; text-align: right; list-style: none; }
+.footer .footer__links li { display: inline-block; margin-right: 10px; }
+.footer .footer__links a { text-decoration: none; font-size: 13px; color: #353458; }
+
+.nav { background: white; border-bottom: 1px solid #e6edf2; }
+.nav .nav__in { width: 850px; margin: 0 auto; }
+.nav ul { height: 83px; width: 100%; position: relative; }
+.nav ul:before { position: absolute; right: 0; top: 0; content: " "; right: 0; top: 0; height: 83px; border-right: 1px solid #e6eef2; z-index: 3; }
+.nav ul li { float: left; width: 20%; }
+.nav ul a { text-align: center; height: 66px; padding-top: 17px; text-decoration: none; border-left: 1px solid #e6eef2; text-transform: uppercase; font-size: 14px; color: #353458; display: block; position: relative; }
+.nav ul a:hover { background: #f8f8f8; }
+.nav ul a:hover i { color: #363656; }
+.nav ul a.is-active { background: #f8f8f8; }
+.nav ul a.is-active:before { position: absolute; bottom: -1px; left: 0; width: 100%; background: #f8f8f8; height: 1px; content: " "; }
+.nav ul a.is-active i { color: #363656; }
+.nav ul a span { display: block; text-align: center; }
+.nav ul a i { font-size: 24px; color: #aeaebc; display: block; text-align: center; }
+
+.l { *zoom: 1; }
+.l:after { content: " "; display: table; clear: both; }
+.l .l-col1 { float: left; width: 20%; }
+.l .l-col2 { float: right; width: 70%; }
+
+@font-face { font-family: iconset; src: url("fonts/untitled-font-2.eot"); src: url("fonts/untitled-font-2.eot?#iefix") format("embedded-opentype"), url("fonts/untitled-font-2.woff") format("woff"), url("fonts/untitled-font-2.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+[data-icon]:before { font-family: iconset !important; content: attr(data-icon); font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: red; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: iconset !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.icon-settings:before { content: "r"; }
+
+.icon-withdraw:before { content: "K"; }
+
+.icon-activity:before { content: "L"; }
+
+.icon-add:before { content: "M"; }
+
+.icon-btc:before { content: "N"; }
+
+.icon-console:before { content: "O"; }
+
+.icon-cube-logo-dark:before { content: "P"; }
+
+.icon-cube-logo-lite:before { content: "Q"; }
+
+.icon-deposit:before { content: "R"; }
+
+.icon-facebook:before { content: "S"; }
+
+.icon-google:before { content: "T"; }
+
+.icon-info:before { content: "U"; }
+
+.icon-lock:before { content: "V"; }
+
+.icon-mail:before { content: "W"; }
+
+.icon-money:before { content: "X"; }
+
+.icon-twitter:before { content: "Y"; }
+
+.icon-swift:before { content: "Z"; }
+
+.icon-sofort:before { content: "0"; }
+
+.icon-skrill:before { content: "1"; }
+
+.icon-settings:before { content: "2"; }
+
+.icon-sepa-text:before { content: "3"; }
+
+.icon-send:before { content: "4"; }
+
+.icon-question:before { content: "5"; }
+
+.icon-qr:before { content: "6"; }
+
+.icon-okpay-text:before { content: "7"; }
+
+.icon-off:before { content: "8"; }
+
+.icon-notification:before { content: "9"; }
+
+.icon-moneyin:before { content: "!"; }
+
+.icon-user:before { content: '"'; }
+
+.icon-arrow:before { content: "a"; }
+
+.icon-arrowdown:before { content: "b"; }
+
+.icon-help:before { content: "c"; }
+
+.icon-logout:before { content: "d"; }
