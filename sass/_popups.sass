@@ -1,0 +1,220 @@
+.overlay
+	position: absolute
+	top: 70px 
+	background: #768395
+	opacity: .9  
+	bottom: 0
+	right: 0
+	left: 0 
+	z-index: 1000   
+	display: none
+.has-popup
+	overflow: hidden
+.popup
+	left: 50%
+	z-index: 1001 
+	position: absolute
+	background: #fff 
+	+transition(all 200ms ceaser($easeInOutQuad))
+	+transition(all 300ms ceaser($easeInOutBack))
+	+translate(0,-1000px)
+	width: 850px 
+	margin-left: -(850px/2)
+	top: 96px  
+	&.popup_nospace
+		background: #F9FCFD 
+		.popup__content
+			padding: 0 
+			padding-top: 20px 
+			
+	&.is-shown
+		+translate(0,0)
+		display: block
+	&.popup_narrow
+		width: 500px
+		margin-left: -250px
+		 
+	.popup__content
+		padding: 20px 50px 20px 50px 
+		+areg
+		font-size: 14px 
+		color: #353458 
+	.popup__title
+		+preg
+		font-size: 18px 
+		color: #353458
+		text-align: center
+		text-transform: uppercase
+		font-weight: normal
+		margin-bottom: 20px 
+		letter-spacing: 3px 
+		i
+			vertical-align: middle
+			margin-right: 15px 
+			position: relative
+			top: -2px 
+	.popup__subtitle
+		text-align: center
+	.popup__close
+		position: absolute
+		right: 20px 
+		top: 20px 
+		font-size: 19px 
+		color: #93C4D2 
+		cursor: pointer
+		+amed
+	.qrcode
+		border: 2px solid #93C4D2 
+		height: 56px 
+		line-height: 56px 
+		text-align: center
+		margin: 14px 0
+		font-size: 17px  
+		+asemi
+		color: #353558 
+	.qrpic
+		margin-bottom: 20px 
+	.makedeposit
+		background: #1EBEBB
+		text-transform: uppercase
+		color: #fff  
+		width: 280px 
+		margin: 0 auto
+		height: 50px  
+		line-height: 50px
+		text-decoration: none 
+		box-shadow: 0 0 0 2px #27E5E1
+		cursor: pointer
+		+psemi
+		font-size: 15px 
+		text-align: center
+		letter-spacing: 3px 
+		margin-bottom: 23px
+	.actions
+		margin-bottom: 28px 
+		td,th
+			height: 69px
+			background: #fff 
+			border-bottom: 1px solid #E6EEF2   
+			vertical-align: middle
+		.actions__currency
+			padding-left: 60px 
+			width: 40px 
+			text-align: left
+		.actions__amount
+			text-align: right
+			padding-right: 32px 
+			span
+				margin-left: 30px 
+		.actions__buttons
+			text-align: right
+			padding-right: 30px 
+		.actions__time
+			color: #9EA3A6
+			font-size: 15px  
+			+aital
+		.actions__amount
+			font-size: 21px 
+			+asemi
+			color: #353458
+			padding-right: 20px 
+			span
+				margin-left: 20px 
+				color: #00BFBC 
+		.actions__currency
+			font-size: 21px 
+			+asemi
+			color: #353458
+	.button
+		height: 46px 
+		line-height: 46px
+		padding: 0 15px
+		border: 2px solid #96C4D0   
+		display: inline-block
+		margin-left: 10px 
+		border-radius: 2px
+		text-transform: uppercase
+		letter-spacing: 3px 
+		color: #353557
+		text-decoration: none
+		cursor: pointer 
+		i
+			font-size: 20px 
+			vertical-align: middle
+			display: inline-block
+			position: relative
+			top: 2px 
+		&:hover
+			border-color: darken(#96C4D0, 10%) 
+	h3
+		letter-spacing: 3px 
+		font-weight: normal
+		text-transform: uppercase
+		text-align: center
+		font-size: 15px 
+		+preg
+		margin-bottom: 27px 
+	.showmore
+		height: 35px 
+		cursor: pointer
+		line-height: 35px
+		text-align: center
+		font-size: 13px  
+		text-decoration: none
+		+areg
+		color: #353458 
+		background: #F9FCFD
+		&:hover
+			background: darken(#F9FCFD, 2%) 
+.transfers
+	background: #fff
+	td,th
+		border-bottom: 1px solid #E6EEF2 
+		background: #fff 
+	td
+		height: 50px 
+		vertical-align: middle
+	tr:hover
+		td
+			background: #F9FCFD 
+	.transfers__icon
+		padding-left: 60px 
+		padding-right: 20px 
+		color: #93C4D2
+		font-size: 23px  
+		width: 30px 
+		i
+			position: relative
+			top: 3px 
+	.sort
+		cursor: pointer
+		display: inline-block
+		i
+			font-size: 12px 
+			position: relative
+			top: 2px 
+	.transfers__right
+		text-align: right
+		padding-right: 30px 
+	.transfers__left
+		text-align: left
+	.transfers__type
+		width: 270px 
+	.transfers__time
+		font-size: 14px 
+		+areg
+		color: #9EA3A6 
+	.transfers__amount
+		text-align: right
+		font-size: 16px 
+		+areg
+		color: #00BFBC 
+		padding-right: 30px 
+		strong
+			+asemi
+			margin-left: 20px 
+			display: inline-block
+			// min-width: 60px 
+			margin-right: 5px 
+		&.is-minus
+			color: #ED1847 

@@ -36,7 +36,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: aital; src: url("fonts/AvenirNext-Italic.eot"); src: url("fonts/AvenirNext-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Italic.woff") format("woff"), url("fonts/AvenirNext-Italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: aital; src: url("fonts/AvenirNext-Medium.eot"); src: url("fonts/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Medium.woff") format("woff"), url("fonts/AvenirNext-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: amed; src: url("fonts/AvenirNext-Medium.eot"); src: url("fonts/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Medium.woff") format("woff"), url("fonts/AvenirNext-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; background: #f8f8f8; }
 
@@ -47,7 +47,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .header__logo span { font-family: proxima, sans-serif; font-weight: normal; color: white; }
 .header .header__logo i { color: white; font-size: 13px; vertical-align: middle; margin-left: 4px; }
 .header .header__exchange { float: left; padding: 0 23px 0 30px; height: 70px; line-height: 70px; border-right: 1px solid #4c4c69; font-size: 13px; color: white; }
-.header .header__exchange i { color: white; margin: 0 9px; font-size: 10px; color: #414d83; position: relative; top: 1px; }
+.header .header__exchange i { color: white; margin: 0 9px; font-size: 10px; color: #414d83; color: #918fa0; position: relative; top: 1px; }
 .header .header__balances { float: left; padding: 0 57px; height: 70px; }
 .header .header__tumblr { position: relative; display: inline-block; height: 2px; background: #3e4981; width: 25px; margin-right: 48px; cursor: pointer; margin-top: 31px; vertical-align: top; }
 .header .header__tumblr.is-on i { left: 20px; }
@@ -76,6 +76,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .hprofile .hprofile__user .hprofile__name { color: white; display: inline-block; line-height: 1; }
 .header .hprofile .hprofile__user i { color: white; margin-left: 12px; position: relative; top: 1px; font-size: 12px; }
 .header .hprofile.is-open .hprofile__drop { display: block; background: white; position: absolute; top: 0; right: 0; width: 100%; background: #fafcfd; border: 2px solid #353556; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; padding-top: 77px; z-index: 10; }
+.header .hprofile .hprofile__accounts { cursor: pointer; }
 .header .hprofile .hprofile__accounts h3 { font-weight: normal; text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 11px; font-family: areg, sans-serif; font-weight: normal; }
 .header .hprofile .hprofile__accounts h3 i { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; margin-right: 10px; }
 .header .hprofile .hprofile__accounts .hprofile__accountslist { padding: 0 25px; list-style: none; }
@@ -93,6 +94,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .footer .footer__links { float: right; text-align: right; list-style: none; }
 .footer .footer__links li { display: inline-block; margin-left: 10px; }
 .footer .footer__links a { text-decoration: none; font-size: 13px; color: #353458; }
+
+.logo { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; }
 
 .nav { background: white; border-bottom: 1px solid #e6edf2; }
 .nav ul { height: 83px; width: 100%; position: relative; }
@@ -274,3 +277,53 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .table .table__text { color: #353458; font-size: 17px; }
 .table .table__amount { font-family: "Source Code Pro", sans-serif; font-weight: 400; text-align: right; font-size: 17px; color: #0e2354; }
 .table .table__currency { color: #00c7c4; }
+
+.overlay { position: absolute; top: 70px; background: #768395; opacity: 0.9; bottom: 0; right: 0; left: 0; z-index: 1000; display: none; }
+
+.has-popup { overflow: hidden; }
+
+.popup { left: 50%; z-index: 1001; position: absolute; background: white; -webkit-transition: all 200ms cubic-bezier(0.455, 0.030, 0.515, 0.955); -moz-transition: all 200ms cubic-bezier(0.455, 0.030, 0.515, 0.955); -o-transition: all 200ms cubic-bezier(0.455, 0.030, 0.515, 0.955); transition: all 200ms cubic-bezier(0.455, 0.030, 0.515, 0.955); -webkit-transition: all 300ms cubic-bezier(0.680, -0.550, 0.265, 1.550); -moz-transition: all 300ms cubic-bezier(0.680, -0.550, 0.265, 1.550); -o-transition: all 300ms cubic-bezier(0.680, -0.550, 0.265, 1.550); transition: all 300ms cubic-bezier(0.680, -0.550, 0.265, 1.550); -webkit-transform: translate(0, -1000px); -moz-transform: translate(0, -1000px); -ms-transform: translate(0, -1000px); -o-transform: translate(0, -1000px); transform: translate(0, -1000px); width: 850px; margin-left: -425px; top: 96px; }
+.popup.popup_nospace { background: #f9fcfd; }
+.popup.popup_nospace .popup__content { padding: 0; padding-top: 20px; }
+.popup.is-shown { -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); display: block; }
+.popup.popup_narrow { width: 500px; margin-left: -250px; }
+.popup .popup__content { padding: 20px 50px 20px 50px; font-family: areg, sans-serif; font-weight: normal; font-size: 14px; color: #353458; }
+.popup .popup__title { font-family: proxima, sans-serif; font-weight: normal; font-size: 18px; color: #353458; text-align: center; text-transform: uppercase; font-weight: normal; margin-bottom: 20px; letter-spacing: 3px; }
+.popup .popup__title i { vertical-align: middle; margin-right: 15px; position: relative; top: -2px; }
+.popup .popup__subtitle { text-align: center; }
+.popup .popup__close { position: absolute; right: 20px; top: 20px; font-size: 19px; color: #93c4d2; cursor: pointer; font-family: amed, sans-serif; font-weight: normal; }
+.popup .qrcode { border: 2px solid #93c4d2; height: 56px; line-height: 56px; text-align: center; margin: 14px 0; font-size: 17px; font-family: asemi, sans-serif; font-weight: normal; color: #353558; }
+.popup .qrpic { margin-bottom: 20px; }
+.popup .makedeposit { background: #1ebebb; text-transform: uppercase; color: white; width: 280px; margin: 0 auto; height: 50px; line-height: 50px; text-decoration: none; box-shadow: 0 0 0 2px #27e5e1; cursor: pointer; font-family: semi, sans-serif; font-weight: normal; font-size: 15px; text-align: center; letter-spacing: 3px; margin-bottom: 23px; }
+.popup .actions { margin-bottom: 28px; }
+.popup .actions td, .popup .actions th { height: 69px; background: white; border-bottom: 1px solid #e6eef2; vertical-align: middle; }
+.popup .actions .actions__currency { padding-left: 60px; width: 40px; text-align: left; }
+.popup .actions .actions__amount { text-align: right; padding-right: 32px; }
+.popup .actions .actions__amount span { margin-left: 30px; }
+.popup .actions .actions__buttons { text-align: right; padding-right: 30px; }
+.popup .actions .actions__time { color: #9ea3a6; font-size: 15px; font-family: aital, sans-serif; font-weight: normal; }
+.popup .actions .actions__amount { font-size: 21px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; padding-right: 20px; }
+.popup .actions .actions__amount span { margin-left: 20px; color: #00bfbc; }
+.popup .actions .actions__currency { font-size: 21px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; }
+.popup .button { height: 46px; line-height: 46px; padding: 0 15px; border: 2px solid #96c4d0; display: inline-block; margin-left: 10px; border-radius: 2px; text-transform: uppercase; letter-spacing: 3px; color: #353557; text-decoration: none; cursor: pointer; }
+.popup .button i { font-size: 20px; vertical-align: middle; display: inline-block; position: relative; top: 2px; }
+.popup .button:hover { border-color: #73b0c0; }
+.popup h3 { letter-spacing: 3px; font-weight: normal; text-transform: uppercase; text-align: center; font-size: 15px; font-family: proxima, sans-serif; font-weight: normal; margin-bottom: 27px; }
+.popup .showmore { height: 35px; cursor: pointer; line-height: 35px; text-align: center; font-size: 13px; text-decoration: none; font-family: areg, sans-serif; font-weight: normal; color: #353458; background: #f9fcfd; }
+.popup .showmore:hover { background: #f1f8fa; }
+
+.transfers { background: white; }
+.transfers td, .transfers th { border-bottom: 1px solid #e6eef2; background: white; }
+.transfers td { height: 50px; vertical-align: middle; }
+.transfers tr:hover td { background: #f9fcfd; }
+.transfers .transfers__icon { padding-left: 60px; padding-right: 20px; color: #93c4d2; font-size: 23px; width: 30px; }
+.transfers .transfers__icon i { position: relative; top: 3px; }
+.transfers .sort { cursor: pointer; display: inline-block; }
+.transfers .sort i { font-size: 12px; position: relative; top: 2px; }
+.transfers .transfers__right { text-align: right; padding-right: 30px; }
+.transfers .transfers__left { text-align: left; }
+.transfers .transfers__type { width: 270px; }
+.transfers .transfers__time { font-size: 14px; font-family: areg, sans-serif; font-weight: normal; color: #9ea3a6; }
+.transfers .transfers__amount { text-align: right; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; padding-right: 30px; }
+.transfers .transfers__amount strong { font-family: asemi, sans-serif; font-weight: normal; margin-left: 20px; display: inline-block; margin-right: 5px; }
+.transfers .transfers__amount.is-minus { color: #ed1847; }
