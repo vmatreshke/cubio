@@ -55,6 +55,7 @@
 	input
 		display: block
 		padding: 0 23px
+		padding-left: 45px 
 		border: 2px solid #95C4D1 
 		border-radius: 2px
 		box-shadow: inset 3px 3px 0 #EAEAEA
@@ -68,8 +69,18 @@
 		color: #CBCBCB 
 		&:focus
 			border-color: #1EBEBB 
+			color: #353556 
 		&:focus + .input__currency
 			background-color: #1EBEBB 
+	.input__tilda
+		position: absolute
+		left: 23px 
+		top: 0
+		height: 66px  
+		line-height: 66px
+		font-size: 31px  
+		color: #677689 
+		+amed
 	.input__currency
 		width: 60px 
 		height: 46px
