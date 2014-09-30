@@ -69,6 +69,7 @@
 +font(abold,AvenirNext-Bold)
 +font(asemi,AvenirNext-DemiBold)
 +font(aital,AvenirNext-Italic)
++font(aital,AvenirNext-Medium)
 =areg
 	font-family: areg,sans-serif
 	font-weight: normal 
@@ -81,10 +82,24 @@
 =asemi
 	font-family: asemi,sans-serif
 	font-weight: normal 
+=amed
+	font-family: amed,sans-serif
+	font-weight: normal 
 =aital
 	font-family: aital,sans-serif
 	font-weight: normal 
-
+=slite
+	font-family: 'Source Code Pro',sans-serif
+	font-weight: 300
+=sreg
+	font-family: 'Source Code Pro',sans-serif
+	font-weight: 400
+=ssemi
+	font-family: 'Source Code Pro',sans-serif
+	font-weight: 600
+=sbold
+	font-family: 'Source Code Pro',sans-serif
+	font-weight: 700
 body
 	+preg
 	font-size: 12px 
@@ -97,6 +112,9 @@ body
 %in
 	width: 850px 
 	margin: 0 auto 
+.in
+	@extend %in
+	
 
 
 
