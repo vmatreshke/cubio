@@ -38,6 +38,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; background: #f8f8f8; }
 
+.footer, .nav .nav__in, .a .a__table { width: 850px; margin: 0 auto; }
+
 .header { background: #353557; height: 70px; position: relative; min-width: 1200px; }
 .header .header__logo { float: left; height: 70px; padding: 0 30px; font-size: 18px; text-transform: uppercase; font-family: bold, sans-serif; font-weight: normal; height: 70px; line-height: 70px; color: #f8cf5e; cursor: pointer; }
 .header .header__logo span { font-family: proxima, sans-serif; font-weight: normal; color: white; }
@@ -83,7 +85,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .hprofile .hprofile__list a:hover { background: rgba(0, 0, 0, 0.03); }
 .header .hprofile .hprofile__list a i { position: absolute; height: 39px; line-height: 39px; left: 25px; top: 0; top: 2px; }
 
-.footer { width: 850px; margin: 0 auto; font-size: 13px; font-family: areg, sans-serif; font-weight: normal; padding: 10px 0; color: #353458; *zoom: 1; }
+.footer { font-size: 13px; font-family: areg, sans-serif; font-weight: normal; padding: 10px 0; color: #353458; *zoom: 1; }
 .footer:after { content: " "; display: table; clear: both; }
 .footer .footer__left { float: left; }
 .footer .footer__links { float: right; text-align: right; list-style: none; }
@@ -91,7 +93,6 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .footer .footer__links a { text-decoration: none; font-size: 13px; color: #353458; }
 
 .nav { background: white; border-bottom: 1px solid #e6edf2; }
-.nav .nav__in { width: 850px; margin: 0 auto; }
 .nav ul { height: 83px; width: 100%; position: relative; }
 .nav ul:before { position: absolute; right: 0; top: 0; content: " "; right: 0; top: 0; height: 83px; border-right: 1px solid #e6eef2; z-index: 3; }
 .nav ul li { float: left; width: 20%; }
@@ -180,3 +181,17 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .icon-help:before { content: "c"; }
 
 .icon-logout:before { content: "d"; }
+
+.a { border-bottom: 1px solid #e6eef2; cursor: pointer; }
+.a:hover { background: white; }
+.a:hover td.a__icon { color: #363656; }
+.a .a__table { height: 82px; }
+.a .a__table td { height: 82px; vertical-align: middle; }
+.a .a__table td.a__icon { width: 81px; text-align: left; color: #b3b3bc; font-size: 20px; line-height: 1.5; }
+.a .a__table td.a__descr { font-size: 16px; color: #353458; font-family: areg, sans-serif; font-weight: normal; width: 460px; }
+.a .a__table td.a__descr strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.a .a__table td.a__descr span { display: block; padding-top: 5px; font-family: aital, sans-serif; font-weight: normal; font-size: 16px; color: #9ea3a6; }
+.a .a__table td.a__time { font-size: 14px; color: #9ea3a6; font-family: areg, sans-serif; font-weight: normal; }
+.a .a__table td.a__amount { text-align: right; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; }
+.a .a__table td.a__amount strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; margin-left: 20px; }
+.a .a__table td.a__amount.is-minus { color: #ea294c; }

@@ -1,0 +1,50 @@
+.activities
+
+.a
+	border-bottom: 1px solid #E6EEF2 
+	cursor: pointer
+	&:hover
+		background: #fff 
+		td.a__icon
+			color: #363656 
+	.a__table
+		@extend %in
+		height: 82px 
+		td
+			height: 82px 
+			vertical-align: middle
+			&.a__icon
+				width: 81px 
+				text-align: left
+				color: #B3B3BC
+				font-size: 20px  
+				line-height: 1.5 
+			&.a__descr
+				font-size: 16px 
+				color: #353458
+				+areg
+				width: 460px 
+				strong
+					font-weight: normal
+					+asemi
+				span
+					display: block
+					padding-top: 5px 
+					+aital
+					font-size: 16px 
+					color: #9EA3A6 
+			&.a__time
+				font-size: 14px 
+				color: #9EA3A6
+				+areg
+			&.a__amount
+				text-align: right
+				font-size: 16px 
+				+areg
+				color: #00BFBC 
+				strong
+					font-weight: normal
+					+asemi
+					margin-left: 20px 
+				&.is-minus
+					color: #EA294C 
