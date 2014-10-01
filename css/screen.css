@@ -353,10 +353,12 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .submit:active { position: relative; top: 2px; }
 
 .requestpage { padding-bottom: 40px; }
+.requestpage .tabs { margin-bottom: 34px; }
 .requestpage .hr { margin: 30px 0; }
 .requestpage .input { margin: 0; }
 .requestpage .input input { padding-left: 26px; font-size: 17px; }
 .requestpage .input .input__icon { position: absolute; right: 29px; top: 20px; font-size: 20px; color: #93c4d2; font-size: 25px; }
+.requestpage .input .input__icon.icon-qr { border: 2px solid #93c4d2; line-height: 1; height: 40px; line-height: 50px; display: inline-block; width: 60px; text-align: center; top: 11px; right: 10px; }
 .requestpage .input input:focus + .input__icon { color: #179290; }
 .requestpage .input.is-tilda input { padding-left: 60px; }
 .requestpage .input.input_to .input__currency { color: #95c4d1; color: #95c4d1; background: white; box-shadow: inset 0 0 0 2px #95c4d1; }
