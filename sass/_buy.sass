@@ -75,7 +75,7 @@
 			color: #353556 
 		&:focus + .input__currency
 			background-color: #1EBEBB 
-	&.is-tilda
+	&.is-tilda, &.with-tilda
 		input
 			padding-left: 60px 
 	.input__tilda
@@ -87,6 +87,10 @@
 		font-size: 31px  
 		color: #677689 
 		+amed
+		display: none
+	&.with-tilda,&.is-tilda
+		.input__tilda
+			display: block
 	.input__currency
 		width: 60px 
 		height: 46px
