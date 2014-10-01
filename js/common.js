@@ -42,4 +42,11 @@ head.ready(function() {
 		$('.popup').removeClass('is-shown')
 		$('.overlay').fadeOut();
 	});
+
+	$('.selectbank').click(function(event) {
+		$(this).toggleClass('is-open');
+	});
+	$('.input__currency_drop').click(function(event) {
+		$(this).toggleClass('is-opendrop');
+	});
 });

@@ -58,7 +58,7 @@
 	input
 		display: block
 		padding: 0 23px
-		padding-left: 60px 
+		// padding-left: 60px 
 		border: 2px solid #95C4D1 
 		border-radius: 2px
 		box-shadow: inset 3px 3px 0 #EAEAEA
@@ -75,6 +75,9 @@
 			color: #353556 
 		&:focus + .input__currency
 			background-color: #1EBEBB 
+	&.is-tilda
+		input
+			padding-left: 60px 
 	.input__tilda
 		position: absolute
 		left: 26px 
@@ -97,6 +100,58 @@
 		font-size: 17px 
 		+asemi
 		color: #fff 
+		&.input__currency_drop
+			width: 75px 
+			background: #1EBEBB
+			cursor: pointer
+			.input__currencydrop
+				display: none
+			.input__currencyvalue
+				position: relative
+				z-index: 3
+				display: inline-block
+			i
+				display: inline-block
+				color: #fff 
+				vertical-align: middle
+				font-size: 12px 
+			&.is-opendrop
+				z-index: 10 
+				.input__currencyvalue
+					z-index: 12 
+					color: #1EBEBB
+				i
+					color: #353556 
+					position: relative
+					z-index: 20 
+				.input__currencydrop
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					right: 0
+					background: #fff 
+					padding-top: 46px    
+					z-index: 11
+					border: 2px solid #1EBEBB 
+					ul
+						list-style: none
+					li
+						border-top: 1px solid #E6EEF2 
+						height: 27px 
+						line-height: 27px
+						cursor: pointer
+						background: #fff 
+						text-align: center  
+						color: #575770 
+						text-transform: uppercase
+						font-size: 12px 
+						+amed
+						&:hover
+							background: #F9F9F9 
+							color: #1EBEBB 
+						&:first-child
+							border-top: none 
 	&.input_small
 		width: 340px 
 		margin: 0 auto 15px auto
@@ -171,6 +226,78 @@
 				top: -11px 
 			&.is-active,&:hover
 				box-shadow: inset 0 0 0 4px #1EBEBB
+.cashout
+	@extend .paywith
+	.cashaccount
+		width: 420px 
+	.selectbank
+		width: 420px 
+		float: left
+		
+		
+.selectbank
+	height: 66px
+	line-height: 66px
+	box-shadow: inset 0 0 0 2px #95C4D1  
+	cursor: pointer
+	background: #fff 
+	position: relative
+	.selectbank__value
+		font-size: 21px 
+		+amed
+		color: #353458 
+		position: relative
+		z-index: 4 
+		.selectbank__currency
+			position: absolute
+			right: 0
+			top: 0 
+			text-transform: uppercase
+			color: #1EBEBB  
+		i
+			position: absolute
+			right: 15px 
+			top: 24px 
+			line-height: 1 
+			font-size: 15px 
+	.selectbank__valuewrap
+		margin: 0 46px 0 28px
+		display: block 
+		position: relative
+	.selectbank__drop
+		display: none
+		ul
+			list-style: none
+			li
+				position: relative
+				font-size: 21px 
+				
+				+amed
+				color: #353458 
+				border-top: 1px solid #E6EEF2 
+				padding: 10px 0 
+				padding-left: 28px 
+				&:hover
+					background: #fafafa 
+			.selectbank__currency
+				position: absolute
+				right: 46px
+				top: 10px
+				text-transform: uppercase
+				color: #1EBEBB 
+	&.is-open
+		.selectbank__drop
+			display: block
+			background: #fff
+			line-height: 1  
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			padding-top: 66px    
+			z-index: 3 
+			border: 2px solid #353557 
+			border-radius: 2px
 .cashaccount
 	float: right
 	width: 205px 

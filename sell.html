@@ -79,23 +79,34 @@
 	<!-- begin in -->
 	<div class="in">
 		<ul class="tabs">
-			<li><a href="#" class="is-active">Instant buy</a></li>
-			<li><a href="#">With bank transfer</a></li>
+			<li><a href="#" class="is-active">From my wallet</a></li>
+			<li><a href="#">From External address</a></li>
 		</ul>
 		<!-- begin exchange  -->
 		<div class="exchange">
 			
 			<div class="exchange__col">
-				<label for="">Spent</label>
+				<label for="">Sell</label>
 				<div class="input">
-					<div class="input__tilda">~</div>
 					<input type="text" name="" value="105.50" id="">
-					<div class="input__currency">EUR</div>
+					<div class="input__currency input__currency_drop">
+						<div class="input__currencyvalue">EUR</div>
+						<i class="icon-arrowdown"></i>
+						<div class="input__currencydrop">
+							<ul>
+								<li>USD</li>
+								<li>USD</li>
+								<li>CAD</li>
+								<li>HRN</li>
+								<li>USD</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="exchange__col">
 				<label for="">To get <span>at 232 EUR each</span></label>
-				<div class="input">
+				<div class="input is-tilda">
 					<div class="input__tilda">~</div>
 					<input type="text" name="" value="105.50" id="">
 					<div class="input__currency">BTC</div>
@@ -109,68 +120,32 @@
 	<!-- begin in -->
 	<div class="in">
 		
-		<!-- begin paywith -->
-		<div class="paywith">
-			<h3>Pay with <a href="#" class="icon-help"></a></h3>
-			<ul class="paywith__services">
-				<li><a href="#" class="is-active"><i class="icon-skrill"></i></a></li>
-				<li><a href="#"><i class="icon-sofort"></i></a></li>
-				<li><a href="#"><i class="icon-okpay"></i></a></li>
-			</ul>
-			<div class="cashaccount is-disabled">
-				<div class="cashaccount__value ">
-					<h3><i class="icon-cube_logo_dark"></i>Cash Accounts </h3>
-				</div>
 
-			</div>
-		</div>
-		<!-- end paywith -->
-		<!-- begin paywith -->
-		<div class="paywith">
-			<h3>Pay with <a href="#" class="icon-help"></a></h3>
-			<ul class="paywith__services">
-				<li><a href="#" class="is-active"><i class="icon-skrill"></i></a></li>
-				<li><a href="#"><i class="icon-sofort"></i></a></li>
-				<li><a href="#"><i class="icon-okpay"></i></a></li>
-			</ul>
-			<div class="cashaccount ">
-				<div class="cashaccount__value ">
-					<h3><i class="icon-cube_logo_dark"></i>Cash Accounts<i class="icon-arrowdown"></i></h3>
-				</div>
 
-			</div>
-		</div>
-		<!-- end paywith -->
-		<!-- begin paywith -->
-		<div class="paywith">
+		<!-- begin cashout -->
+		<div class="cashout">
 			<h3>Pay with <a href="#" class="icon-help"></a></h3>
-			<ul class="paywith__services">
-				<li><a href="#" class="is-active"><i class="icon-skrill"></i></a></li>
-				<li><a href="#"><i class="icon-sofort"></i></a></li>
-				<li><a href="#"><i class="icon-okpay"></i></a></li>
-			</ul>
-			<div class="cashaccount is-filled">
-				<div class="cashaccount__value ">
-					<h3><i class="icon-cube_logo_dark"></i>Cash Accounts<i class="icon-arrowdown"></i></h3>
-					<div class="cashaccount__money">$350 <span>USD</span></div>
+			<div class="selectbank">
+				<div class="selectbank__value">
+					<div class="selectbank__valuewrap">
+						<div class="selectbank__title">Deutsche Bank</div>
+						<div class="selectbank__currency">USD</div>
+					</div>
+					<i class="icon-arrowdown"></i>
 				</div>
-				<div class="cashaccount__drop">
+				<div class="selectbank__drop">
 					<ul>
-						<li>$350 <span class="currency">USD</span></li>
-						<li>$350 <span class="currency">EUR</span></li>
+						<li>
+							<div class="selectbank__title">Deutsche Bank</div>
+							<div class="selectbank__currency">USD</div>
+						</li>
+						<li>
+							<div class="selectbank__title">Deutsche Bank</div>
+							<div class="selectbank__currency">USD</div>
+						</li>
 					</ul>
 				</div>
 			</div>
-		</div>
-		<!-- end paywith -->
-		<!-- begin paywith -->
-		<div class="paywith">
-			<h3>Pay with <a href="#" class="icon-help"></a></h3>
-			<ul class="paywith__services">
-				<li><a href="#" class="is-active"><i class="icon-skrill"></i></a></li>
-				<li><a href="#"><i class="icon-sofort"></i></a></li>
-				<li><a href="#"><i class="icon-okpay"></i></a></li>
-			</ul>
 			<div class="cashaccount is-drop is-filled">
 				<div class="cashaccount__value ">
 					<h3><i class="icon-cube_logo_dark"></i>Cash Accounts<i class="icon-arrowdown"></i></h3>
@@ -184,7 +159,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- end paywith -->
+		<!-- end cashout -->
+		
 		<!-- begin confirm -->
 		<div class="confirm">
 			<div class="confirm__amount">
