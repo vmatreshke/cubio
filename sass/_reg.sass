@@ -15,12 +15,10 @@
 	.hr
 		margin: 25px 0 
 	.submit
-		@extend %submit
-		height: 66px
-		line-height: 66px  
+		 
 	.prefer
 		width: 340px 
-		margin: 0 auto 15px auto 
+		margin: 0 auto 25px auto 
 		+clr
 		label
 			float: left
@@ -64,8 +62,21 @@
 				width: 100%
 				height: 100%
 				opacity: 0
-				z-index: 1     
-
+				z-index: 1  
+	.strength
+		height: 8px    
+		border: 2px solid #95C4D1 
+		background: #fff 
+		border-radius: 8px
+		width: 340px - 4px
+		margin: 0 auto 
+		margin-top: 25px 
+		i
+			display: block
+			height: 8px 
+			border-top-left-radius: 6px
+			border-bottom-left-radius: 6px
+			background: #1EBEBB 
 %submit
 	background: #1EBEBB 
 	font-size: 20px 
@@ -78,9 +89,12 @@
 	cursor: pointer
 	box-shadow: inset 0 0 0 3px #27E5E1  
 	+transition(all .1s ease)
+	height: 66px
+	line-height: 66px 
 	&:hover
 		background: darken(#1EBEBB,10% )
 	&:active
 		position: relative
 		top: 2px 
-		
+.submit
+	@extend %submit
