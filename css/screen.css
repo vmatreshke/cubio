@@ -322,6 +322,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup.popup_nospace .popup__content { padding: 0; padding-top: 20px; }
 .popup.is-shown { -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); display: block; }
 .popup.popup_narrow { width: 500px; margin-left: -250px; }
+.popup.popup_narrow1 { width: 600px; margin-left: -300px; }
+.popup.popup_center { top: 50%; margin-top: -100px; }
 .popup .popup__content { padding: 20px 50px 20px 50px; font-family: areg, sans-serif; font-weight: normal; font-size: 14px; color: #353458; }
 .popup .popup__title { font-family: proxima, sans-serif; font-weight: normal; font-size: 18px; color: #353458; text-align: center; text-transform: uppercase; font-weight: normal; margin-bottom: 20px; letter-spacing: 3px; }
 .popup .popup__title i { vertical-align: middle; margin-right: 15px; position: relative; top: -2px; }
@@ -362,6 +364,14 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .transfers .transfers__amount { text-align: right; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; padding-right: 30px; }
 .transfers .transfers__amount strong { font-family: asemi, sans-serif; font-weight: normal; margin-left: 20px; display: inline-block; margin-right: 5px; }
 .transfers .transfers__amount.is-minus { color: #ed1847; }
+
+.field { padding-bottom: 23px; *zoom: 1; }
+.field:after { content: " "; display: table; clear: both; }
+.field label { float: left; width: 104px; padding-left: 16px; font-size: 17px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; padding-top: 13px; }
+.field .input { float: right; width: 410px; margin-bottom: 0; }
+
+.addbank .addbank__content { padding: 0px 41px 0 27px; }
+.addbank .addbank__title { font-size: 19px; color: #353458; font-family: asemi, sans-serif; font-weight: normal; margin-bottom: 27px; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }

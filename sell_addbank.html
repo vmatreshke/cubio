@@ -311,11 +311,30 @@
 <!-- end popup popup_narrow -->
 
 <!-- begin popup popup_narrow  -->
-<div class="popup popup_narrow" id="popup-addbank">
+<div class="popup popup_narrow1 popup_nospace popup_center" id="popup-addbank">
 	<div class="popup__close">X</div>
 	<div class="popup__content">
-		<h3 class="popup__title">Addbank</h3>
-		<p>add it!</p>
+		<div class="addbank">
+			<div class="addbank__content">
+				<h4 class="addbank__title">
+					Enter you bank information:
+				</h4>
+				<div class="field">
+					<label for="">Full name</label>
+					<div class="input input_small"><input type="text" placeholder="John Doe"></div>
+				</div>
+				<div class="field">
+					<label for="">IBAN</label>
+					<div class="input input_small"><input type="text" placeholder="DE89 3704 0044 0532 0130 00"></div>
+				</div>
+				<div class="field">
+					<label for="">BIC (Swift)</label>
+					<div class="input input_small"><input type="text" placeholder="DEUTDEBB101"></div>
+				</div>
+			</div>
+			
+			<div class="submit">Save info</div>
+		</div>
 	</div>
 </div>
 <!-- end popup popup_narrow -->
