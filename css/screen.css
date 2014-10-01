@@ -57,7 +57,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .header__tumblr b { font-size: 12px; position: absolute; padding-top: 10px; color: white; font-weight: normal; width: 35px; left: -5px; text-align: center; }
 .header .header__tumblr b.header__tumblroff { display: none; }
 .header .header__currencies { display: inline-block; vertical-align: middle; vertical-align: top; }
-.header .header__balancevalue { font-size: 32px; font-family: asemi, sans-serif; font-weight: normal; color: #f8cf5e; line-height: 1; display: inline-block; margin-top: 17px; vertical-align: top; }
+.header .header__balancevalue { font-size: 32px; font-family: asemi, sans-serif; font-weight: normal; color: #f8cf5e; line-height: 1; display: inline-block; margin-top: 17px; vertical-align: top; min-width: 60px; }
 .header .header__balancevalue span { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; color: #918fa0; text-transform: uppercase; cursor: pointer; display: block; padding-top: 2px; }
 .header .header__balancevalue span.is-active { color: #f8cf5e; }
 .header .header__notifications, .header .header__address { float: right; height: 55px; border-left: 1px solid #4c4c69; padding: 0 24px; padding-top: 15px; font-size: 12px; color: white; text-align: center; cursor: pointer; }
@@ -223,6 +223,11 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input input:focus + .input__currency { background-color: #1ebebb; }
 .input .input__tilda { position: absolute; left: 26px; top: 0; height: 66px; line-height: 66px; font-size: 31px; color: #677689; font-family: amed, sans-serif; font-weight: normal; }
 .input .input__currency { width: 60px; height: 46px; line-height: 46px; text-align: center; position: absolute; right: 14px; top: 10px; border-radius: 2px; background: #95c4d1; font-size: 17px; font-family: asemi, sans-serif; font-weight: normal; color: white; }
+.input.input_small { width: 340px; margin: 0 auto 15px auto; }
+.input.input_small .input__label { display: block; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; margin-bottom: 10px; }
+.input.input_small .input__label span { display: block; font-size: 14px; font-family: aital, sans-serif; font-weight: normal; color: #a4a4b0; }
+.input.input_small input { font-size: 17px; height: 46px; line-height: 46px; padding: 0 37px 0 17px; }
+.input.input_small .input__icon { position: absolute; right: 10px; bottom: 6px; font-size: 20px; color: #93c4d2; }
 
 .paywith { margin: 26px 0; color: #79798c; *zoom: 1; }
 .paywith:after { content: " "; display: table; clear: both; }
@@ -327,3 +332,21 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .transfers .transfers__amount { text-align: right; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; padding-right: 30px; }
 .transfers .transfers__amount strong { font-family: asemi, sans-serif; font-weight: normal; margin-left: 20px; display: inline-block; margin-right: 5px; }
 .transfers .transfers__amount.is-minus { color: #ed1847; }
+
+.reg { margin: 25px 0; background: white; float: left; width: 100%; }
+.reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
+.reg .reg__welcome strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.reg .hr { margin: 25px 0; }
+.reg .submit { height: 66px; line-height: 66px; }
+.reg .prefer { width: 340px; margin: 0 auto 15px auto; *zoom: 1; }
+.reg .prefer:after { content: " "; display: table; clear: both; }
+.reg .prefer label { float: left; width: 225px; font-size: 15px; padding-top: 3px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; }
+.reg .prefer label span { display: block; font-size: 14px; font-family: aital, sans-serif; font-weight: normal; color: #a4a4b0; }
+.reg .prefer .select { float: right; width: 115px; position: relative; }
+.reg .prefer .select input { border: 2px solid #95c4d1; border-radius: 2px; box-shadow: inset 3px 3px 0 #eaeaea; background: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 46px; line-height: 46px; width: 100%; font-size: 31px; color: #485878; font-size: 17px; padding-left: 14px; font-family: asemi, sans-serif; font-weight: normal; }
+.reg .prefer .select i { position: absolute; right: 16px; top: 16px; }
+.reg .prefer .select select { -webkit-appearance: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; z-index: 1; }
+
+.reg .submit { background: #1ebebb; font-size: 20px; letter-spacing: 3px; text-align: center; font-family: bold, sans-serif; font-weight: normal; color: white; text-transform: uppercase; text-decoration: none; cursor: pointer; box-shadow: inset 0 0 0 3px #27e5e1; -webkit-transition: all 0.1s ease; -moz-transition: all 0.1s ease; -o-transition: all 0.1s ease; transition: all 0.1s ease; }
+.reg .submit:hover { background: #179290; }
+.reg .submit:active { position: relative; top: 2px; }
