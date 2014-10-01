@@ -48,7 +48,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .header__logo i { color: white; font-size: 13px; vertical-align: middle; margin-left: 4px; }
 .header .header__exchange { float: left; padding: 0 23px 0 30px; height: 70px; line-height: 70px; border-right: 1px solid #4c4c69; font-size: 13px; color: white; }
 .header .header__exchange i { color: white; margin: 0 9px; font-size: 10px; color: #414d83; color: #918fa0; position: relative; top: 1px; }
-.header .header__balances { float: left; padding: 0 57px; height: 70px; }
+.header .header__balances { height: 70px; position: absolute; width: 300px; left: 50%; margin-left: -150px; }
 .header .header__tumblr { position: relative; display: inline-block; height: 2px; background: #3e4981; width: 25px; margin-right: 48px; cursor: pointer; margin-top: 31px; vertical-align: top; }
 .header .header__tumblr.is-on i { left: 20px; }
 .header .header__tumblr.is-on .header__tumblroff { display: block; }
