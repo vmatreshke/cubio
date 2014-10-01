@@ -239,7 +239,12 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input.input_small { width: 340px; margin: 0 auto 15px auto; }
 .input.input_small .input__label { display: block; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; margin-bottom: 10px; }
 .input.input_small .input__label span { display: block; font-size: 14px; font-family: aital, sans-serif; font-weight: normal; color: #a4a4b0; }
-.input.input_small input { font-size: 17px; height: 46px; line-height: 46px; padding: 0 37px 0 17px; }
+.input.input_small input { font-size: 17px; height: 46px; line-height: 46px; line-height: 1; padding: 0 37px 0 17px; padding-top: 0px; line-height: auto; }
+.input.input_small input:-ms-input-placeholder { line-height: 17px; padding-top: 3px; }
+.input.input_small input:-moz-placeholder { line-height: 17px; padding-top: 3px; }
+.input.input_small input::-moz-placeholder { line-height: 17px; padding-top: 3px; }
+.input.input_small input::-webkit-input-placeholder { line-height: 17px; padding-top: 3px; }
+.input.input_small input::placeholder { line-height: 17px; padding-top: 3px; }
 .input.input_small .input__icon { position: absolute; right: 10px; bottom: 6px; font-size: 20px; color: #93c4d2; }
 
 .paywith, .cashout { margin: 26px 0; color: #79798c; *zoom: 1; }
