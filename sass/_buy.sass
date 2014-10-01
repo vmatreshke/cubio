@@ -211,6 +211,9 @@
 			float: left
 			width: 205px 
 			margin-right: 10px 
+			&:last-child
+				margin: 0 
+
 		a
 			display: block
 			text-align: center
@@ -235,8 +238,39 @@
 				font-size: 90px  
 				position: relative
 				top: -11px 
+			
 			&.is-active,&:hover
 				box-shadow: inset 0 0 0 4px #1EBEBB
+			&.cashaccountoption
+				font-weight: normal
+				text-align: center
+				font-size: 12px 
+				text-transform: uppercase
+				letter-spacing: 3px 
+				margin-bottom: 11px 
+				+areg
+				i
+					+svg(cube_logo_dark,26,26)
+					display: inline-block
+					vertical-align: middle
+					margin-right: 10px
+				&.is-disabled
+					box-shadow: inset 0 0 0 2px #E6EEF2
+					+gray
+					opacity: .5
+				&.is-active
+					line-height: 1 
+					padding-top: 14px 
+					height: 66px - 14px 
+					+asemi
+					span
+						display: block
+ 
+						letter-spacing: 0 
+						color: #353458
+						b
+							font-weight: normal
+							color: #1EBEBB 
 .cashout
 	@extend .paywith
 	.cashaccount

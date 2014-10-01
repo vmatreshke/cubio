@@ -255,11 +255,18 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .paywith h3 a:hover, .cashout h3 a:hover { color: #1ebebb; }
 .paywith .paywith__services, .cashout .paywith__services { list-style: none; }
 .paywith .paywith__services li, .cashout .paywith__services li { float: left; width: 205px; margin-right: 10px; }
+.paywith .paywith__services li:last-child, .cashout .paywith__services li:last-child { margin: 0; }
 .paywith .paywith__services a, .cashout .paywith__services a { display: block; text-align: center; text-decoration: none; color: #353556; font-size: 70px; height: 66px; line-height: 66px; background: white; border-radius: 2px; box-shadow: inset 0 0 0 2px #95c4d1; }
 .paywith .paywith__services a .icon-skrill, .cashout .paywith__services a .icon-skrill { position: relative; top: -2px; }
 .paywith .paywith__services a .icon-sofort, .cashout .paywith__services a .icon-sofort { font-size: 90px; vertical-align: top; line-height: 20px; position: relative; top: -10px; }
 .paywith .paywith__services a .icon-okpay-text, .cashout .paywith__services a .icon-okpay-text { font-size: 90px; position: relative; top: -11px; }
 .paywith .paywith__services a.is-active, .cashout .paywith__services a.is-active, .paywith .paywith__services a:hover, .cashout .paywith__services a:hover { box-shadow: inset 0 0 0 4px #1ebebb; }
+.paywith .paywith__services a.cashaccountoption, .cashout .paywith__services a.cashaccountoption { font-weight: normal; text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 11px; font-family: areg, sans-serif; font-weight: normal; }
+.paywith .paywith__services a.cashaccountoption i, .cashout .paywith__services a.cashaccountoption i { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; margin-right: 10px; }
+.paywith .paywith__services a.cashaccountoption.is-disabled, .cashout .paywith__services a.cashaccountoption.is-disabled { box-shadow: inset 0 0 0 2px #e6eef2; -webkit-filter: grayscale(100%); -webkit-backface-visibility: hidden; filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; opacity: 0.5; }
+.paywith .paywith__services a.cashaccountoption.is-active, .cashout .paywith__services a.cashaccountoption.is-active { line-height: 1; padding-top: 14px; height: 52px; font-family: asemi, sans-serif; font-weight: normal; }
+.paywith .paywith__services a.cashaccountoption.is-active span, .cashout .paywith__services a.cashaccountoption.is-active span { display: block; letter-spacing: 0; color: #353458; }
+.paywith .paywith__services a.cashaccountoption.is-active span b, .cashout .paywith__services a.cashaccountoption.is-active span b { font-weight: normal; color: #1ebebb; }
 
 .cashout .cashaccount { width: 420px; }
 .cashout .selectbank { width: 420px; float: left; }
