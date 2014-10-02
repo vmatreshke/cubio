@@ -187,6 +187,10 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .icon-logout:before { content: "d"; }
 
+.icon-mobile:before { content: "e"; }
+
+.icon-invoice:before { content: "f"; }
+
 .a { border-bottom: 1px solid #e6eef2; cursor: pointer; }
 .a:hover { background: white; }
 .a:hover td.a__icon { color: #363656; }
@@ -209,7 +213,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .steps { width: 640px; margin: 20px auto; height: 82px; position: relative; }
 .steps .steps__line { height: 4px; background: #94c4d1; width: 100%; position: absolute; left: 0; top: 24px; }
 .steps .steps__step { width: 52px; height: 52px; position: absolute; top: 0; left: 0; background: #94c4d1; border-radius: 52px; color: white; text-align: center; line-height: 52px; z-index: 10; font-size: 20px; }
-.steps .steps__step i { position: relative; top: 3px; }
+.steps .steps__step i { position: relative; top: 4px; }
+.steps .steps__step i.icon-invoice { left: 3px; }
 .steps .steps__step.steps__4 { right: 0; left: auto; }
 .steps .steps__step.steps__2 { left: 33%; margin-left: -26px; }
 .steps .steps__step.steps__3 { left: 66%; margin-left: -26px; }
