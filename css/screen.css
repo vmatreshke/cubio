@@ -339,6 +339,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup.is-shown { -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); display: block; }
 .popup.popup_narrow { width: 500px; margin-left: -250px; }
 .popup.popup_narrow1 { width: 600px; margin-left: -300px; }
+.popup.popup_invoice { width: 700px; margin-left: -350px; background: #f9fcfd; }
+.popup.popup_invoice .popup__content { width: 500px; margin: 0 auto; padding: 20px 0; }
 .popup.popup_center { top: 50%; margin-top: -100px; }
 .popup .popup__content { padding: 20px 50px 20px 50px; font-family: areg, sans-serif; font-weight: normal; font-size: 14px; color: #353458; }
 .popup h3 { letter-spacing: 3px; font-weight: normal; text-transform: uppercase; text-align: center; font-size: 15px; font-family: proxima, sans-serif; font-weight: normal; margin-bottom: 27px; }
@@ -371,6 +373,16 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .withdraw__in { width: 400px; margin: 0 auto; margin-bottom: 24px; }
 .withdraw__in .withdraw__title { margin-bottom: 10px; margin-top: 20px; }
+
+.invoice .invoice__text { margin: 20px 0; font-size: 15px; text-align: center; color: #353458; font-family: areg, sans-serif; font-weight: normal; }
+.invoice .invoice__text strong { font-weight: normal; font-family: abold, sans-serif; font-weight: normal; color: #1ebebb; }
+.invoice .invoice__text em { font-style: normal; font-family: asemi, sans-serif; font-weight: normal; color: #353458; }
+.invoice .invoice__note { font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #353458; margin-top: 15px; }
+.invoice .invoice__note h3 { font-size: 15px; text-align: left; letter-spacing: 0; text-transform: none; font-family: asemi, sans-serif; font-weight: normal; color: #ed1847; margin-bottom: 8px; }
+.invoice .invoice__data th, .invoice .invoice__data td { border-bottom: 1px solid #f9fcfd; padding: 15px 10px 15px 20px; }
+.invoice .invoice__data th { text-align: left; font-weight: normal; background: white; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
+.invoice .invoice__data td { font-family: asemi, sans-serif; font-weight: normal; font-size: 16px; color: #353458; background: #e6eef2; }
+.invoice .invoice__data td em { font-style: normal; color: #ea294c; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }

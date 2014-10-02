@@ -36,6 +36,14 @@
 	&.popup_narrow1
 		width: 600px 
 		margin-left: -300px 
+	&.popup_invoice
+		width: 700px 
+		margin-left: -350px 
+		background: #F9FCFD 
+		.popup__content
+			width: 500px 
+			margin: 0 auto 
+			padding: 20px 0 
 	&.popup_center
 		top: 50%
 		margin-top: -100px  
@@ -156,3 +164,51 @@
 	.withdraw__title
 		margin-bottom: 10px 
 		margin-top: 20px 
+.invoice
+	.invoice__text
+		margin: 20px 0
+		font-size: 15px 
+		text-align: center
+		color: #353458 
+		+areg
+		strong
+			font-weight: normal
+			+abold
+			color: #1EBEBB 
+		em
+			font-style: normal 
+			+asemi
+			color: #353458 
+	.invoice__note
+		font-size: 15px 
+		+areg
+		color: #353458 
+		margin-top: 15px 
+
+		h3
+			font-size: 15px 
+			text-align: left
+			letter-spacing: 0
+			text-transform: none 
+			+asemi
+			color: #ED1847
+			margin-bottom: 8px  
+	.invoice__data
+		th,td
+			border-bottom: 1px solid #F9FCFD 
+			padding: 15px 10px 15px 20px 
+		th
+			text-align: left
+			font-weight: normal
+			background: #fff 
+			font-size: 16px 
+			+areg
+			color: #353458 
+		td
+			+asemi
+			font-size: 16px 
+			color: #353458 
+			background: #E6EEF2 
+			em
+				font-style: normal 
+				color: #EA294C 
