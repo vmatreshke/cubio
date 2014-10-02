@@ -39,6 +39,8 @@
 .exchange
 	margin-bottom: 24px 
 	+clr
+	&.exchange_spaced
+		margin-bottom: 50px 
 	.exchange__col
 		float: left
 		width: 420px 
@@ -456,7 +458,35 @@
 		.cashaccount__drop
 			display: block
 			
-			
+.cash
+	font-weight: normal
+	text-align: center
+	font-size: 16px 
+	text-transform: uppercase
+	letter-spacing: 2px 
+	color: #353458 
+	margin-bottom: 0 
+	+areg
+	float: right
+	width: 420px 
+	box-shadow: inset 0 0 0 2px #95C4D1
+	height: 66px
+	line-height: 66px
+	text-align: center  
+	background: #fff 
+	cursor: pointer
+	+transition( all .1s linear)
+	&.is-active,&:hover
+		box-shadow: inset 0 0 0 4px #1EBEBB
+	i
+		margin-left: 4px 
+		margin-right: 0 
+	i.icon-cube_logo_dark
+		+svg(cube_logo_dark,26,26)
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px 
+
 .confirm
 	+clr
 	.confirm__button

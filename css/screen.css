@@ -213,7 +213,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .steps .steps__step.steps__4 { right: 0; left: auto; }
 .steps .steps__step.steps__2 { left: 33%; margin-left: -26px; }
 .steps .steps__step.steps__3 { left: 66%; margin-left: -26px; }
-.steps .steps__title { top: 70px; width: 102px; margin-left: -26px; text-align: center; color: #353556; line-height: 1; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; position: absolute; left: 0; }
+.steps .steps__title { top: 70px; width: 152px; margin-left: -50px; text-align: center; color: #353556; line-height: 1; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; position: absolute; left: 0; }
 .steps .steps__fill { background: #1fbeba; height: 4px; width: 0; }
 .steps.steps_1 .steps__1 { background: #1fbeba; box-shadow: inset 0 0 0 6px #94c4d1; }
 .steps.steps_2 .steps__1, .steps.steps_2 .steps__2 { background: #1fbeba; box-shadow: inset 0 0 0 6px #94c4d1; }
@@ -231,6 +231,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .steps.steps_4 .steps__1:before, .steps.steps_4 .steps__2:after, .steps.steps_4 .steps__3:after { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; right: 0; }
 .steps.steps_4 .steps__3:before { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; left: 0; }
 .steps.steps_4 .steps__fill { width: 66%; }
+.steps.steps_spaced { margin-bottom: 50px; margin-top: 50px; }
 
 .tabs { *zoom: 1; margin: 31px 0 25px; list-style: none; font-size: 0; text-align: center; }
 .tabs:after { content: " "; display: table; clear: both; }
@@ -245,6 +246,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .exchange { margin-bottom: 24px; *zoom: 1; }
 .exchange:after { content: " "; display: table; clear: both; }
+.exchange.exchange_spaced { margin-bottom: 50px; }
 .exchange .exchange__col { float: left; width: 420px; }
 .exchange .exchange__col + .exchange__col { float: right; }
 .exchange label { font-size: 19px; display: block; position: relative; margin-bottom: 12px; line-height: 19px; font-family: amed, sans-serif; font-weight: normal; color: #79798c; }
@@ -338,6 +340,11 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cashaccount.is-filled .cashaccount__value .icon-arrowdown { position: relative; top: 7px; }
 .cashaccount.is-filled .cashaccount__money { line-height: 15px; position: relative; top: -10px; }
 .cashaccount.is-drop .cashaccount__drop { display: block; }
+
+.cash { font-weight: normal; text-align: center; font-size: 16px; text-transform: uppercase; letter-spacing: 2px; color: #353458; margin-bottom: 0; font-family: areg, sans-serif; font-weight: normal; float: right; width: 420px; box-shadow: inset 0 0 0 2px #95c4d1; height: 66px; line-height: 66px; text-align: center; background: white; cursor: pointer; -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; }
+.cash.is-active, .cash:hover { box-shadow: inset 0 0 0 4px #1ebebb; }
+.cash i { margin-left: 4px; margin-right: 0; }
+.cash i.icon-cube_logo_dark { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; margin-right: 10px; }
 
 .confirm { *zoom: 1; }
 .confirm:after { content: " "; display: table; clear: both; }
