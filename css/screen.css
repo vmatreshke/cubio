@@ -308,6 +308,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cashout .selectbank { width: 420px; float: left; }
 
 .selectbank { height: 66px; line-height: 66px; box-shadow: inset 0 0 0 2px #95c4d1; cursor: pointer; background: white; position: relative; }
+.selectbank:hover { box-shadow: inset 0 0 0 4px #1ebebb; }
+.selectbank.is-active { box-shadow: inset 0 0 0 4px #1ebebb; }
 .selectbank .selectbank__value { font-size: 21px; font-family: amed, sans-serif; font-weight: normal; color: #353458; position: relative; z-index: 4; }
 .selectbank .selectbank__value .selectbank__addvalue { letter-spacing: 2px; color: #353458; text-transform: uppercase; font-size: 15px; text-align: center; }
 .selectbank .selectbank__value .selectbank__addvalue .icon-add { font-size: 20px; display: inline-block; vertical-align: middle; color: #93c4d2; margin-right: 6px; position: relative; top: 2px; }
@@ -341,7 +343,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cashaccount.is-filled .cashaccount__money { line-height: 15px; position: relative; top: -10px; }
 .cashaccount.is-drop .cashaccount__drop { display: block; }
 
-.cash { font-weight: normal; text-align: center; font-size: 16px; text-transform: uppercase; letter-spacing: 2px; color: #353458; margin-bottom: 0; font-family: areg, sans-serif; font-weight: normal; float: right; width: 420px; box-shadow: inset 0 0 0 2px #95c4d1; height: 66px; line-height: 66px; text-align: center; background: white; cursor: pointer; -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; }
+.cash { font-weight: normal; text-align: center; font-size: 16px; text-transform: uppercase; letter-spacing: 2px; color: #353458; margin-bottom: 0; font-family: areg, sans-serif; font-weight: normal; float: right; width: 420px; box-shadow: inset 0 0 0 2px #95c4d1; height: 66px; line-height: 66px; text-align: center; background: white; cursor: pointer; }
 .cash.is-active, .cash:hover { box-shadow: inset 0 0 0 4px #1ebebb; }
 .cash i { margin-left: 4px; margin-right: 0; }
 .cash i.icon-cube_logo_dark { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; margin-right: 10px; }
