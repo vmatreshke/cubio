@@ -207,6 +207,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .tabs a { display: inline-block; width: 324px; font-size: 17px; font-family: proxima, sans-serif; font-weight: normal; color: #b3b3bc; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid #cdcdd4; text-align: center; letter-spacing: 3px; padding-bottom: 10px; padding-top: 2px; }
 .tabs a.is-active { color: #353458; font-family: semi, sans-serif; font-weight: normal; border-bottom-color: #353458; }
 .tabs a:hover { color: #353458; border-bottom-color: #353458; }
+.tabs.tabs_small { margin: 18px 0 24px 0; }
+.tabs.tabs_small a { text-transform: none; width: 200px; letter-spacing: 0; }
 
 .hr { border-top: 1px solid #e6eef2; margin: 10px 0; }
 
@@ -225,6 +227,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input .input__tilda { position: absolute; left: 26px; top: 0; height: 66px; line-height: 66px; font-size: 31px; color: #677689; font-family: amed, sans-serif; font-weight: normal; display: none; }
 .input.with-tilda .input__tilda, .input.is-tilda .input__tilda { display: block; }
 .input .input__currency { width: 60px; height: 46px; line-height: 46px; text-align: center; position: absolute; right: 14px; top: 10px; border-radius: 2px; background: #95c4d1; font-size: 17px; font-family: asemi, sans-serif; font-weight: normal; color: white; }
+.input .input__currency.input__currency_subtle { background: transparent; color: #1ebebb; }
 .input .input__currency.input__currency_drop { width: 75px; background: #1ebebb; cursor: pointer; }
 .input .input__currency.input__currency_drop .input__currencydrop { display: none; }
 .input .input__currency.input__currency_drop .input__currencyvalue { position: relative; z-index: 3; display: inline-block; }
@@ -382,9 +385,22 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .field:after { content: " "; display: table; clear: both; }
 .field label { float: left; width: 104px; padding-left: 16px; font-size: 17px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; padding-top: 13px; }
 .field .input { float: right; width: 410px; margin-bottom: 0; }
+.field.field_check { margin: 20px 0; padding-left: 110px; cursor: pointer; }
+.field.field_check .checkbox { display: inline-block; vertical-align: middle; margin-right: 11px; }
+.field.field_check .checkbox input { display: none; }
+.field.field_check .checkbox i { display: inline-block; width: 20px; height: 20px; background: #00bfbc; box-shadow: inset 0 0 0 2px #bccdd5; }
+.field.field_check .checkbox input:checked + i { background: #bccdd5; }
+.field.field_check .label { display: inline-block; font-family: areg, sans-serif; font-weight: normal; font-size: 13px; color: #353458; }
 
 .addbank .addbank__content { padding: 0px 41px 0 27px; }
 .addbank .addbank__title { font-size: 19px; color: #353458; font-family: asemi, sans-serif; font-weight: normal; margin-bottom: 27px; }
+.addbank.addbank_withdraw { width: 400px; margin: 0 auto; }
+.addbank.addbank_withdraw .addbank__content { padding: 0; }
+.addbank.addbank_withdraw .field label { padding-left: 0; width: 100px; }
+.addbank.addbank_withdraw .field .input { width: 290px; }
+
+.withdraw__in { width: 400px; margin: 0 auto; margin-bottom: 24px; }
+.withdraw__in .withdraw__title { margin-bottom: 10px; margin-top: 20px; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
