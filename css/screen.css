@@ -200,6 +200,37 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .a .a__table td.a__amount { text-align: right; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; }
 .a .a__table td.a__amount strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; margin-left: 20px; }
 .a .a__table td.a__amount.is-minus { color: #ea294c; }
+.a.a_empty { background: white; text-align: center; cursor: default; border-bottom: none; border-top: 1px solid #e6eef2; }
+.a.a_empty td { font-family: aital, sans-serif; font-weight: normal; color: #9ea3a6; font-size: 16px; cursor: default; }
+
+.welcome { width: 850px; margin: 30px auto; }
+.welcome .welcome__text { margin-bottom: 23px; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #353458; text-align: center; }
+
+.steps { width: 640px; margin: 20px auto; height: 82px; position: relative; }
+.steps .steps__line { height: 4px; background: #94c4d1; width: 100%; position: absolute; left: 0; top: 24px; }
+.steps .steps__step { width: 52px; height: 52px; position: absolute; top: 0; left: 0; background: #94c4d1; border-radius: 52px; color: white; text-align: center; line-height: 52px; z-index: 10; font-size: 20px; }
+.steps .steps__step i { position: relative; top: 3px; }
+.steps .steps__step.steps__4 { right: 0; left: auto; }
+.steps .steps__step.steps__2 { left: 33%; margin-left: -26px; }
+.steps .steps__step.steps__3 { left: 66%; margin-left: -26px; }
+.steps .steps__title { top: 70px; width: 102px; margin-left: -26px; text-align: center; color: #353556; line-height: 1; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; position: absolute; left: 0; }
+.steps .steps__fill { background: #1fbeba; height: 4px; width: 0; }
+.steps.steps_1 .steps__1 { background: #1fbeba; box-shadow: inset 0 0 0 6px #94c4d1; }
+.steps.steps_2 .steps__1, .steps.steps_2 .steps__2 { background: #1fbeba; box-shadow: inset 0 0 0 6px #94c4d1; }
+.steps.steps_2 .steps__1:before { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; right: 0; }
+.steps.steps_2 .steps__2:before { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; left: 0; }
+.steps.steps_2 .steps__fill { width: 33%; }
+.steps.steps_3 .steps__1, .steps.steps_3 .steps__2, .steps.steps_3 .steps__3 { background: #1fbeba; box-shadow: inset 0 0 0 6px #94c4d1; }
+.steps.steps_3 .steps__1:before { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; right: 0; }
+.steps.steps_3 .steps__2:before { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; left: 0; }
+.steps.steps_3 .steps__2:after { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; right: 0; }
+.steps.steps_3 .steps__3:before { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; left: 0; }
+.steps.steps_3 .steps__fill { width: 66%; }
+.steps.steps_4 .steps__step { background: #1fbeba; box-shadow: inset 0 0 0 6px #94c4d1; }
+.steps.steps_4 .steps__2:before, .steps.steps_4 .steps__3:before, .steps.steps_4 .steps__4:before { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; left: 0; }
+.steps.steps_4 .steps__1:before, .steps.steps_4 .steps__2:after, .steps.steps_4 .steps__3:after { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; right: 0; }
+.steps.steps_4 .steps__3:before { position: absolute; height: 4px; width: 10px; background: #1fbeba; top: 24px; content: " "; z-index: 20; left: 0; }
+.steps.steps_4 .steps__fill { width: 66%; }
 
 .tabs { *zoom: 1; margin: 31px 0 25px; list-style: none; font-size: 0; text-align: center; }
 .tabs:after { content: " "; display: table; clear: both; }

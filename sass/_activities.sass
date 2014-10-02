@@ -48,3 +48,136 @@
 					margin-left: 20px 
 				&.is-minus
 					color: #EA294C 
+	&.a_empty
+		background: #fff 
+		text-align: center
+		cursor: default
+		border-bottom: none
+		border-top: 1px solid #E6EEF2  
+		td
+			+aital
+			color: #9EA3A6  
+			font-size: 16px 
+			cursor: default 
+.welcome
+	width: 850px 
+	margin: 30px auto
+	.welcome__text
+		margin-bottom: 23px 
+		font-size: 15px 
+		+areg
+		color: #353458 
+		text-align: center
+
+=rightb
+	position: absolute
+	height: 4px 
+	width: 10px 
+	background: #1FBEBA
+	top: 24px  
+	content: ' ' 
+	z-index: 20 
+	right: 0 
+=leftb
+	position: absolute
+	height: 4px 
+	width: 10px 
+	background: #1FBEBA
+	top: 24px  
+	content: ' ' 
+	z-index: 20 
+	left: 0 
+.steps
+	width: 640px
+	margin: 20px auto
+	height: 82px 
+	position: relative
+	.steps__line
+		height: 4px 
+		background: #94C4D1
+		width: 100%
+		position: absolute
+		left: 0
+		top: 24px    
+	.steps__step
+		width: 52px 
+		height: 52px 
+		position: absolute
+		top: 0
+		left: 0
+		background: #94C4D1
+		border-radius: 52px
+		color: #fff 
+		text-align: center
+		line-height: 52px 
+		z-index: 10 
+		font-size: 20px 
+		i
+			position: relative
+			top: 3px 
+		&.steps__4
+			right: 0
+			left: auto 
+			 
+		&.steps__2
+			left: 33%
+			margin-left: -26px  
+		&.steps__3
+			left: 66%
+			margin-left: -26px  
+	.steps__title
+		top: 70px 
+		width: 102px 
+		margin-left: -26px
+		text-align: center
+		color: #353556
+		line-height: 1 
+		font-size: 15px   
+		+areg
+		position: absolute
+		left: 0 
+	.steps__fill
+		background: #1FBEBA 
+		height: 4px 
+		width: 0 
+	&.steps_1
+		.steps__1
+			background: #1FBEBA
+			box-shadow: inset 0 0 0 6px #94C4D1 
+	&.steps_2
+		.steps__1,.steps__2
+			background: #1FBEBA
+			box-shadow: inset 0 0 0 6px #94C4D1 
+		.steps__1:before
+			+rightb
+		.steps__2:before
+			+leftb
+		.steps__fill
+			width: 33%
+	&.steps_3
+		.steps__1,.steps__2,.steps__3
+			background: #1FBEBA
+			box-shadow: inset 0 0 0 6px #94C4D1 
+		.steps__1:before
+			+rightb
+		.steps__2:before
+			+leftb
+		.steps__2:after
+			+rightb
+		.steps__3:before
+			+leftb
+		.steps__fill
+			width: 66%
+	&.steps_4
+		.steps__step
+			background: #1FBEBA
+			box-shadow: inset 0 0 0 6px #94C4D1 
+
+		.steps__2:before,.steps__3:before,.steps__4:before
+			+leftb
+		.steps__1:before,.steps__2:after,.steps__3:after
+			+rightb
+		.steps__3:before
+			+leftb
+		.steps__fill
+			width: 66%
