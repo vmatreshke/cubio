@@ -42,7 +42,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .in, .footer, .nav .nav__in, .a .a__table { width: 850px; margin: 0 auto; }
 
-.header { background: #353557; height: 70px; position: relative; min-width: 1200px; }
+.l-header { height: 70px; }
+
+.header { background: #353557; height: 70px; position: relative; min-width: 1200px; position: fixed; top: 0; left: 0; width: 100%; z-index: 100; }
 .header .header__logo { float: left; height: 70px; padding: 0 30px; font-size: 18px; text-transform: uppercase; font-family: bold, sans-serif; font-weight: normal; height: 70px; line-height: 70px; color: #f8cf5e; cursor: pointer; }
 .header .header__logo span { font-family: proxima, sans-serif; font-weight: normal; color: white; }
 .header .header__logo i { color: white; font-size: 13px; vertical-align: middle; margin-left: 4px; }
@@ -97,7 +99,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .logo { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; }
 
-.nav { background: white; border-bottom: 1px solid #e6edf2; }
+.l-nav { height: 83px; }
+
+.nav { background: white; border-bottom: 1px solid #e6edf2; position: fixed; z-index: 100; top: 70px; width: 100%; }
 .nav ul { height: 83px; width: 100%; position: relative; }
 .nav ul:before { position: absolute; right: 0; top: 0; content: " "; right: 0; top: 0; height: 83px; border-right: 1px solid #e6eef2; z-index: 3; }
 .nav ul li { float: left; width: 20%; }
@@ -478,7 +482,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cashaccounts .button { height: 46px; line-height: 46px; padding: 0 15px; border: 2px solid #96c4d0; display: inline-block; margin-left: 10px; border-radius: 2px; text-transform: uppercase; letter-spacing: 3px; color: #353557; text-decoration: none; cursor: pointer; }
 .cashaccounts .button i { font-size: 20px; vertical-align: middle; display: inline-block; position: relative; top: 2px; }
 .cashaccounts .button:hover { border-color: #73b0c0; }
-.cashaccounts .showmore { height: 35px; cursor: pointer; line-height: 35px; text-align: center; font-size: 13px; text-decoration: none; font-family: areg, sans-serif; font-weight: normal; color: #353458; background: #f9fcfd; }
+.cashaccounts .showmore { height: 35px; cursor: pointer; line-height: 35px; text-align: center; font-size: 13px; text-decoration: none; font-family: areg, sans-serif; font-weight: normal; color: #353458; background: #f8f8f8; position: relative; margin-top: -1px; }
 .cashaccounts .showmore:hover { background: #f1f8fa; }
 .cashaccounts .transfers { background: white; }
 .cashaccounts .transfers td, .cashaccounts .transfers th { border-bottom: 1px solid #e6eef2; background: white; }
