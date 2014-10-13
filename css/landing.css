@@ -110,12 +110,15 @@ body { background: #e6eef2; }
 
 .bottom { height: 100vh; overflow: hidden; width: 100%; position: relative; }
 .bottom .section__content { height: 100%; z-index: 100; }
-.bottom .bottom__bg { position: absolute; left: 50%; top: 50%; width: 1440px; height: 900px; margin-top: -440px; margin-left: -720px; background: url(../img/bottombg.svg) no-repeat 0 0; z-index: 10; }
+.bottom .bottom__bg { position: absolute; left: 50%; top: 50%; width: 1440px; height: 900px; margin-top: -440px; margin-left: -720px; z-index: 10; }
+.bottom .bottom__bg svg { position: absolute; top: 0; left: 0; }
+.bottom .bottom__bg svg path { stroke-dasharray: 1200; stroke-dashoffset: 1200; transition: all 2s linear; }
+.is-bottom .bottom .bottom__bg svg path { stroke-dashoffset: 0; }
 .bottom .bottom__centerwrap { height: 100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; display: table; width: 100%; }
 .bottom .bottom__centerwrap1 { display: table-cell; vertical-align: middle; width: 100%; }
-.bottom .bottom__center { width: 80%; margin: 0 10%; text-align: center; }
+.bottom .bottom__center { width: 80%; margin: 0 10%; text-align: center; position: relative; top: 10px; }
 .bottom .bottom__title, .bottom .bottom__subtitle { font-size: 42px; color: #353458; font-family: amed, sans-serif; font-weight: normal; font-weight: normal; white-space: nowrap; text-align: center; }
-.bottom .bottom__subtitle { padding-top: 560px; }
+.bottom .bottom__subtitle { padding-top: 570px; }
 .bottom .bottom__subtitle strong { font-weight: normal; font-style: normal; font-family: aital, sans-serif; font-weight: normal; font-weight: bold; color: #ea294c; }
 .bottom .bottom__pic { width: 572px; height: 550px; background: url(../img/pic.png) no-repeat 0 0; position: absolute; left: 434px; top: 176px; z-index: 2000; }
 

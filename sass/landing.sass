@@ -271,8 +271,23 @@ $width:  120px
 		height: 900px 
 		margin-top: -450px + 10px
 		margin-left: -720px 
-		background: url(../img/bottombg.svg) no-repeat 0 0 
+		// background: url(../img/bottombg.svg) no-repeat 0 0 
 		z-index: 10 
+		svg
+			position: absolute
+			top: 0
+			left: 0
+			path
+				// stroke-dasharray: 20
+				stroke-dasharray: 1200
+				stroke-dashoffset: 1200
+				transition: all 2s linear
+	.is-bottom &
+		.bottom__bg
+			svg
+				path
+					stroke-dashoffset: 0
+			  
 	.bottom__centerwrap
 		height: 100%
 		position: absolute
@@ -291,6 +306,8 @@ $width:  120px
 		width: 80%
 		margin: 0 10%  
 		text-align: center
+		position: relative
+		top: 10px 
 		// height: 200px
 	.bottom__title,.bottom__subtitle
 		font-size: 42px 
@@ -300,7 +317,7 @@ $width:  120px
 		white-space: nowrap
 		text-align: center
 	.bottom__subtitle
-		padding-top: 560px 
+		padding-top: 570px 
 		strong
 			font-weight: normal
 			font-style: normal
