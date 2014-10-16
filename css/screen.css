@@ -330,6 +330,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .paywith .paywith__services a.cashaccountoption.is-active, .cashout .paywith__services a.cashaccountoption.is-active { line-height: 1; padding-top: 14px; height: 52px; font-family: asemi, sans-serif; font-weight: normal; }
 .paywith .paywith__services a.cashaccountoption.is-active span, .cashout .paywith__services a.cashaccountoption.is-active span { display: block; letter-spacing: 0; color: #353458; }
 .paywith .paywith__services a.cashaccountoption.is-active span b, .cashout .paywith__services a.cashaccountoption.is-active span b { font-weight: normal; color: #1ebebb; }
+.paywith .paywith__services a.cashaccountoption.is-filled, .cashout .paywith__services a.cashaccountoption.is-filled { line-height: 1; padding-top: 14px; height: 52px; }
+.paywith .paywith__services a.cashaccountoption.is-filled span, .cashout .paywith__services a.cashaccountoption.is-filled span { display: block; line-height: 1; letter-spacing: 0; color: #353458; }
+.paywith .paywith__services a.cashaccountoption.is-filled span b, .cashout .paywith__services a.cashaccountoption.is-filled span b { font-weight: normal; color: #1ebebb; }
 
 .cashout .cashaccount { width: 420px; }
 .cashout .selectbank { width: 420px; float: left; float: right; }
