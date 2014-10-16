@@ -14,12 +14,14 @@ body
 .section__content
 	@extend %in
 	position: relative
+	
 .start
 	height: 100%
-	background: #353656  url(../img/start.svg) no-repeat 50% 50%
+	// background: #353656  url(../img/start.svg) no-repeat 50% 50%
 	-webkit-background-size: cover 
 	-o-background-size: cover 
 	background-size: cover 
+	overflow: hidden
 	.section__content
 		height: 100% 
 	.start__wallet
@@ -32,6 +34,28 @@ body
 		font-size: 15px 
 		z-index: 500 
 		padding: 0 20px 
+	.start__bg
+		position: absolute
+		left: 50%
+		top: 50%  
+		margin-left: -720px
+		margin-top: -450px  
+		background: #353657 
+		svg
+			position: absolute
+			left: 0
+			top: 0
+			background: #353657 
+			path
+				// stroke-dasharray: 20
+				stroke-dasharray: 1200
+				stroke-dashoffset: 1200
+				transition: all 2s linear
+	.a &
+		.start__bg svg
+			path
+				stroke-dashoffset: 0
+			
 	.start__right
 		position: absolute
 		right: 0
@@ -282,11 +306,16 @@ $width:  120px
 				stroke-dasharray: 1200
 				stroke-dashoffset: 1200
 				transition: all 2s linear
+			#cube
+				opacity: 0 
+				transition: all .5s linear
 	.is-bottom &
 		.bottom__bg
 			svg
 				path
 					stroke-dashoffset: 0
+				#cube
+					opacity: 1
 			  
 	.bottom__centerwrap
 		height: 100%

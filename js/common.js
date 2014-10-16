@@ -1,5 +1,5 @@
 head.ready(function() {
-
+	$('body').addClass('a');
 	$('.header__tumblr').click(function(event) {
 		$(this).toggleClass('is-on');
 		$('.header__balancevalue').fadeToggle();
