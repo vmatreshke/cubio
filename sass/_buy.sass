@@ -707,6 +707,8 @@
 		.confirmation__goin
 			text-align: center
 			padding: 24px 30px 
+			&.confirmation__goin_alt
+				padding: 50px 0 
 		.confirmation__icon
 			font-size: 110px 
 			color: #00C7C4 
@@ -729,3 +731,32 @@
 				margin-right: 4px 
 				span
 					color: #00C3C0 
+	.confirmation__send
+		text-align: center
+		width: 260px 
+		display: inline-block
+		vertical-align: middle
+		label
+			display: block
+			text-align: center
+			font-size: 15px 
+			margin-bottom: 10px 
+			+areg
+			color: #353458 
+			strong
+				font-weight: normal
+				+asemi
+		input
+			border: 2px solid #95C4D1 
+			width: 100%
+			text-align: center
+			padding: 10px  
+			font-size: 12px 
+			+asemi
+			color: #353458 
+			+box
+			background: #FAFCFD 
+	.confirmation__qr
+		display: inline-block
+		vertical-align: middle
+		margin-left: 17px 
