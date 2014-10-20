@@ -517,6 +517,18 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .verify p strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
 .verify p.verify__pic { margin: 35px 0; }
 .verify .verify__ok { font-size: 125px; line-height: 1; color: #00c7c4; }
+.verify .verify__field { width: 415px; margin: 0 auto 12px auto; *zoom: 1; }
+.verify .verify__field:after { content: " "; display: table; clear: both; }
+.verify .verify__field label { width: 110px; text-align: left; float: left; font-family: asemi, sans-serif; font-weight: normal; font-size: 14px; color: #353458; padding-top: 15px; }
+.verify .verify__field .verify__input { float: right; width: 290px; position: relative; }
+.verify .verify__field .verify__input .smallselect { width: 100%; }
+.verify .verify__field .verify__input .verify__phone { height: 50px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0px 10px 0 10px; line-height: 1; width: 239px; border: 2px solid #95c4d1; border-radius: 3px; float: right; font-size: 17px; border-top-left-radius: 0; border-bottom-left-radius: 0; font-family: asemi, sans-serif; font-weight: normal; }
+.verify .verify__field .verify__input .verify__phone:-ms-input-placeholder { color: #d3d3d9; }
+.verify .verify__field .verify__input .verify__phone:-moz-placeholder { color: #d3d3d9; }
+.verify .verify__field .verify__input .verify__phone::-moz-placeholder { color: #d3d3d9; }
+.verify .verify__field .verify__input .verify__phone::-webkit-input-placeholder { color: #d3d3d9; }
+.verify .verify__field .verify__input .verify__phone::placeholder { color: #d3d3d9; }
+.verify .verify__field .verify__input .verify__phonecode { position: absolute; left: 0; top: 0; bottom: 0; height: 50px; line-height: 50px; font-family: asemi, sans-serif; font-weight: normal; font-size: 17px; color: #f9fcfd; width: 52px; background: #95c4d1; border-radius: 3px; border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
