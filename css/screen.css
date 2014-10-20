@@ -429,6 +429,19 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .table .table__text { color: #353458; font-size: 17px; }
 .table .table__amount { font-family: "Source Code Pro", sans-serif; font-weight: 400; text-align: right; font-size: 17px; color: #0e2354; }
 .table .table__currency { color: #00c7c4; }
+.table.table_confirm { border: none; }
+.table.table_confirm td, .table.table_confirm th { border: none; background: white; }
+.table.table_confirm thead td, .table.table_confirm thead th { border: none; border-bottom: 3px solid #e6eef2; }
+.table.table_confirm tfoot td, .table.table_confirm tfoot th { padding-top: 20px; border: none; border-top: 10px solid #e6eef2; background: none; }
+
+.confirmation { width: 450px; margin: 0 auto; background: #f9fcfd; margin-top: 25px; padding: 30px 30px 47px 30px; box-shadow: inset -3px -3px 0 #eaeaea; }
+.confirmation .confirmation__go { background: white; box-shadow: inset 3px 3px 0 #ebebeb; margin-top: 30px; }
+.confirmation .confirmation__go .confirmation__goin { text-align: center; padding: 24px 30px; }
+.confirmation .confirmation__go .confirmation__icon { font-size: 110px; color: #00c7c4; line-height: 1; }
+.confirmation .confirmation__go h3 { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; font-style: italic; color: #00c7c4; font-size: 19px; margin-bottom: 10px; }
+.confirmation .confirmation__go p { font-family: areg, sans-serif; font-weight: normal; font-size: 15px; color: #353458; }
+.confirmation .confirmation__go p strong { font-weight: normal; font-family: abold, sans-serif; font-weight: normal; margin-right: 4px; }
+.confirmation .confirmation__go p strong span { color: #00c3c0; }
 
 .overlay { position: absolute; top: 70px; background: #768395; opacity: 0.9; bottom: 0; right: 0; left: 0; z-index: 1000; display: none; }
 
@@ -505,6 +518,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .submit:hover, .udata .udata__button:hover, .mdata .mdata__edit:hover, .mdata .mdata__delete:hover { background: #179290; }
 .submit:active, .udata .udata__button:active, .mdata .mdata__edit:active, .mdata .mdata__delete:active { position: relative; top: 2px; }
 .submit_subtle.submit, .udata .submit_subtle.udata__button, .mdata .submit_subtle.mdata__edit, .mdata .submit_subtle.mdata__delete { background: #95c4d1; box-shadow: inset 0 0 0 3px #a2d6e4; }
+.submit_small.submit, .udata .submit_small.udata__button, .mdata .submit_small.mdata__edit, .mdata .submit_small.mdata__delete { font-size: 16px; height: 50px; line-height: 50px; }
 
 .requestpage { padding-bottom: 40px; }
 .requestpage .tabs { margin-bottom: 34px; }
