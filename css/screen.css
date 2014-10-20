@@ -432,9 +432,16 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .table.table_confirm { border: none; }
 .table.table_confirm td, .table.table_confirm th { border: none; background: white; }
 .table.table_confirm thead td, .table.table_confirm thead th { border: none; border-bottom: 3px solid #e6eef2; }
-.table.table_confirm tfoot td, .table.table_confirm tfoot th { padding-top: 20px; border: none; border-top: 10px solid #e6eef2; background: none; }
+.table.table_confirm tfoot td, .table.table_confirm tfoot th { padding-top: 20px; border: none; background: none; }
+.table.table_confirm .table__status td { height: 10px; padding: 0; background: white; height: 10px; text-align: right; }
+.table.table_confirm .table__status td .table__counter { display: block; position: relative; height: 10px; width: 100%; }
+.table.table_confirm .table__status td .table__counter.is-done { background: #e6eef2; }
+.table.table_confirm .table__status td .table__counter i { background: #00c7c4; position: absolute; right: 0; height: 10px; }
 
 .confirmation { width: 450px; margin: 0 auto; background: #f9fcfd; margin-top: 25px; padding: 30px 30px 47px 30px; box-shadow: inset -3px -3px 0 #eaeaea; }
+.confirmation .confirmation__wrap { position: relative; }
+.confirmation .confirmation__timeleft { text-align: right; width: 100px; top: -20px; position: absolute; right: 0; font-size: 13px; font-family: aital, sans-serif; font-weight: normal; color: #abacba; }
+.confirmation .confirmation__timeleft i { color: #b8bac5; margin-right: 4px; position: relative; top: 2px; }
 .confirmation .confirmation__go { background: white; box-shadow: inset 3px 3px 0 #ebebeb; margin-top: 30px; }
 .confirmation .confirmation__go .confirmation__goin { text-align: center; padding: 24px 30px; }
 .confirmation .confirmation__go .confirmation__icon { font-size: 110px; color: #00c7c4; line-height: 1; }

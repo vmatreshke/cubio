@@ -653,8 +653,30 @@
 			td,th
 				padding-top: 20px 
 				border: none 
-				border-top: 10px solid #E6EEF2 
+				// border-top: 10px solid #E6EEF2 
 				background: none 
+		.table__status
+			td
+				height: 10px 
+				padding: 0
+				background: #fff  
+				height: 10px
+				text-align: right
+				.table__counter
+					display: block
+					position: relative
+					height: 10px
+					width: 100%  
+					&.is-done
+						background: #E6EEF2 
+					i
+						background: #00C7C4 
+						position: absolute
+						right: 0
+						height: 10px  
+
+					
+					
 .confirmation
 	width: 510px - 60px 
 	margin: 0 auto
@@ -662,6 +684,22 @@
 	margin-top: 25px  
 	padding: 30px 30px 47px 30px 
 	box-shadow: inset -3px -3px 0 #EAEAEA
+	.confirmation__wrap
+		position: relative
+	.confirmation__timeleft
+		text-align: right
+		width: 100px 
+		top: -20px 
+		position: absolute
+		right: 0
+		font-size: 13px  
+		+aital
+		color: #ABACBA 
+		i
+			color: #B8BAC5 
+			margin-right: 4px 
+			position: relative
+			top: 2px 
 	.confirmation__go
 		background: #fff 
 		box-shadow: inset 3px 3px 0 #EBEBEB
