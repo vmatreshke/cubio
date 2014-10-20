@@ -533,7 +533,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cashaccounts .actions .actions__amount { font-size: 21px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; padding-right: 20px; }
 .cashaccounts .actions .actions__amount span { margin-left: 20px; color: #00bfbc; }
 .cashaccounts .actions .actions__currency { font-size: 21px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; }
-.cashaccounts .button { height: 46px; line-height: 46px; padding: 0 15px; border: 2px solid #96c4d0; display: inline-block; margin-left: 10px; border-radius: 2px; text-transform: uppercase; letter-spacing: 3px; color: #353557; text-decoration: none; cursor: pointer; }
+.cashaccounts .button { height: 46px; line-height: 46px; padding: 0 15px; border: 2px solid #96c4d0; display: inline-block; margin-left: 10px; border-radius: 2px; text-transform: uppercase; letter-spacing: 3px; color: #353557; text-decoration: none; cursor: pointer; color: #95c4d1; border-color: #95c4d1; font-size: 15px; font-family: semi, sans-serif; font-weight: normal; }
 .cashaccounts .button i { font-size: 20px; vertical-align: middle; display: inline-block; position: relative; top: 2px; }
 .cashaccounts .button:hover { border-color: #73b0c0; }
 .cashaccounts .showmore { height: 35px; cursor: pointer; line-height: 35px; text-align: center; font-size: 13px; text-decoration: none; font-family: areg, sans-serif; font-weight: normal; color: #353458; background: #f8f8f8; position: relative; margin-top: -1px; }
@@ -542,17 +542,24 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cashaccounts .transfers td, .cashaccounts .transfers th { border-bottom: 1px solid #e6eef2; background: white; }
 .cashaccounts .transfers td { height: 50px; vertical-align: middle; }
 .cashaccounts .transfers tr:hover td { background: #f9fcfd; }
-.cashaccounts .transfers .transfers__icon { padding-left: 60px; padding-right: 20px; color: #353558; font-size: 23px; width: 30px; }
+.cashaccounts .transfers tr:hover .transfers__remove { opacity: 1; }
+.cashaccounts .transfers .transfers__icon { padding-left: 60px; padding-right: 20px; padding-right: 40px; color: #353558; font-size: 23px; width: 30px; }
 .cashaccounts .transfers .transfers__icon i { position: relative; top: 3px; }
 .cashaccounts .transfers .sort { cursor: pointer; display: inline-block; }
 .cashaccounts .transfers .sort i { font-size: 12px; position: relative; top: 2px; }
 .cashaccounts .transfers .transfers__right { text-align: right; padding-right: 30px; }
+.cashaccounts .transfers thead .transfers__right { padding-right: 10px; }
+.cashaccounts .transfers .transfers__status { padding-right: 30px; }
 .cashaccounts .transfers .transfers__left { text-align: left; }
-.cashaccounts .transfers .transfers__type { width: 370px; font-size: 15px; }
+.cashaccounts .transfers .transfers__type { width: 230px; font-size: 15px; }
 .cashaccounts .transfers .transfers__time { font-size: 14px; font-family: areg, sans-serif; font-weight: normal; color: #9ea3a6; }
-.cashaccounts .transfers .transfers__amount { text-align: right; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; padding-right: 30px; }
+.cashaccounts .transfers .transfers__remove { color: #ed1847; padding-right: 5px; padding-left: 0; font-size: 16px; position: relative; top: 1px; opacity: 0; cursor: pointer; }
+.cashaccounts .transfers .transfers__amount { text-align: right; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; padding-right: 30px; padding-right: 10px; }
 .cashaccounts .transfers .transfers__amount strong { font-family: asemi, sans-serif; font-weight: normal; margin-left: 20px; display: inline-block; margin-right: 5px; }
 .cashaccounts .transfers .transfers__amount.is-minus { color: #ed1847; }
+
+.status { display: inline-block; width: 100px; text-align: center; border: 2px solid #1ebebb; border-radius: 2px; color: #1ebebb; text-transform: uppercase; font-family: semi, sans-serif; font-weight: normal; font-size: 12px; height: 18px; line-height: 18px; }
+.status.is-pending { color: #f7ce67; border-color: #f7ce67; }
 
 .settings { *zoom: 1; padding-bottom: 300px; }
 .settings:after { content: " "; display: table; clear: both; }
