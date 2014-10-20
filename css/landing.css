@@ -66,7 +66,7 @@ body { background: #e6eef2; }
 .start .start__bg { position: absolute; left: 50%; top: 50%; margin-left: -720px; margin-top: -450px; background: #353657; }
 .start .start__bg svg { position: absolute; left: 0; top: 0; background: #353657; }
 .start .start__bg svg path { stroke-dasharray: 1200; stroke-dashoffset: 1200; transition: all 2s linear; }
-.a .start .start__bg svg path { stroke-dashoffset: 0; }
+.animateme .start .start__bg svg path { stroke-dashoffset: 0; }
 .start .start__right { position: absolute; right: 0; top: 17px; z-index: 500; }
 .start .start__right > div { height: 40px; line-height: 40px; text-decoration: none; text-transform: uppercase; color: white; font-size: 15px; margin-left: 10px; padding: 0 20px; display: inline-block; cursor: pointer; }
 .start .start__right > div.start__signup { box-shadow: inset 0 0 0 2px #f7ce67; color: #f7ce67; }

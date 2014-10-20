@@ -80,7 +80,7 @@
 	<div class="activities">
 
 		<!-- begin a  -->
-		<div class="a">
+		<div class="a js-popup" data-popup="popup-activity">
 			<table class="a__table">
 				<tr>
 					<td class="a__icon"><i class="icon-send"></i></td>
@@ -88,6 +88,7 @@
 						Received money from <strong>Andreas</strong>
 						<span>Here's some free bitcoin.</span>
 					</td>
+					<td class="a__status"><span class="is-completed">Completed</span></td>
 					<td class="a__time">7 minutes ago</td>
 					<td class="a__amount is-minus"><span class="a__sign">-</span> <strong>0.56734</strong> BTC</td>
 				</tr>
@@ -103,6 +104,7 @@
 						Received money from <strong>Andreas</strong>
 						<span>Here's some free bitcoin.</span>
 					</td>
+					<td class="a__status"><span class="is-pending">Pending</span></td>
 					<td class="a__time">7 minutes ago</td>
 					<td class="a__amount"><span class="a__sign">-</span> <strong>0.56734</strong> BTC</td>
 				</tr>
@@ -118,21 +120,50 @@
 						Received money from <strong>Andreas</strong>
 						<span>Here's some free bitcoin.</span>
 					</td>
+					<td class="a__status"><span class="is-pending">Pending</span></td>
 					<td class="a__time">7 minutes ago</td>
 					<td class="a__amount is-minus"><span class="a__sign">-</span> <strong>0.56734</strong> BTC</td>
 				</tr>
 			</table>
 		</div>
 		<!-- end a -->
+		<!-- begin amore  -->
+		<div class="amore">
+			<div class="amore__wrap">
+				<table class="amoretable">
+					<tr>
+						<th>Status</th>
+						<td class="amore__status"><span class="is-completed">Completed</span></td>
+					</tr>
+					<tr>
+						<th>Time</th>
+						<td>October 5, 2014 at 12:12 PM</td>
+					</tr>
+					<tr>
+						<th>Bitcoin price</th>
+						<td>320 <em>USD</em></td>
+					</tr>
+					<tr>
+						<th>Payment fee</th>
+						<td>320 <em>USD</em></td>
+					</tr>
+					<tr>
+						<th>Reference id</th>
+						<td>QXZ54</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- end amore -->
 		<!-- begin a  -->
 		<div class="a">
 			<table class="a__table">
 				<tr>
 					<td class="a__icon"><i class="icon-sell"></i></td>
 					<td class="a__descr">
-						Received money from <strong>Andreas</strong>
-						<span>Here's some free bitcoin.</span>
+						You bought <strong>212 BTC</strong> for <strong>20 $</strong> <i class="icon-info"></i>
 					</td>
+					<td class="a__status"><span class="is-completed">completed</span></td>
 					<td class="a__time">7 minutes ago</td>
 					<td class="a__amount is-minus"><span class="a__sign">-</span> <strong>0.56734</strong> BTC</td>
 				</tr>
@@ -161,7 +192,43 @@
 </div>
 <!-- end l-footer -->
 
-
+<div class="overlay"></div>
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-activity">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="afull">
+			<div class="afull__descr">
+				<i class="icon-buy"></i> I did something <strong>231 BTC</strong>
+			</div>
+			<table class="amoretable">
+				<tr>
+					<th>Status</th>
+					<td class="amore__status"><span class="is-completed">Completed</span></td>
+				</tr>
+				<tr>
+					<th>Time</th>
+					<td>October 5, 2014 at 12:12 PM</td>
+				</tr>
+				<tr>
+					<th>Bitcoin price</th>
+					<td>320 <em>USD</em></td>
+				</tr>
+				<tr>
+					<th>Payment fee</th>
+					<td>320 <em>USD</em></td>
+				</tr>
+				<tr>
+					<th>Reference id</th>
+					<td>QXZ54</td>
+				</tr>
+			</table>
+		</div>
+		<div class="submit">Close window</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+<div class="overlay"></div>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

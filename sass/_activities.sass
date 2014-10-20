@@ -2,10 +2,11 @@
 
 .a
 	border-bottom: 1px solid #E6EEF2 
+	box-shadow: 0 -1px 0 #E6EEF2
 	cursor: pointer
 	&:hover
 		background: #fff 
-		td.a__icon
+		.a__table td.a__icon
 			color: #363656 
 	.a__table
 		@extend %in
@@ -23,7 +24,13 @@
 				font-size: 16px 
 				color: #353458
 				+areg
-				width: 460px 
+				width: 320px 
+				i
+					vertical-align: middle
+					color: #94C4D1 
+					margin-left: 12px 
+					position: relative
+					top: 2px 
 				strong
 					font-weight: normal
 					+asemi
@@ -48,6 +55,24 @@
 					margin-left: 20px 
 				&.is-minus
 					color: #EA294C 
+			&.a__status
+				padding-right: 50px 
+				
+				span
+					display: inline-block
+					width: 100px 
+					text-align: center
+					border: 2px solid #1EBEBB 
+					border-radius: 2px
+					color: #1EBEBB 
+					text-transform: uppercase
+					+psemi
+					font-size: 12px 
+					height: 18px 
+					line-height: 18px 
+					&.is-pending
+						color: #F7CE67
+						border-color: #F7CE67  
 	&.a_empty
 		background: #fff 
 		text-align: center
@@ -59,6 +84,52 @@
 			color: #9EA3A6  
 			font-size: 16px 
 			cursor: default 
+.amore
+	padding: 15px 0
+	@extend %in
+	.amore__wrap
+		background: #fff 
+		box-shadow: inset 3px 3px 0 #E6E8E9
+		padding: 10px 100px 
+.amoretable
+	width: 100%
+	border-spacing: 0
+	border-collapse: collapse
+	th,td
+		text-align: left
+		padding: 20px 0 
+		border-bottom: 1px solid #E6EDF2 
+	tr:last-child
+		th,td
+			border-bottom: none 
+	th
+		font-weight: normal
+		+asemi
+		font-size: 16px 
+		color: #353458 
+	td
+		text-align: right
+		+areg
+		font-size: 16px 
+		em
+			font-style: normal 
+			color: #00BFBC 
+			margin-left: 6px 
+	.amore__status span
+		display: inline-block
+		width: 100px 
+		text-align: center
+		border: 2px solid #1EBEBB 
+		border-radius: 2px
+		color: #1EBEBB 
+		text-transform: uppercase
+		+psemi
+		font-size: 12px 
+		height: 18px 
+		line-height: 18px 
+		&.is-pending
+			color: #F7CE67
+			border-color: #F7CE67
 .welcome
 	width: 850px 
 	margin: 30px auto
@@ -186,3 +257,25 @@
 	&.steps_spaced
 		margin-bottom: 50px
 		margin-top: 50px 
+.afull
+	padding: 0px 30px 0 20px 
+	.afull__descr
+		font-size: 16px 
+		color: #353458
+		+areg
+		width: 320px 
+		i
+			text-align: left
+			color: #363656
+			font-size: 30px  
+			display: inline-block
+			position: relative
+			top: 2px 
+			line-height: 1.5 
+			margin-right: 10px
+			vertical-align: middle  
+		strong
+			font-weight: normal
+			+asemi
+	.afull__table
+		@extend .amore__table
