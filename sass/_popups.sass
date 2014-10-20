@@ -43,7 +43,7 @@
 	&.popup_narrow1
 		width: 600px 
 		margin-left: -300px 
-		&#popup-activity
+		&#popup-activity,&.popup-verify
 			top: 200px 
 	&.popup_invoice
 		width: 700px 
@@ -221,3 +221,21 @@
 			em
 				font-style: normal 
 				color: #EA294C 
+.verify
+	min-height: 220px 
+	text-align: center
+	font-size: 15px 
+	+areg
+	color: #353458
+	p
+		margin-bottom: 2em
+		strong
+			font-weight: normal
+			+asemi
+
+	p.verify__pic
+		margin: 35px 0 
+	.verify__ok
+		font-size: 125px 
+		line-height: 1 
+		color: #00C7C4 

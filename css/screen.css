@@ -466,7 +466,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup.is-shown { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); display: block; z-index: 10000; opacity: 1; }
 .popup.popup_narrow { width: 500px; margin-left: -250px; }
 .popup.popup_narrow1 { width: 600px; margin-left: -300px; }
-.popup.popup_narrow1#popup-activity { top: 200px; }
+.popup.popup_narrow1#popup-activity, .popup.popup_narrow1.popup-verify { top: 200px; }
 .popup.popup_invoice { width: 700px; margin-left: -350px; background: #f9fcfd; }
 .popup.popup_invoice .popup__content { width: 500px; margin: 0 auto; padding: 20px 0; }
 .popup.popup_center { top: 50%; margin-top: -100px; }
@@ -511,6 +511,12 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .invoice .invoice__data th { text-align: left; font-weight: normal; background: white; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
 .invoice .invoice__data td { font-family: asemi, sans-serif; font-weight: normal; font-size: 16px; color: #353458; background: #e6eef2; }
 .invoice .invoice__data td em { font-style: normal; color: #ea294c; }
+
+.verify { min-height: 220px; text-align: center; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
+.verify p { margin-bottom: 2em; }
+.verify p strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.verify p.verify__pic { margin: 35px 0; }
+.verify .verify__ok { font-size: 125px; line-height: 1; color: #00c7c4; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
