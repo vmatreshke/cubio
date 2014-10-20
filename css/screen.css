@@ -329,6 +329,12 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input.input_small input::-webkit-input-placeholder { line-height: 17px; padding-top: 3px; }
 .input.input_small input::placeholder { line-height: 17px; padding-top: 3px; }
 .input.input_small .input__icon { position: absolute; right: 10px; bottom: 6px; font-size: 20px; color: #93c4d2; }
+.input .error { position: absolute; padding: 14px; background: #f6e0e6; font-family: amed, sans-serif; font-weight: normal; font-size: 13px; color: #ed1847; border-radius: 3px; top: 70px; left: 0; z-index: 200; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.input .error:before { width: 20px; height: 20px; background: #f6e0e6; content: " "; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); left: 60px; top: -9px; position: absolute; }
+.input.input_small .error { top: auto; bottom: -50px; }
+.input .errorstatus { position: absolute; right: -225px; width: 210px; bottom: 10px; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #ed1847; padding: 0; line-height: 1; }
+.input .errorstatus i { font-size: 25px; margin-right: 15px; vertical-align: middle; position: relative; top: 2px; }
+.input .errorstatus.is-ok { color: #23c7c4; }
 
 .paywith, .cashout { margin: 26px 0; color: #79798c; *zoom: 1; }
 .paywith:after, .cashout:after { content: " "; display: table; clear: both; }

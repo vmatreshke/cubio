@@ -200,6 +200,51 @@
 			bottom: 6px 
 			font-size: 20px 
 			color: #93C4D2 
+	.error
+		position: absolute
+		padding: 14px 
+		background: #F6E0E6 
+		+amed
+		font-size: 13px 
+		color: #ED1847 
+		border-radius: 3px
+		top: 70px
+		left: 0
+		z-index: 200   
+		width: 100% 
+		+box
+		&:before
+			width: 20px 
+			height: 20px 
+			background: #F6E0E6
+			// background: green 
+			content: ' '
+			+rotate(45)
+			left: 60px 
+			top: -9px 
+			position: absolute
+	&.input_small
+		.error
+			top: auto 
+			bottom: -50px 
+	.errorstatus
+		position: absolute
+		right: -225px 
+		width: 210px 
+		bottom: 10px 
+		font-size: 15px 
+		+amed
+		color: #ED1847 
+		padding: 0
+		line-height: 1  
+		i
+			font-size: 25px 
+			margin-right: 15px 
+			vertical-align: middle
+			position: relative
+			top: 2px 
+		&.is-ok
+			color: #23C7C4 
 .paywith
 	margin: 26px 0 
 	color: #79798C 
