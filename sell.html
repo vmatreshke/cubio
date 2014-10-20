@@ -82,6 +82,13 @@
 			<li><a href="#" class="is-active">From my wallet</a></li>
 			<li><a href="#">From External address</a></li>
 		</ul>
+		<div class="steps  steps_spaced">
+			<div class="steps__step steps__1"><i class="icon-invoice"></i><div class="steps__title">Get Invoice</div></div>
+			<div class="steps__step steps__2"><i class="icon-deposit"></i><div class="steps__title">Make Bank Transfer</div></div>
+			<div class="steps__step steps__3"><i class="icon-cube-logo-dark"></i><div class="steps__title">Receive Deposit</div></div>
+			<div class="steps__step steps__4"><i class="icon-buy"></i><div class="steps__title">Buy Bitcoin</div></div>
+			<div class="steps__line"><div class="steps__fill"></div></div>
+		</div>
 		<!-- begin exchange  -->
 		<div class="exchange">
 			
@@ -124,40 +131,15 @@
 
 		<!-- begin cashout -->
 		<div class="cashout">
-			<h3>Pay with <a href="#" class="icon-help"></a></h3>
-			<div class="selectbank">
-				<div class="selectbank__value">
-					<div class="selectbank__valuewrap">
-						<div class="selectbank__title">Deutsche Bank</div>
-						<div class="selectbank__currency">USD</div>
-					</div>
-					<i class="icon-arrowdown"></i>
-				</div>
-				<div class="selectbank__drop">
-					<ul>
-						<li>
-							<div class="selectbank__title">Deutsche Bank</div>
-							<div class="selectbank__currency">USD</div>
-						</li>
-						<li>
-							<div class="selectbank__title">Deutsche Bank</div>
-							<div class="selectbank__currency">USD</div>
-						</li>
-					</ul>
-				</div>
+			<!-- begin paywith -->
+			<div class="paywith paywith_dos">
+				<h3>Pay with <a href="#" class="icon-help"></a></h3>
+				<ul class="paywith__services">
+					<li><a href="#" class=""><i class="icon-skrill"></i></a></li>
+					<li><a href="#" class="paywith__text is-active">International bank transfer</a></li>
+				</ul>
 			</div>
-			<div class="cashaccount is-drop is-filled">
-				<div class="cashaccount__value ">
-					<h3><i class="icon-cube_logo_dark"></i>Cash Accounts<i class="icon-arrowdown"></i></h3>
-					<div class="cashaccount__money">$350 <span>USD</span></div>
-				</div>
-				<div class="cashaccount__drop">
-					<ul>
-						<li>$350 <span class="currency">USD</span></li>
-						<li>$350 <span class="currency">EUR</span></li>
-					</ul>
-				</div>
-			</div>
+			<!-- end paywith -->
 		</div>
 		<!-- end cashout -->
 		
