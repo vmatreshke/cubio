@@ -329,6 +329,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input.input_small input::-webkit-input-placeholder { line-height: 17px; padding-top: 3px; }
 .input.input_small input::placeholder { line-height: 17px; padding-top: 3px; }
 .input.input_small .input__icon { position: absolute; right: 10px; bottom: 6px; font-size: 20px; color: #93c4d2; }
+.input.input_smaller { width: 137px !important; display: inline-block; float: left; }
+.input.input_smaller + .input_smaller { margin-right: 16px; }
 .input .error { position: absolute; padding: 14px; background: #f6e0e6; font-family: amed, sans-serif; font-weight: normal; font-size: 13px; color: #ed1847; border-radius: 3px; top: 70px; left: 0; z-index: 200; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .input .error:before { width: 20px; height: 20px; background: #f6e0e6; content: " "; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); left: 60px; top: -9px; position: absolute; }
 .input.input_small .error { top: auto; bottom: -50px; }
@@ -491,8 +493,12 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .field.field_check .checkbox i { display: inline-block; width: 20px; height: 20px; background: #00bfbc; box-shadow: inset 0 0 0 2px #bccdd5; }
 .field.field_check .checkbox input:checked + i { background: #bccdd5; }
 .field.field_check .label { display: inline-block; font-family: areg, sans-serif; font-weight: normal; font-size: 13px; color: #353458; }
+.field .smallselect { float: right; width: 290px; height: 46px; line-height: 46px; }
+.field .smallselect .smallselect__value { padding-left: 20px; font-family: amed, sans-serif; font-weight: normal; font-size: 17px; }
 
 .addbank .addbank__content { padding: 0px 41px 0 27px; }
+.addbank .addbank__content .field { padding-bottom: 15px; }
+.addbank .addbank__content .field label { font-size: 14px; font-family: amed, sans-serif; font-weight: normal; }
 .addbank .addbank__title { font-size: 19px; color: #353458; font-family: asemi, sans-serif; font-weight: normal; margin-bottom: 27px; }
 .addbank.addbank_withdraw { width: 400px; margin: 0 auto; }
 .addbank.addbank_withdraw .addbank__content { padding: 0; }
