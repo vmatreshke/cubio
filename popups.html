@@ -80,7 +80,7 @@
 		<ul>
 			<li><a href="#" class="js-popup" data-popup="popup-login">login</a></li>
 			<li><a href="#" class="js-popup" data-popup="popup-login2">two factor autentification</a></li>
-			<li><a href="#" class="js-popup" data-popup="popup-activity">activity</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-changepass">popup changepass</a></li>
 		</ul>
 	</div>
 </div>
@@ -145,7 +145,45 @@
 	</div>
 </div>
 <!-- end popup popup_narrow -->
-<div class="overlay"></div>
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace " id="popup-changepass">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Change password</div>
+		<div class="popup__inside">
+			<div class="input input_small">
+				<div class="input__label">Current password</div>
+				<input type="text" name="" placeholder="ex. Max Power" id="">
+				<i class="input__icon icon-lock"></i>
+				<!-- <div class="error">Please enter your full name</div> -->
+			</div>
+
+			<div class="hr"></div>
+
+			<div class="input input_small">
+				<div class="input__label">New password <span>(with at least 8 characters and 1 special character)</span></div>
+				<input type="password" name="" placeholder="ex. Max Power" id="">
+				<i class="input__icon icon-lock"></i>
+				<div class="errorstatus is-ok"><i class="icon-help"></i></div>
+			</div>
+
+			<div class="input input_small">
+				<input type="password" name="" placeholder="ex. Max Power" id="">
+				<i class="input__icon icon-lock"></i>
+				<div class="errorstatus"><i class="icon-help"></i>Needs a special character</div>
+			</div>
+
+			<div class="strength"><i style="width:70%"></i></div>
+			<br><br>
+
+		</div>
+		<div class="submit">Confirm</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
