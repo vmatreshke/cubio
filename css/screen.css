@@ -530,8 +530,10 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .verify .verify__field .verify__input .verify__phone::placeholder { color: #d3d3d9; }
 .verify .verify__field .verify__input .verify__phonecode { position: absolute; left: 0; top: 0; bottom: 0; height: 50px; line-height: 50px; font-family: asemi, sans-serif; font-weight: normal; font-size: 17px; color: #f9fcfd; width: 52px; background: #95c4d1; border-radius: 3px; border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
+.popup__inside .errormess { text-align: center; font-size: 13px; font-family: asemi, sans-serif; font-weight: normal; margin-bottom: 14px; color: #ea294c; }
+.popup__inside .input.is-error input { border-color: #ea294c; }
 .popup__inside .popup__in { width: 340px; margin: 0 auto; padding: 50px 0; }
-.popup__inside .popup__in p { margin-bottom: 1em; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; }
+.popup__inside .popup__in p { margin-bottom: 1em; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
 .popup__inside .rememberme { width: 340px; margin: 0 auto; text-align: left; *zoom: 1; }
 .popup__inside .rememberme:after { content: " "; display: table; clear: both; }
 .popup__inside .rememberme .field { padding-left: 0; float: left; width: 50%; margin: 0; }
