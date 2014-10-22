@@ -530,6 +530,14 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .verify .verify__field .verify__input .verify__phone::placeholder { color: #d3d3d9; }
 .verify .verify__field .verify__input .verify__phonecode { position: absolute; left: 0; top: 0; bottom: 0; height: 50px; line-height: 50px; font-family: asemi, sans-serif; font-weight: normal; font-size: 17px; color: #f9fcfd; width: 52px; background: #95c4d1; border-radius: 3px; border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
+.popup__inside .rememberme { width: 340px; margin: 0 auto; text-align: left; *zoom: 1; }
+.popup__inside .rememberme:after { content: " "; display: table; clear: both; }
+.popup__inside .rememberme .field { padding-left: 0; float: left; width: 50%; margin: 0; }
+.popup__inside .rememberme .forgotpassword { float: right; font-family: asemi, sans-serif; font-weight: normal; padding-top: 3px; }
+.popup__inside .rememberme .forgotpassword a { text-decoration: none; color: #00bfbc; font-size: 13px; }
+.popup__inside .donthave { background: white; text-align: center; padding: 20px 0; border-top: 1px solid #ebeff7; font-size: 13px; font-family: areg, sans-serif; font-weight: normal; }
+.popup__inside .donthave a { text-decoration: none; font-family: asemi, sans-serif; font-weight: normal; color: #00bfbc; }
+
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
 .reg .reg__welcome strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
