@@ -548,6 +548,14 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup__inside .donthave { background: white; text-align: center; padding: 20px 0; border-top: 1px solid #ebeff7; font-size: 13px; font-family: areg, sans-serif; font-weight: normal; }
 .popup__inside .donthave a { text-decoration: none; font-family: asemi, sans-serif; font-weight: normal; color: #00bfbc; }
 
+.popup__bottom { background: white; border-top: 1px solid #e6edf2; padding: 15px 20px; font-family: areg, sans-serif; font-weight: normal; font-size: 13px; text-align: center; }
+.popup__bottom span { display: block; font-size: 15px; margin-bottom: 5px; }
+.popup__bottom span strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; color: #00bfbc; }
+
+.twofactor { text-align: center; width: 450px; margin: 0 auto; }
+.twofactor .popup__qr { margin: 20px 0; }
+.twofactor p { text-align: left; }
+
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
 .reg .reg__welcome strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
