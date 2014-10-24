@@ -8,6 +8,18 @@
 		background: #fff 
 		.a__table td.a__icon
 			color: #363656 
+	&.a_title
+		background: #fff 
+		.a__table
+			height: 60px 
+			td
+				height: 60px 
+				font-size: 15px 
+				+asemi
+				i
+					font-size: 12px 
+					vertical-align: middle
+					margin-left: 10px 
 	.a__table
 		@extend %in
 		height: 82px 
@@ -72,7 +84,40 @@
 					line-height: 18px 
 					&.is-pending
 						color: #F7CE67
-						border-color: #F7CE67  
+						border-color: #F7CE67 
+					&.is-aborted
+						color: #EA294C
+						border-color: #EA294C  
+			&.a__date
+				width: 190px 
+				font-size: 16px 
+				.date
+					display: inline-block
+					+preg
+					font-size: 17px 
+					text-align: center
+					line-height: .9
+					text-transform: uppercase
+					vertical-align: middle
+					strong
+						display: block
+						+asemi
+						font-size: 30px 
+				.time
+					display: inline-block
+					vertical-align: middle
+					margin-left: 12px 
+			&.a__title
+				width: 380px 
+				font-size: 16px 
+			&.a__sum
+				width: 120px 
+				text-align: right
+				font-size: 16px 
+				color: #353458
+				strong
+					font-weight: normal
+					+asemi
 	&.a_empty
 		background: #fff 
 		text-align: center
@@ -163,6 +208,7 @@
 	margin: 20px auto
 	height: 82px 
 	position: relative
+	
 	.steps__line
 		height: 4px 
 		background: #94C4D1
@@ -257,6 +303,25 @@
 	&.steps_spaced
 		margin-bottom: 50px
 		margin-top: 50px 
+	&.steps_three
+		width: 444px 
+		.steps__step
+			&.steps__1
+				left: 0
+				right: auto 
+			&.steps__2
+				left: 50%
+				margin-left: -26px  
+			&.steps__3
+				right: 0
+				left: auto  
+		&.steps_1
+		&.steps_2
+			.steps__fill
+				width: 50%
+		&.steps_3
+			.steps__fill
+				width: 100%
 .afull
 	padding: 0px 30px 0 20px 
 	.afull__descr
