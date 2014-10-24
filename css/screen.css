@@ -211,6 +211,26 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .icon-googlea { background: url(../img/google-auth@2x.png) no-repeat 0 0; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; display: inline-block; width: 23px; height: 23px; }
 
+.icon-cart:before { content: "h"; }
+
+.icon-tools:before { content: "i"; }
+
+.icon-squares:before { content: "j"; }
+
+.icon-screen:before { content: "k"; }
+
+.icon-profile:before { content: "l"; }
+
+.icon-ok:before { content: "m"; }
+
+.icon-link:before { content: "n"; }
+
+.icon-doc:before { content: "o"; }
+
+.icon-close:before { content: "p"; }
+
+.icon-clock:before { content: "q"; }
+
 .a { border-bottom: 1px solid #e6eef2; box-shadow: 0 -1px 0 #e6eef2; cursor: pointer; }
 .a:hover { background: white; }
 .a:hover .a__table td.a__icon { color: #363656; }
