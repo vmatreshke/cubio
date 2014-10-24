@@ -142,6 +142,16 @@
 			font-size: 14px 
 			width: auto
 			padding-top: 15px 
+	&.field_smaller
+		margin-bottom: 15px 
+		.field__content
+			float: right
+			width: 290px 
+		label
+			font-size: 14px 
+			padding-top: 15px
+		.input
+			width: 100%
 	&.field_check
 		margin: 20px 0
 		padding-left: 110px 
@@ -442,9 +452,17 @@
 .bp
 	width: 420px 
 	margin: 0 auto
+	padding-bottom: 15px 
 	.required
 		text-align: center
 		margin-bottom: 20px 
 		color: #353458
 		font-size: 15px  
 		+asemi
+	.input_short
+		display: inline-block
+		width: 142px !important 
+		margin-left: 6px  
+		margin-top: 10px 
+		&:last-child
+			margin-left: 0 

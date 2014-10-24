@@ -550,6 +550,10 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .field.field_small .input { width: 280px; }
 .field.field_small .smallselect { background: white; width: 280px; }
 .field.field_small label { font-size: 14px; width: auto; padding-top: 15px; }
+.field.field_smaller { margin-bottom: 15px; }
+.field.field_smaller .field__content { float: right; width: 290px; }
+.field.field_smaller label { font-size: 14px; padding-top: 15px; }
+.field.field_smaller .input { width: 100%; }
 .field.field_check { margin: 20px 0; padding-left: 110px; cursor: pointer; }
 .field.field_check .checkbox { display: inline-block; vertical-align: middle; margin-right: 11px; }
 .field.field_check .checkbox input { display: none; }
@@ -631,8 +635,10 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .congr p { font-family: areg, sans-serif; font-weight: normal; font-size: 15px; color: #353458; margin-bottom: 2em; }
 .congr i { font-size: 100px; text-align: center; color: #00c7c4; }
 
-.bp { width: 420px; margin: 0 auto; }
+.bp { width: 420px; margin: 0 auto; padding-bottom: 15px; }
 .bp .required { text-align: center; margin-bottom: 20px; color: #353458; font-size: 15px; font-family: asemi, sans-serif; font-weight: normal; }
+.bp .input_short { display: inline-block; width: 142px !important; margin-left: 6px; margin-top: 10px; }
+.bp .input_short:last-child { margin-left: 0; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
@@ -769,6 +775,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .smallselect { display: inline-block; cursor: pointer; box-shadow: inset 0 0 0 2px #95c4d1; position: relative; width: 115px; }
 .smallselect.smallselect_bold .smallselect__value { font-family: asemi, sans-serif; font-weight: normal; text-transform: none; }
+.smallselect.smallselect_normal .smallselect__value { font-family: areg, sans-serif; font-weight: normal; text-transform: none; }
 .smallselect .smallselect__value { padding-left: 16px; width: 115px; height: 50px; line-height: 50px; font-size: 17px; font-family: asemi, sans-serif; font-weight: normal; text-transform: uppercase; color: #485878; text-align: left; }
 .smallselect select { position: absolute; opacity: 0; -webkit-appearance: none; width: 100%; height: 100%; z-index: 10; left: 0; top: 0; }
 .smallselect i { position: absolute; right: 17px; font-size: 14px; color: #353556; line-height: 1; top: 13px; margin-top: 4px; }
