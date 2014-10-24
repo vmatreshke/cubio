@@ -63,9 +63,9 @@
 	<div class="nav">
 		<div class="nav__in">
 			<ul>
-				<li><a href="#"><i class="icon-sell"></i><span>payouts</span></a></li>
+				<li><a href="#" class="is-active"><i class="icon-sell"></i><span>payouts</span></a></li>
 				<li><a href="#"><i class="icon-cart"></i><span>payment button</span></a></li>
-				<li><a href="#" class="is-active"><i class="icon-squares"></i><span>dashboard</span></a></li>
+				<li><a href="#" ><i class="icon-squares"></i><span>dashboard</span></a></li>
 				<li><a href="#"><i class="icon-doc"></i><span>payment screen</span></a></li>
 				<li><a href="#"><i class="icon-tools"></i><span>integration tools</span></a></li>
 			</ul>
@@ -78,31 +78,36 @@
 <div class="l-content">
 
 	<div class="in">
-		<!-- begin dashes  -->
-		<div class="dashes">
-			<!-- begin dash  -->
-			<div class="dash">
-				<h3 class="dash__top">Number of sales</h3>
-				<div class="dash__value">681</div>
-				<div class="dash__bottom">+10%</div>
+		<ul class="tabs">
+			<li><a href="#" class="is-active">Payouts</a></li>
+		</ul>
+		<!-- begin payouts  -->
+		<div class="payoutsform">
+			<div class="field field_small">
+				<label for="">Payout Bank</label>
+				<div class="smallselect smallselect_bold">
+					<div class="smallselect__value">Deutche</div><i class="icon-arrowdown"></i>
+					<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+				</div>
 			</div>
-			<!-- end dash -->
-			<!-- begin dash  -->
-			<div class="dash">
-				<h3 class="dash__top">Monthly Volume</h3>
-				<div class="dash__value">23.45<span>BTC</span></div>
-				<div class="dash__bottom is-minus">-10%</div>
+			<div class="field field_small">
+				<label for="">Percentage Kept In BTC</label>
+				<div class="input input_small">
+					<input type="password" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-lock"></i>
+					<div class="errorstatus is-ok"><i class="icon-ok"></i></div>
+				</div>
 			</div>
-			<!-- end dash -->
-			<!-- begin dash  -->
-			<div class="dash">
-				<h3 class="dash__top">Total volume</h3>
-				<div class="dash__value">1223.45<span>BTC</span></div>
-				<div class="dash__bottom">+21%</div>
+			<div class="field field_small">
+				<label for="">Payout Frequency</label>
+				<div class="smallselect smallselect_bold">
+					<div class="smallselect__value">Deutche</div><i class="icon-arrowdown"></i>
+					<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+				</div>
 			</div>
-			<!-- end dash -->
 		</div>
-		<!-- end dashes -->
+		<!-- end payouts -->
+		
 	</div>
 	<!-- begin activities  -->
 	<div class="activities">
@@ -110,14 +115,15 @@
 		<div class="a a_title">
 			<table class="a__table">
 				<tr>
-					<td class="a__date">
-						Period <i class="icon-arrowdown"></i>
+					<td class="a__filter" colspan="3">
+						Custom <i class="icon-arrowdown"></i>
+						<div class="dateinput"><input value="2014.12.12" type="text"><i class="icon-date"></i></div>
+						<span class="to">to</span>
+						<div class="dateinput"><input type="text"><i class="icon-date"></i></div>
 					</td>
-					<td class="a__title">
-						Title/ID
+					<td class="a__report a__reporttitle">
+						Download full history
 					</td>
-					<td class="a__status">&nbsp;</td>
-					<td class="a__sum">&nbsp;</td>
 				</tr>
 			</table>
 		</div>
@@ -130,11 +136,13 @@
 						<div class="date">apr<strong>29</strong></div>
 						<div class="time">21:55</div>
 					</td>
-					<td class="a__title">
-						My new car
+					<td class="a__title a__title_short">
+						<strong>Deutchse bank</strong>
 					</td>
-					<td class="a__status"><span class="is-completed">Completed</span></td>
-					<td class="a__sum"><strong>800</strong> EUR</td>
+					<td class="a__money">12312.13 <span>EUR</span></td>
+					<td class="a__report">
+						<a href="#">View report</a>
+					</td>
 				</tr>
 			</table>
 		</div>
@@ -147,11 +155,13 @@
 						<div class="date">apr<strong>29</strong></div>
 						<div class="time">21:55</div>
 					</td>
-					<td class="a__title">
-						My new car
+					<td class="a__title a__title_short">
+						<strong>Deutchse bank</strong>
 					</td>
-					<td class="a__status"><span class="is-aborted">aborted</span></td>
-					<td class="a__sum"><strong>800</strong> EUR</td>
+					<td class="a__money">12312.13 <span>EUR</span></td>
+					<td class="a__report">
+						<a href="#">View report</a>
+					</td>
 				</tr>
 			</table>
 		</div>
@@ -164,11 +174,13 @@
 						<div class="date">apr<strong>29</strong></div>
 						<div class="time">21:55</div>
 					</td>
-					<td class="a__title">
-						My new car
+					<td class="a__title a__title_short">
+						<strong>Deutchse bank</strong>
 					</td>
-					<td class="a__status"><span class="is-pending">pending</span></td>
-					<td class="a__sum"><strong>800</strong> EUR</td>
+					<td class="a__money">1.13 <span>EUR</span></td>
+					<td class="a__report">
+						<a href="#">View report</a>
+					</td>
 				</tr>
 			</table>
 		</div>

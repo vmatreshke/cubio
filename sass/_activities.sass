@@ -110,6 +110,41 @@
 			&.a__title
 				width: 380px 
 				font-size: 16px 
+				strong
+					+asemi
+					font-weight: normal
+				&.a__title_short
+					width: auto 
+			&.a__report
+				text-align: right
+				width: 170px 
+				padding-left: 60px 
+				a
+					display: block
+					border: 2px solid #95C4D1 
+					border-radius: 3px
+					letter-spacing: 3px 
+					+asemi
+					text-decoration: none
+					color: #93C4D2
+					font-size: 14px  
+					padding: 0 20px
+					height: 45px  
+					line-height: 45px 
+					text-transform: uppercase
+					font-weight: normal
+					white-space: nowrap
+			&.a__reporttitle
+				text-align: center
+				color: #93C4D2 
+			&.a__money
+				font-size: 16px 
+				+asemi
+				color: #353458
+				text-align: right
+				span
+					+areg
+					color: #00BFBC  
 			&.a__sum
 				width: 120px 
 				text-align: right
@@ -118,6 +153,20 @@
 				strong
 					font-weight: normal
 					+asemi
+			&.a__filter
+				font-size: 15px 
+				+asemi
+				color: #353458 
+				i.icon-arrowdown
+					margin-right: 20px 
+					margin-left: 5px 
+					font-size: 10px 
+					position: relative
+					top: 3px 
+					vertical-align: middle
+				.to
+					margin: 0 10px
+					display: inline-block
 	&.a_empty
 		background: #fff 
 		text-align: center
@@ -129,6 +178,27 @@
 			color: #9EA3A6  
 			font-size: 16px 
 			cursor: default 
+.dateinput
+	display: inline-block
+	width: 130px 
+	vertical-align: middle
+	position: relative
+	i
+		position: absolute
+		right: 10px 
+		top: 10px
+		color: #95C4D1 
+		font-size: 13px !important
+	input
+		border: 2px solid #95C4D1 
+		border-radius: 3px
+		font-size: 13px 
+		+asemi
+		display: block
+		width: 100%
+		+box
+		padding: 5px 10px  
+
 .amore
 	padding: 15px 0
 	@extend %in

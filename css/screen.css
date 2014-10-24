@@ -231,6 +231,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .icon-clock:before { content: "q"; }
 
+.icon-date:before { content: "s"; }
+
 .a { border-bottom: 1px solid #e6eef2; box-shadow: 0 -1px 0 #e6eef2; cursor: pointer; }
 .a:hover { background: white; }
 .a:hover .a__table td.a__icon { color: #363656; }
@@ -258,10 +260,24 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .a .a__table td.a__date .date strong { display: block; font-family: asemi, sans-serif; font-weight: normal; font-size: 30px; }
 .a .a__table td.a__date .time { display: inline-block; vertical-align: middle; margin-left: 12px; }
 .a .a__table td.a__title { width: 380px; font-size: 16px; }
+.a .a__table td.a__title strong { font-family: asemi, sans-serif; font-weight: normal; font-weight: normal; }
+.a .a__table td.a__title.a__title_short { width: auto; }
+.a .a__table td.a__report { text-align: right; width: 170px; padding-left: 60px; }
+.a .a__table td.a__report a { display: block; border: 2px solid #95c4d1; border-radius: 3px; letter-spacing: 3px; font-family: asemi, sans-serif; font-weight: normal; text-decoration: none; color: #93c4d2; font-size: 14px; padding: 0 20px; height: 45px; line-height: 45px; text-transform: uppercase; font-weight: normal; white-space: nowrap; }
+.a .a__table td.a__reporttitle { text-align: center; color: #93c4d2; }
+.a .a__table td.a__money { font-size: 16px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; text-align: right; }
+.a .a__table td.a__money span { font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; }
 .a .a__table td.a__sum { width: 120px; text-align: right; font-size: 16px; color: #353458; }
 .a .a__table td.a__sum strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.a .a__table td.a__filter { font-size: 15px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; }
+.a .a__table td.a__filter i.icon-arrowdown { margin-right: 20px; margin-left: 5px; font-size: 10px; position: relative; top: 3px; vertical-align: middle; }
+.a .a__table td.a__filter .to { margin: 0 10px; display: inline-block; }
 .a.a_empty { background: white; text-align: center; cursor: default; border-bottom: none; border-top: 1px solid #e6eef2; }
 .a.a_empty td { font-family: aital, sans-serif; font-weight: normal; color: #9ea3a6; font-size: 16px; cursor: default; }
+
+.dateinput { display: inline-block; width: 130px; vertical-align: middle; position: relative; }
+.dateinput i { position: absolute; right: 10px; top: 10px; color: #95c4d1; font-size: 13px !important; }
+.dateinput input { border: 2px solid #95c4d1; border-radius: 3px; font-size: 13px; font-family: asemi, sans-serif; font-weight: normal; display: block; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5px 10px; }
 
 .amore { padding: 15px 0; }
 .amore .amore__wrap { background: white; box-shadow: inset 3px 3px 0 #e6e8e9; padding: 10px 100px; }
@@ -525,6 +541,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .field:after { content: " "; display: table; clear: both; }
 .field label { float: left; width: 104px; padding-left: 16px; font-size: 17px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; padding-top: 13px; }
 .field .input { float: right; width: 410px; margin-bottom: 0; }
+.field.field_small .input { width: 280px; }
+.field.field_small .smallselect { background: white; width: 280px; }
+.field.field_small label { font-size: 14px; width: auto; padding-top: 15px; }
 .field.field_check { margin: 20px 0; padding-left: 110px; cursor: pointer; }
 .field.field_check .checkbox { display: inline-block; vertical-align: middle; margin-right: 11px; }
 .field.field_check .checkbox input { display: none; }
@@ -728,6 +747,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .udata .is-expanded td, .udata .is-expanded th { border: none; }
 
 .smallselect { display: inline-block; cursor: pointer; box-shadow: inset 0 0 0 2px #95c4d1; position: relative; width: 115px; }
+.smallselect.smallselect_bold .smallselect__value { font-family: asemi, sans-serif; font-weight: normal; text-transform: none; }
 .smallselect .smallselect__value { padding-left: 16px; width: 115px; height: 50px; line-height: 50px; font-size: 17px; font-family: asemi, sans-serif; font-weight: normal; text-transform: uppercase; color: #485878; text-align: left; }
 .smallselect select { position: absolute; opacity: 0; -webkit-appearance: none; width: 100%; height: 100%; z-index: 10; left: 0; top: 0; }
 .smallselect i { position: absolute; right: 17px; font-size: 14px; color: #353556; line-height: 1; top: 13px; margin-top: 4px; }
@@ -758,3 +778,5 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .pleaseverify:after { content: " "; display: table; clear: both; }
 .pleaseverify .pleaseverify__text { font-size: 17px; font-family: amed, sans-serif; font-weight: normal; color: #353458; padding: 14px 0 0 0; float: left; width: 70%; }
 .pleaseverify .pleaseverify__button { display: inline-block; cursor: pointer; font-size: 15px; font-family: semi, sans-serif; font-weight: normal; letter-spacing: 2px; padding: 0 15px; height: 50px; line-height: 50px; letter-spacing: 3px; float: right; }
+
+.payoutsform { margin: 0 auto; width: 480px; }
