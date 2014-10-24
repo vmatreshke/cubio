@@ -534,6 +534,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup .popup__content { padding: 20px 50px 20px 50px; font-family: areg, sans-serif; font-weight: normal; font-size: 14px; color: #353458; }
 .popup h3 { letter-spacing: 3px; font-weight: normal; text-transform: uppercase; text-align: center; font-size: 15px; font-family: proxima, sans-serif; font-weight: normal; margin-bottom: 27px; }
 .popup .popup__title { font-family: proxima, sans-serif; font-weight: normal; font-size: 18px; color: #353458; text-align: center; text-transform: uppercase; font-weight: normal; margin-bottom: 20px; letter-spacing: 3px; }
+.popup .popup__title span { display: block; font-size: 13px; text-align: center; font-family: areg, sans-serif; font-weight: normal; color: #a1a2af; text-transform: none; letter-spacing: 0; }
 .popup .popup__title i { vertical-align: middle; margin-right: 15px; position: relative; top: -2px; }
 .popup .popup__subtitle { text-align: center; }
 .popup .popup__close { position: absolute; right: 20px; top: 20px; font-size: 19px; color: #93c4d2; cursor: pointer; font-family: amed, sans-serif; font-weight: normal; }
@@ -620,7 +621,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .twofactor .popup__qr { margin: 20px 0; }
 .twofactor p { text-align: left; }
 
-.fileupload { width: 440px; margin: 25px auto; }
+.fileupload { margin: 25px auto; }
 .fileupload label { font-size: 15px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; display: block; margin-bottom: 7px; }
 .fileupload .fileupload__button { display: block; text-decoration: none; background: #95c4d1; color: white; box-shadow: inset 0 0 0 2px #9ccedb; border-radius: 2px; height: 50px; text-align: center; font-size: 17px; font-family: asemi, sans-serif; font-weight: normal; cursor: pointer; line-height: 50px; }
 .fileupload .input { width: auto; }
