@@ -604,7 +604,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup__inside .input.is-error input { border-color: #ea294c; }
 .popup__inside .popup__in { width: 340px; margin: 0 auto; padding: 50px 0; }
 .popup__inside .popup__in p { margin-bottom: 1em; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
-.popup__inside .rememberme { width: 340px; margin: 0 auto; text-align: left; *zoom: 1; }
+.popup__inside .rememberme { width: 340px; margin: 0 auto; text-align: left; margin-bottom: 20px; *zoom: 1; }
 .popup__inside .rememberme:after { content: " "; display: table; clear: both; }
 .popup__inside .rememberme .field { padding-left: 0; float: left; width: 50%; margin: 0; }
 .popup__inside .rememberme .forgotpassword { float: right; font-family: asemi, sans-serif; font-weight: normal; padding-top: 3px; }
@@ -626,6 +626,10 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .fileupload .fileupload__button { display: block; text-decoration: none; background: #95c4d1; color: white; box-shadow: inset 0 0 0 2px #9ccedb; border-radius: 2px; height: 50px; text-align: center; font-size: 17px; font-family: asemi, sans-serif; font-weight: normal; cursor: pointer; line-height: 50px; }
 .fileupload .input { width: auto; }
 .fileupload .input input { background: #f2f5f9; }
+
+.congr { text-align: center; }
+.congr p { font-family: areg, sans-serif; font-weight: normal; font-size: 15px; color: #353458; margin-bottom: 2em; }
+.congr i { font-size: 100px; text-align: center; color: #00c7c4; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
