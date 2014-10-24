@@ -82,6 +82,7 @@
 			<li><a href="#" class="js-popup" data-popup="popup-login2">two factor autentification</a></li>
 			<li><a href="#" class="js-popup" data-popup="popup-changepass">popup changepass</a></li>
 			<li><a href="#" class="js-popup" data-popup="popup-twofactor">something with <del>fucking</del> qr code inside of it.</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-verifysite">Verify site upload</a></li>
 		</ul>
 	</div>
 </div>
@@ -219,6 +220,50 @@
 	</div>
 </div>
 <!-- end popup popup_narrow -->
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_narrow1 popup_nospace" id="popup-verifysite">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<h3 class="popup__title">Your website</h3>
+		<div class="somerandomblockthatlookslikealotofotherblocksbutnotquite">
+			<div class="somerandomblockthatlookslikealotofotherblocksbutnotquite__in">
+				<h4 class="withdraw__title"><strong>Your website</strong></h4>
+				<div class="input ">
+					<input type="text" value="www.example.com" name="" id="">
+					<div class="input__icon">
+						<i class="icon-link"></i>
+					</div>
+				</div>
+			</div>
+			<div class="hr"></div>
+			<div class="somerandomblockthatlookslikealotofotherblocksbutnotquite__in">
+				<div class="fileupload">
+					<label for="">Upload this file (cubits-1234.html) to your web server</label>
+					<div class="fileupload__button">Download Verification File</div>
+				</div>
+				<div class="fileupload">
+					<label for="">Add this meta tag to the <head> of your index.html Þle</label>
+					<div class="input input_small"><input class="fileupload__input" value='meta name="domain-verify" content="b123eq"' /></div>
+				</div>
+			</div>
+			
+
+			
+			<div class="popup__bottom">
+				Can't upload this file? <a href="#">Verify by metatag</a>
+			</div>
+			<div class="popup__bottom">
+				Can't use this metatag? <a href="#">Verify by upload</a>
+			</div>
+		</div>
+		<div class="submit">Confirm</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
 
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
