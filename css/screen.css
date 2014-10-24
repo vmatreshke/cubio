@@ -373,6 +373,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input .input__currency.input__currency_drop.is-opendrop .input__currencydrop li { border-top: 1px solid #e6eef2; height: 27px; line-height: 27px; cursor: pointer; background: white; text-align: center; color: #575770; text-transform: uppercase; font-size: 12px; font-family: amed, sans-serif; font-weight: normal; }
 .input .input__currency.input__currency_drop.is-opendrop .input__currencydrop li:hover { background: #f9f9f9; color: #1ebebb; }
 .input .input__currency.input__currency_drop.is-opendrop .input__currencydrop li:first-child { border-top: none; }
+.input .input__type { position: absolute; right: 0; top: 0; bottom: 0; text-align: center; line-height: 47px; width: 50px; text-align: center; background: #95c4d1; color: white; font-size: 25px; }
 .input.input_small { width: 340px; margin: 0 auto 15px auto; }
 .input.input_small .input__label { display: block; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; margin-bottom: 10px; }
 .input.input_small .input__label span { display: block; font-size: 14px; font-family: aital, sans-serif; font-weight: normal; color: #a4a4b0; }
@@ -388,9 +389,10 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input .error { position: absolute; padding: 14px; background: #f6e0e6; font-family: amed, sans-serif; font-weight: normal; font-size: 13px; color: #ed1847; border-radius: 3px; top: 70px; left: 0; z-index: 200; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .input .error:before { width: 20px; height: 20px; background: #f6e0e6; content: " "; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); left: 60px; top: -9px; position: absolute; }
 .input.input_small .error { top: auto; bottom: -50px; }
-.input .errorstatus { position: absolute; right: -245px; width: 230px; bottom: 10px; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #ed1847; padding: 0; line-height: 1; }
-.input .errorstatus i { font-size: 25px; margin-right: 15px; vertical-align: middle; position: relative; top: 2px; }
-.input .errorstatus.is-ok { color: #23c7c4; }
+
+.errorstatus { position: absolute; right: -245px; width: 230px; bottom: 10px; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #ed1847; padding: 0; line-height: 1; }
+.errorstatus i { font-size: 25px; margin-right: 15px; vertical-align: middle; position: relative; top: 2px; }
+.errorstatus.is-ok { color: #23c7c4; }
 
 .paywith, .cashout { margin: 26px 0; color: #79798c; *zoom: 1; }
 .paywith:after, .cashout:after { content: " "; display: table; clear: both; }
@@ -537,7 +539,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .qrpic { margin-bottom: 20px; }
 
-.field { padding-bottom: 23px; *zoom: 1; }
+.field { margin-bottom: 23px; position: relative; *zoom: 1; }
 .field:after { content: " "; display: table; clear: both; }
 .field label { float: left; width: 104px; padding-left: 16px; font-size: 17px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; padding-top: 13px; }
 .field .input { float: right; width: 410px; margin-bottom: 0; }
