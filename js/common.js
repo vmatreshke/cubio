@@ -1,5 +1,14 @@
 head.ready(function() {
 	$('body').addClass('animateme');
+
+	$('.scr__paywithtabs a').click(function(event) {
+		if($(this).hasClass('is-active')){}
+		else{
+			$('.scr__paywithtabs a').toggleClass('is-active');
+			$('.bb').toggle();
+		}
+		return false;
+	});
 	$('.header__tumblr').click(function(event) {
 		$(this).toggleClass('is-on');
 		$('.header__balancevalue').fadeToggle();
