@@ -1,0 +1,189 @@
+.ps
+	+clr
+	margin-top: 25px 
+	.ps__options
+		float: left
+		width: 335px 
+		background: #fff 
+		border-radius: 4px
+	.ps__screen
+		float: right
+		width: 504px 
+		
+	.ps__option
+		border-bottom: 1px solid #E6EDF2 
+		padding: 25px 30px 
+		+clr
+		.ps__key
+			float: left
+			font-size: 15px 
+			padding-top: 4px 
+			+areg
+			color: #353458 
+		.ps__value
+			float: right
+		&:last-child
+			border-bottom: none 
+.scr
+	padding: 30px 30px 0 30px 
+	background: #F9FCFD
+	box-shadow: inset -3px -3px 0 #EAEAEA
+	border-radius: 3px 
+	.scr__copy
+		text-align: center
+		+areg
+		font-size: 15px 
+		color: #485878
+		padding: 10px 0
+		strong
+			font-weight: normal
+			+asemi
+	.scr__pic
+		position: relative
+		img
+			display: block
+			width: 100% 
+	.scr__timeleft
+		position: absolute
+		right: 5px 
+		top: 5px 
+		font-size: 13px 
+		+aital
+		color: #747370
+		i
+			display: inline-block
+			margin-right: 4px 
+			position: relative
+			top: 2px 
+	.scr__timer
+		height: 10px 
+		position: relative
+		margin-bottom: 14px 
+		b
+			position: absolute
+			right: 0
+			top: 0
+			bottom: 0
+			height: 10px    
+			background: #00C7C4 
+	.scr__table
+		width: 400px 
+		margin-left: 22px 
+		margin-bottom: 25px 
+		thead
+			th
+				text-align: left
+				font-size: 16px 
+				font-weight: normal
+				+asemi
+				color: #353458 
+				padding-bottom: 6px 
+			td
+				text-align: right
+				font-size: 16px 
+				padding-bottom: 6px 
+				+asemi
+				span
+					color: #00C7C4 
+		tbody
+			th
+				text-align: left
+				font-size: 16px 
+				color: #A1A2AF 
+				+areg
+			td
+				text-align: right
+				color: #A1A2AF 
+				font-size: 16px 
+				+areg
+
+
+
+.scr__paywith
+	box-shadow: inset 2px 2px 0 #EBEBEB
+	background: #FFFFFF 
+	.scr__paywithcontent
+		padding: 20px 15px 
+	.scr__paywithtabs
+		margin-left: 2px 
+		+clr
+		list-style: none
+		li
+			float: left
+			width: 50% 
+		a
+			display: block
+			height: 54px 
+			line-height: 54px
+			text-align: center
+			border-bottom: 2px solid #D3D3D9  
+			text-decoration: none
+			color: #B8B7C2 
+			font-size: 15px 
+			cursor: pointer
+			+areg
+			&.is-active
+				+asemi
+				color: #353556
+				border-color: #353556  
+			&:hover
+				border-color: #353556  
+	.scr__send
+		text-align: center
+		width: 260px 
+		display: inline-block
+		vertical-align: middle
+		label
+			display: block
+			text-align: center
+			font-size: 15px 
+			margin-bottom: 10px 
+			+areg
+			color: #353458 
+			strong
+				font-weight: normal
+				+asemi
+		input
+			border: 2px solid #95C4D1 
+			width: 100%
+			text-align: center
+			padding: 10px  
+			font-size: 12px 
+			+asemi
+			color: #353458 
+			+box
+			background: #FAFCFD 
+	.scr__qr
+		display: inline-block
+		vertical-align: middle
+		margin-left: 17px 
+.available
+	margin: 20px 17px
+	.available__label	
+		font-size: 15px 
+		color: #485878 
+		margin-bottom: 10px 
+		position: relative
+		.avaliable__notyou
+			position: absolute
+			right: 0
+			text-decoration: none
+			color: #47CECB  
+			top: 0 
+		strong
+			font-weight: normal
+			+amed
+	.available__amount
+		padding: 12px 15px
+		border: 2px solid #95C4D1 
+		+clr
+		font-size: 16px 
+		em
+			font-style: normal 
+			float: left
+		strong
+			float: right
+			font-weight: normal
+			+asemi
+			span
+				color: #1FC7C3 
