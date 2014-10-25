@@ -272,6 +272,11 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .a .a__table td.a__filter { font-size: 15px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; }
 .a .a__table td.a__filter i.icon-arrowdown { margin-right: 20px; margin-left: 5px; font-size: 10px; position: relative; top: 3px; vertical-align: middle; }
 .a .a__table td.a__filter .to { margin: 0 10px; display: inline-block; }
+.a .a__table td.a__buttontitle { text-align: left; font-family: asemi, sans-serif; font-weight: normal; font-style: normal; color: #353556; font-size: 16px; width: 250px; }
+.a .a__table td.a__buttondescr { font-family: areg, sans-serif; font-weight: normal; font-size: 16px; }
+.a .a__table td.a__actions { width: 270px; text-align: right; }
+.a .a__table td.a__actions > div { display: inline-block; text-transform: uppercase; letter-spacing: 3px; text-decoration: none; cursor: pointer; margin-left: 10px; border-radius: 3px; text-decoration: none; border: 2px solid #93c4d2; font-family: asemi, sans-serif; font-weight: normal; font-size: 14px; width: 107px; text-align: center; height: 46px; line-height: 46px; color: #94c3d0; }
+.a .a__table td.a__actions .a__delete { color: #e8294b; border-color: #e8294b; }
 .a.a_empty { background: white; text-align: center; cursor: default; border-bottom: none; border-top: 1px solid #e6eef2; }
 .a.a_empty td { font-family: aital, sans-serif; font-weight: normal; color: #9ea3a6; font-size: 16px; cursor: default; }
 
@@ -341,6 +346,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .tabs a:hover { color: #353458; border-bottom-color: #353458; }
 .tabs.tabs_small { margin: 18px 0 24px 0; }
 .tabs.tabs_small a { text-transform: none; width: 200px; letter-spacing: 0; }
+
+.tabs__wrap { position: relative; }
+.tabs__wrap i { position: absolute; right: 20%; color: #94c4d1; font-size: 30px; cursor: pointer; top: 0; }
 
 .hr { border-top: 1px solid #e6eef2; margin: 10px 0; }
 
@@ -528,6 +536,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup.popup_narrow { width: 500px; margin-left: -250px; }
 .popup.popup_narrow1 { width: 600px; margin-left: -300px; }
 .popup.popup_narrow1#popup-activity, .popup.popup_narrow1.popup-verify { top: 200px; }
+.popup.popup_narrow2 { width: 700px; margin-left: -350px; }
 .popup.popup_invoice { width: 700px; margin-left: -350px; background: #f9fcfd; }
 .popup.popup_invoice .popup__content { width: 500px; margin: 0 auto; padding: 20px 0; }
 .popup.popup_center { top: 50%; margin-top: -100px; }
@@ -808,3 +817,27 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .pleaseverify .pleaseverify__button { display: inline-block; cursor: pointer; font-size: 15px; font-family: semi, sans-serif; font-weight: normal; letter-spacing: 2px; padding: 0 15px; height: 50px; line-height: 50px; letter-spacing: 3px; float: right; }
 
 .payoutsform { margin: 0 auto; width: 480px; }
+
+.pb { padding-bottom: 15px; }
+.pb .pb__buttons { margin-left: 30px; }
+.pb .pb__buttonwrap { display: inline-block; padding: 20px 50px; background: white; box-shadow: inset 3px 3px 0 #eaeaea; cursor: pointer; margin-right: 30px; }
+.pb .pb__buttonwrap.is-active { box-shadow: inset 0 0 0 2px #1ebebb, inset 5px 5px 0 #eaeaea; border-radius: 2px; }
+.pb .pb__title { font-family: amed, sans-serif; font-weight: normal; font-size: 14px; color: #353458; text-align: center; margin-bottom: 13px; }
+.pb .pb__button { display: inline-block; background: #1ebebb; border: 2px solid #27e5e1; color: white; height: 46px; cursor: pointer; line-height: 46px; text-decoration: none; font-size: 16px; font-family: asemi, sans-serif; font-weight: normal; width: 195px; text-align: center; }
+.pb .pb__button i { color: #f7ce67; font-size: 20px; vertical-align: middle; margin-right: 10px; position: relative; top: 2px; }
+.pb .hr { margin: 25px 0; }
+
+.pfield__advanced { width: 380px; margin: 0 auto; padding-left: 120px; cursor: pointer; margin-bottom: 10px; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; }
+.pfield__advanced i { font-size: 10px; margin-left: 5px; color: #353458; }
+
+.pfield { width: 500px; margin: 0 auto; *zoom: 1; margin-bottom: 15px; }
+.pfield:after { content: " "; display: table; clear: both; }
+.pfield .pfield__label { float: left; width: 114px; font-size: 14px; font-family: amed, sans-serif; font-weight: normal; color: #353458; padding-top: 13px; }
+.pfield .pfield__content { float: right; width: 380px; }
+.pfield .pfield__content .input { width: 100%; margin: 0; }
+.pfield .pfield__content .smallselect { float: right; height: 46px; width: 115px; }
+.pfield .pfield__content .input__size1 { width: 260px; float: none; display: inline-block; vertical-align: top; float: left; }
+.pfield .pfield__content textarea { background: #f2f6f8; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 120px; padding: 5px; font-family: proxima, sans-serif; font-weight: normal; box-shadow: inset 3px 3px 0 #ebebeb; border: none; }
+
+.somemessage { background: white; margin: 30px 0 25px 0; box-shadow: inset 3px 3px 0 #eaeaea; padding: 25px 46px; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #353458; position: relative; }
+.somemessage .somemessage__close { position: absolute; right: 20px; top: 20px; font-size: 19px; color: #93c4d2; cursor: pointer; font-family: amed, sans-serif; font-weight: normal; }
