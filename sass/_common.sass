@@ -145,6 +145,10 @@ body
 		background: #48C4C1 
 		border-radius: 28px
 		+transition(all .15s linear)
+		
+		border-color: #50AEA1 
+		border-color: transparent 
+		background: #F8F8F8 
 	.onoff__value
 		position: absolute
 		right: 0
@@ -178,13 +182,11 @@ body
 		right: 0 
 		left: auto 
 	input:checked +.onoff__bg
-		border-color: #50AEA1 
-		border-color: transparent 
-		background: #F8F8F8 
+		background: #48C4C1 
 		.onoff__on
-			opacity: 1
+			opacity: 0
 		.onoff__off
-			opacity: 0 
+			opacity: 1
 		.onoff__value
 			// background: #50AEA1 
 			// right: 36px 
