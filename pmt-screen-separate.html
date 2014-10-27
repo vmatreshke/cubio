@@ -2,10 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
-	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" media="all" href="css/screen.css" >
-	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<title>Payment screen</title>
+	<link rel="stylesheet" media="all" href="css/pscreen.css" >
+	<script src="js/lib/jquery.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('.scr__paywithtabs a').click(function(event) {
+			if($(this).hasClass('is-active')){}
+			else{
+				$('.scr__paywithtabs a').toggleClass('is-active');
+				$('.bb').toggle();
+			}
+			return false;
+		});
+	});
+	</script>
 </head>
 <body>
 <div class="scr-layout">
@@ -70,6 +81,5 @@
 			</div>
 			<!-- end scr -->
 </div>
-<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>
