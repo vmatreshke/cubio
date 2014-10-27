@@ -366,6 +366,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input input { display: block; padding: 0 23px; border: 2px solid #95c4d1; border-radius: 2px; box-shadow: inset 3px 3px 0 #eaeaea; background: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 66px; line-height: 66px; width: 100%; font-family: amed, sans-serif; font-weight: normal; font-size: 31px; color: #cbcbcb; }
 .input input:focus { border-color: #1ebebb; color: #353556; }
 .input input:focus + .input__currency { background-color: #1ebebb; color: white; }
+.input.input_icon input { padding-right: 70px; }
 .input.is-tilda input, .input.with-tilda input { padding-left: 60px; }
 .input .input__tilda { position: absolute; left: 26px; top: 0; height: 66px; line-height: 66px; font-size: 31px; color: #677689; font-family: amed, sans-serif; font-weight: normal; display: none; }
 .input.with-tilda .input__tilda, .input.is-tilda .input__tilda { display: block; }
