@@ -854,7 +854,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .ps .ps__option .ps__value { float: right; }
 .ps .ps__option:last-child { border-bottom: none; }
 
-.scr-layout { margin: 0 auto; width: 600px; }
+.scr-layout { margin: 0 auto; width: 500px; }
 
 .scr { padding: 30px 30px 0 30px; background: #f9fcfd; box-shadow: inset -3px -3px 0 #eaeaea; border-radius: 3px; }
 .scr .scr__copy { text-align: center; font-family: areg, sans-serif; font-weight: normal; font-size: 15px; color: #b9c0ca; padding: 10px 0; }
