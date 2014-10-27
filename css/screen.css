@@ -255,6 +255,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .a .a__table td.a__status span { display: inline-block; width: 100px; text-align: center; border: 2px solid #1ebebb; border-radius: 2px; color: #1ebebb; text-transform: uppercase; font-family: semi, sans-serif; font-weight: normal; font-size: 12px; height: 18px; line-height: 18px; }
 .a .a__table td.a__status span.is-pending { color: #f7ce67; border-color: #f7ce67; }
 .a .a__table td.a__status span.is-aborted { color: #ea294c; border-color: #ea294c; }
+.a .a__table td.a__status span.is-cancelled { color: #aaaaaa; border-color: #aaaaaa; }
 .a .a__table td.a__date { width: 190px; font-size: 16px; }
 .a .a__table td.a__date .date { display: inline-block; font-family: proxima, sans-serif; font-weight: normal; font-size: 17px; text-align: center; line-height: 0.9; text-transform: uppercase; vertical-align: middle; }
 .a .a__table td.a__date .date strong { display: block; font-family: asemi, sans-serif; font-weight: normal; font-size: 30px; }
@@ -295,6 +296,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .amoretable td em { font-style: normal; color: #00bfbc; margin-left: 6px; }
 .amoretable .amore__status span { display: inline-block; width: 100px; text-align: center; border: 2px solid #1ebebb; border-radius: 2px; color: #1ebebb; text-transform: uppercase; font-family: semi, sans-serif; font-weight: normal; font-size: 12px; height: 18px; line-height: 18px; }
 .amoretable .amore__status span.is-pending { color: #f7ce67; border-color: #f7ce67; }
+.amoretable .amore__status span.is-cancelled { color: #aaaaaa; border-color: #aaaaaa; }
 
 .welcome { width: 850px; margin: 30px auto; }
 .welcome .welcome__text { margin-bottom: 23px; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #353458; text-align: center; }
@@ -732,6 +734,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .status { display: inline-block; width: 100px; text-align: center; border: 2px solid #1ebebb; border-radius: 2px; color: #1ebebb; text-transform: uppercase; font-family: semi, sans-serif; font-weight: normal; font-size: 12px; height: 18px; line-height: 18px; }
 .status.is-pending { color: #f7ce67; border-color: #f7ce67; }
 .status.is-aborted { color: #ea294c; border-color: #ea294c; }
+.status.is-cancelled { color: #aaaaaa; border-color: #aaaaaa; }
 
 .settings { *zoom: 1; padding-bottom: 300px; }
 .settings:after { content: " "; display: table; clear: both; }
