@@ -20,6 +20,12 @@
 			padding-top: 4px 
 			+areg
 			color: #353458 
+			span
+				+aital
+				font-size: 12px 
+				color: #9EA3A6 
+				display: block
+				padding-top: 2px 
 		.ps__value
 			float: right
 		&:last-child
@@ -46,9 +52,34 @@
 		position: relative
 		min-height: 30px 
 		background: #fff 
+		min-height: 120px 
 		img
 			display: block
 			width: 100% 
+			opacity: .3
+	.scr__textual
+		position: absolute
+		width: 300px 
+		margin-left: -150px 
+		left: 50%
+		top: 50%
+		margin-top: -25px   
+		text-align: center
+		.scr__title
+			+abold
+			font-size: 21px 
+			text-transform: uppercase
+			color: #E6EEEF 
+			// padding: 4px 10px
+			// border: 2px solid #FFFFFF
+			display: inline-block
+			color: #353458 
+			// text-shadow: 1px 1px 0 #fff 
+		.scr__url
+			font-size: 15px 
+			color: #353458
+			line-height: 1 
+			 
 	.scr__timeleft
 		position: absolute
 		right: 5px 

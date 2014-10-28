@@ -28,6 +28,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: amed; src: url("fonts/AvenirNext-Medium.eot"); src: url("fonts/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Medium.woff") format("woff"), url("fonts/AvenirNext-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: abold; src: url("fonts/AvenirNext-Bold.eot"); src: url("fonts/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Bold.woff") format("woff"), url("fonts/AvenirNext-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 .scr { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; background: #f8f8f8; }
 
 .ps { *zoom: 1; margin-top: 25px; }
@@ -37,6 +39,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .ps .ps__option { border-bottom: 1px solid #e6edf2; padding: 25px 30px; *zoom: 1; }
 .ps .ps__option:after { content: " "; display: table; clear: both; }
 .ps .ps__option .ps__key { float: left; font-size: 15px; padding-top: 4px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
+.ps .ps__option .ps__key span { font-family: aital, sans-serif; font-weight: normal; font-size: 12px; color: #9ea3a6; display: block; padding-top: 2px; }
 .ps .ps__option .ps__value { float: right; }
 .ps .ps__option:last-child { border-bottom: none; }
 
@@ -45,8 +48,11 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .scr { padding: 30px 30px 0 30px; background: #f9fcfd; box-shadow: inset -3px -3px 0 #eaeaea; border-radius: 3px; }
 .scr .scr__copy { text-align: center; font-family: areg, sans-serif; font-weight: normal; font-size: 15px; color: #b9c0ca; padding: 10px 0; }
 .scr .scr__copy strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
-.scr .scr__pic { position: relative; min-height: 30px; background: white; }
-.scr .scr__pic img { display: block; width: 100%; }
+.scr .scr__pic { position: relative; min-height: 30px; background: white; min-height: 120px; }
+.scr .scr__pic img { display: block; width: 100%; opacity: 0.3; }
+.scr .scr__textual { position: absolute; width: 300px; margin-left: -150px; left: 50%; top: 50%; margin-top: -25px; text-align: center; }
+.scr .scr__textual .scr__title { font-family: abold, sans-serif; font-weight: normal; font-size: 21px; text-transform: uppercase; color: #e6eeef; display: inline-block; color: #353458; }
+.scr .scr__textual .scr__url { font-size: 15px; color: #353458; line-height: 1; }
 .scr .scr__timeleft { position: absolute; right: 5px; top: 5px; font-size: 13px; font-family: aital, sans-serif; font-weight: normal; z-index: 30; color: #747370; }
 .scr .scr__timeleft i { display: inline-block; margin-right: 4px; position: relative; top: 2px; }
 .scr .scr__timer { height: 10px; position: relative; margin-bottom: 14px; }

@@ -42,7 +42,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .in, .footer, .nav .nav__in, .a .a__table, .amore { width: 850px; margin: 0 auto; }
 
-.onoff { width: 50px; height: 30px; font-size: 13px; font-family: amed, sans-serif; font-weight: normal; color: white; height: 30px; line-height: 30px; height: 28px; line-height: 28px; position: relative; display: inline-block; cursor: pointer; }
+.onoff { width: 50px; height: 30px; font-size: 13px; font-family: amed, sans-serif; font-weight: normal; color: white; height: 30px; line-height: 30px; height: 28px; line-height: 28px; position: relative; display: inline-block; cursor: pointer; -webkit-user-select: none; }
 .onoff input { display: none; }
 .onoff .onoff__bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 4px; background: #ebeff6; background: #48c4c1; border-radius: 28px; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -o-transition: all 0.15s linear; transition: all 0.15s linear; border-color: #50aea1; border-color: transparent; background: #f8f8f8; }
 .onoff .onoff__value { position: absolute; right: 0; top: 0; bottom: 0; width: 43px; background: #dd6a6d; border-top-right-radius: 2px; border-bottom-right-radius: 2px; -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-backface-visibility: hidden; width: 26px; height: 26px; background: #ebeff6; border-radius: 26px; top: 1px; right: 1px; box-shadow: inset 0 0 2px #dadee6; }
@@ -859,6 +859,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .ps .ps__option { border-bottom: 1px solid #e6edf2; padding: 25px 30px; *zoom: 1; }
 .ps .ps__option:after { content: " "; display: table; clear: both; }
 .ps .ps__option .ps__key { float: left; font-size: 15px; padding-top: 4px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
+.ps .ps__option .ps__key span { font-family: aital, sans-serif; font-weight: normal; font-size: 12px; color: #9ea3a6; display: block; padding-top: 2px; }
 .ps .ps__option .ps__value { float: right; }
 .ps .ps__option:last-child { border-bottom: none; }
 
@@ -867,8 +868,11 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .scr { padding: 30px 30px 0 30px; background: #f9fcfd; box-shadow: inset -3px -3px 0 #eaeaea; border-radius: 3px; }
 .scr .scr__copy { text-align: center; font-family: areg, sans-serif; font-weight: normal; font-size: 15px; color: #b9c0ca; padding: 10px 0; }
 .scr .scr__copy strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
-.scr .scr__pic { position: relative; min-height: 30px; background: white; }
-.scr .scr__pic img { display: block; width: 100%; }
+.scr .scr__pic { position: relative; min-height: 30px; background: white; min-height: 120px; }
+.scr .scr__pic img { display: block; width: 100%; opacity: 0.3; }
+.scr .scr__textual { position: absolute; width: 300px; margin-left: -150px; left: 50%; top: 50%; margin-top: -25px; text-align: center; }
+.scr .scr__textual .scr__title { font-family: abold, sans-serif; font-weight: normal; font-size: 21px; text-transform: uppercase; color: #e6eeef; display: inline-block; color: #353458; }
+.scr .scr__textual .scr__url { font-size: 15px; color: #353458; line-height: 1; }
 .scr .scr__timeleft { position: absolute; right: 5px; top: 5px; font-size: 13px; font-family: aital, sans-serif; font-weight: normal; z-index: 30; color: #747370; }
 .scr .scr__timeleft i { display: inline-block; margin-right: 4px; position: relative; top: 2px; }
 .scr .scr__timer { height: 10px; position: relative; margin-bottom: 14px; }
