@@ -82,13 +82,13 @@ body { background: #e6eef2; }
 .start .start__center .start__cashout { margin-top: 230px; }
 .start .start__form { width: 560px; margin: 0 auto; margin-top: 10px; text-align: left; }
 .start .start__form .start__input { margin-right: 4px; display: inline-block; vertical-align: top; }
-.start .start__form .start__input input { width: 350px; border: 2px solid #ea294c; padding: 0 15px; height: 46px; background: transparent; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; line-height: 17px; font-size: 17px; padding: 10px 15px; color: white; border-radius: 2px; font-family: areg, sans-serif; font-weight: normal; }
+.start .start__form .start__input input { width: 350px; border: 2px solid #ea294c; padding: 0 15px; height: 46px; background: transparent; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; line-height: 17px; font-size: 17px; padding: 10px 15px; color: white; border-radius: 2px; font-family: areg, sans-serif; font-weight: normal; }
 .start .start__form .start__input input:-ms-input-placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
 .start .start__form .start__input input:-moz-placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
 .start .start__form .start__input input::-moz-placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
 .start .start__form .start__input input::-webkit-input-placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
 .start .start__form .start__input input::placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
-.start .start__form .start__submit { display: inline-block; vertical-align: top; border-radius: 2px; height: 46px; line-height: 46px; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ea294c), color-stop(100%, #383657)); background-image: -webkit-linear-gradient(left, #ea294c, #383657); background-image: -moz-linear-gradient(left, #ea294c, #383657); background-image: -o-linear-gradient(left, #ea294c, #383657); background-image: linear-gradient(left, #ea294c, #383657); box-shadow: inset 0 0 0 2px #ea294c; width: 200px; text-align: center; font-size: 17px; font-family: proxima, sans-serif; font-weight: normal; color: white; cursor: pointer; }
+.start .start__form .start__submit { display: inline-block; vertical-align: top; border-radius: 2px; height: 46px; line-height: 46px; background-image: -moz-linear-gradient(left, #ea294c, #383657); background-image: -webkit-linear-gradient(left, #ea294c, #383657); background-image: linear-gradient(to right, #ea294c, #383657); box-shadow: inset 0 0 0 2px #ea294c; width: 200px; text-align: center; font-size: 17px; font-family: proxima, sans-serif; font-weight: normal; color: white; cursor: pointer; }
 .start .start__form .start__submit em { letter-spacing: 3px; font-style: normal; text-transform: uppercase; margin-left: 6px; }
 .start .start__form .start__submit strong { font-weight: normal; font-family: bold, sans-serif; font-weight: normal; font-size: 17px; }
 

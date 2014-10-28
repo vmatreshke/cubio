@@ -104,14 +104,20 @@
 		@content
 
 =box
-	+box-sizing(border-box)
+	// +box-sizing(border-box)
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
 
 //simple gradient
 =g($color1, $color2)
 	+background-image(linear-gradient($color1, $color2))
 
 =gh($color1, $color2)
-	+background-image(linear-gradient(left, $color1, $color2))
+	// +background-image(linear-gradient(left, $color1, $color2))
+	background-image: -moz-linear-gradient(left, $color1, $color2)
+	background-image: -webkit-linear-gradient(left, $color1, $color2)
+	background-image: linear-gradient(to right, $color1, $color2)
 
 //asdfast font-family
 =font($alias, $name)
@@ -255,8 +261,8 @@
 =sel
 	+selection
 
-=gpu
-	+transform(translate3d(0, 0, 0))
+// =gpu
+	// +transform(translate3d(0, 0, 0))
 
 =smooth-triangle
 	-webkit-transform: rotate(0.05deg)

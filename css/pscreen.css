@@ -69,7 +69,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .scr__paywith .scr__send { text-align: center; width: 260px; display: inline-block; vertical-align: middle; }
 .scr__paywith .scr__send label { display: block; text-align: center; font-size: 15px; margin-bottom: 10px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
 .scr__paywith .scr__send label strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
-.scr__paywith .scr__send input { border: 2px solid #95c4d1; width: 100%; text-align: center; padding: 10px; font-size: 12px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #fafcfd; }
+.scr__paywith .scr__send input { border: 2px solid #95c4d1; width: 100%; text-align: center; padding: 10px; font-size: 12px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: #fafcfd; }
 .scr__paywith .scr__qr { display: inline-block; vertical-align: middle; margin-left: 17px; }
 
 .available { margin: 20px 17px; }
