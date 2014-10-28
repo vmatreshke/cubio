@@ -107,3 +107,41 @@
 		color: #93C4D2 
 		cursor: pointer
 		+amed
+.plugins
+	+clr
+	.plugin
+		width: 30%
+		margin-right: 3%
+		display: inline-block
+		vertical-align: top
+		background: #fff   
+		margin-bottom: 32px 
+	.plugin__logo
+		height: 118px 
+		position: relative
+		.plugin__logoholder
+			position: absolute
+			top: 15px 
+			right: 15px 
+			bottom: 15px 
+			left: 15px 
+			-webkit-background-size: contain 
+			-o-background-size: contain 
+			background-size: contain 
+			background-position: 50% 50%
+			background-repeat: no-repeat  
+	.plugin__install
+		height: 50px - 2px
+		line-height: 50px - 2px
+		text-align: center
+		text-decoration: none
+		cursor: pointer
+		color: #fff
+		text-transform: uppercase
+		background: #00BFBC   
+		+asemi
+		font-size: 15px 
+		letter-spacing: 3px 
+		border: 2px solid #27E5E1 
+		&:hover
+			background: darken(#00BFBC, 10%)
