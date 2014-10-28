@@ -88,6 +88,10 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .available .available__amount strong { float: right; font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
 .available .available__amount strong span { color: #1fc7c3; }
 
+.upload { display: inline-block; white-space: nowrap; -webkit-user-select: none; margin-top: 23px; }
+.upload .upload__button { width: 100px; height: 20px; line-height: 20px; border-radius: 2px; background: #93c4d2; font-size: 13px; font-family: asemi, sans-serif; font-weight: normal; display: inline-block; cursor: pointer; text-align: center; color: white; }
+.upload .upload__filename { font-family: areg, sans-serif; font-weight: normal; font-size: 13px; color: #353458; display: inline-block; vertical-align: middle; color: #353458; margin-left: 5px; }
+
 @font-face { font-family: iconset; src: url("fonts/untitled-font-2.eot"); src: url("fonts/untitled-font-2.eot?#iefix") format("embedded-opentype"), url("fonts/untitled-font-2.woff") format("woff"), url("fonts/untitled-font-2.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 [data-icon]:before { font-family: iconset !important; content: attr(data-icon); font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: red; }

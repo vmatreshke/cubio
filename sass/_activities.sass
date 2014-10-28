@@ -1,5 +1,7 @@
 .activities
-
+	&.activities_keyval
+		margin-bottom: 20px 
+		
 .a
 	border-bottom: 1px solid #E6EEF2 
 	box-shadow: 0 -1px 0 #E6EEF2
@@ -183,6 +185,13 @@
 			&.a__actions
 				width: 270px 
 				text-align: right
+				&.a__actions_small
+					width: auto
+					vertical-align: top
+
+					div
+						position: relative
+						top: 12px 
 				&>div
 					display: inline-block
 					text-transform: uppercase
@@ -203,6 +212,42 @@
 				.a__delete
 					color: #E8294B  
 					border-color: #E8294B 
+			&.a__key
+				label
+					display: inline-block
+					height: 50px 
+					line-height: 50px
+					margin-right: 20px  
+					font-size: 16px 
+					color: #353458
+					+asemi
+					width: 87px 
+					vertical-align: middle
+				.a__value
+					display: inline-block
+					width: 560px 
+					// padding-top: 16px 
+					vertical-align: middle
+					.input
+						width: 300px 
+						float: none
+						margin: 0 
+						input
+							background: #F2F5F9 
+					.input_important
+						width: 550px 
+			.a__secret
+				clear: both
+				+clr
+				padding-bottom: 16px 
+				padding-top: 15px 
+				label
+					vertical-align: top
+				.a__secretd
+					font-size: 16px 
+					+areg
+					color: #00BFBC 
+					margin-top: 8px 
 	&.a_empty
 		background: #fff 
 		text-align: center
@@ -214,6 +259,10 @@
 			color: #9EA3A6  
 			font-size: 16px 
 			cursor: default 
+	&.a_withsecret
+		.a__table
+			.a__key
+				padding-top: 10px 
 .dateinput
 	display: inline-block
 	width: 130px 
