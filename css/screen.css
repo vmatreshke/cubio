@@ -177,7 +177,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .icon-settings:before { content: "2"; }
 
-.icon-sepa-text:before { content: "3"; }
+.icon-sepa-text:before, .icon-sepa:before { content: "3"; }
 
 .icon-send:before { content: "4"; }
 
@@ -232,6 +232,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .icon-clock:before { content: "q"; }
 
 .icon-date:before { content: "s"; }
+
+.icon-obt-logo-dark:before { content: "t"; }
 
 .activities.activities_keyval { margin-bottom: 20px; }
 
@@ -669,6 +671,26 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .bp .required { text-align: center; margin-bottom: 20px; color: #353458; font-size: 15px; font-family: asemi, sans-serif; font-weight: normal; }
 .bp .input_short { display: inline-block; width: 142px !important; margin-left: 6px; margin-top: 10px; }
 .bp .input_short:last-child { margin-left: 0; }
+
+.po { padding: 25px; }
+.po .po__descr { text-align: center; font-size: 17px; margin-bottom: 25px; }
+.po .po__table { width: 100%; }
+.po .po__table thead td, .po .po__table thead th { font-size: 17px !important; font-family: areg, sans-serif; font-weight: normal; color: #353458; font-weight: normal; text-align: left; }
+.po .po__table thead th { color: white; font-size: 21px; font-family: bold, sans-serif; font-weight: normal; }
+.po .po__table td { border-right: 2px solid white; }
+.po .po__table td, .po .po__table th { text-align: left; font-weight: normal; border-bottom: 2px solid white; background: #e6eef2; padding: 15px; vertical-align: middle; }
+.po .po__table th { background: #1ebebb; font-size: 21px; font-family: bold, sans-serif; font-weight: normal; color: white; text-align: center; }
+.po .po__table .po__provider { font-size: 25px; text-align: center; line-height: 1; }
+.po .po__table .po__provider i { font-size: 70px; }
+.po .po__table .po__provider strong { font-family: asemi, sans-serif; font-weight: normal; font-size: 17px; }
+.po .po__table .po__provider .cashaccountprovider { font-size: 13px; white-space: nowrap; vertical-align: middle; }
+.po .po__table .po__provider .cashaccountprovider i { background: url("../img/svg/logodark.svg") no-repeat 0 0; -moz-background-size: 18px 18px 100%; -webkit-background-size: 18px 18px 100%; background-size: 18px 18px 100%; width: 18px; height: 18px; display: inline-block; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; margin-right: 6px; vertical-align: middle; }
+.po .po__table .po__description { font-size: 13px; color: #353458; line-height: 1.4; }
+.po .po__table .po__description strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; overflow: hidden; display: block; }
+.po .po__table .po__description span { float: left; white-space: nowrap; margin-right: 5px; }
+.po .po__table .po__fee { font-size: 16px; color: #353458; font-family: semi, sans-serif; font-weight: normal; text-align: center; }
+.po .po__table .po__fee.is-red { color: #ed1847; }
+.po .po__table .po__duration { font-size: 16px; color: #353458; font-family: semi, sans-serif; font-weight: normal; text-align: center; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }

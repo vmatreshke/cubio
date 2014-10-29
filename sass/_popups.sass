@@ -475,3 +475,88 @@
 		margin-top: 10px 
 		&:last-child
 			margin-left: 0 
+.po
+	padding: 25px 
+	.po__descr
+		text-align: center
+		font-size: 17px 
+		margin-bottom: 25px 
+	.po__table
+		width: 100%
+
+		thead
+			td,th
+				font-size: 17px  !important
+				+areg
+				color: #353458
+				font-weight: normal 
+				text-align: left
+			th
+				color: #fff 
+				font-size: 21px 
+				+pbold
+
+		td
+			border-right: 2px solid #FFF 
+		td,th
+			text-align: left
+			font-weight: normal
+			border-bottom: 2px solid #fff
+			background: #E6EEF2 
+			padding: 15px 
+			vertical-align: middle
+		th
+			background: #1EBEBB 
+			font-size: 21px 
+			+pbold
+			color: #fff
+			text-align: center 
+		.po__provider
+			font-size: 25px 
+			text-align: center 
+			line-height: 1  
+			i
+				font-size: 70px 
+			
+			strong
+				+asemi
+				font-size: 17px 
+			.cashaccountprovider
+				font-size: 13px 
+				white-space: nowrap
+				vertical-align: middle
+				i
+					+svg(logodark, 18, 18)
+					-webkit-background-size: contain 
+					-o-background-size: contain 
+					background-size: contain 
+					margin-right: 6px 
+					vertical-align: middle
+				
+		.po__description
+			font-size: 13px 
+			color: #353458 
+			line-height: 1.4
+			strong
+				font-weight: normal
+				+asemi
+				overflow: hidden
+				display: block
+			span
+				float: left
+				white-space: nowrap
+				margin-right: 5px 
+		.po__fee
+			font-size: 16px 
+			color: #353458 
+			+psemi
+			text-align: center
+			&.is-red
+				color: #ED1847 
+		.po__duration
+			font-size: 16px 
+			color: #353458 
+			+psemi
+			text-align: center 
+				
+				
