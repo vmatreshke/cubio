@@ -104,4 +104,15 @@ head.ready(function() {
 	       $('body').addClass('is-bottom');
 	   }
 	});
+
+
+	$('.js-tabs a').click(function(event) {
+		$('.toggleme').hide();
+		$('.js-tabs a').removeClass('is-active');
+		$(this).addClass('is-active');
+		$(''+$(this).attr('href')).show();
+		// idd = $(this).attr('href');
+		// alert(idd.substring(1));
+		return false;
+	});
 });
