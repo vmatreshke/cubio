@@ -102,6 +102,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .hprofile .hprofile__list a:hover { background: rgba(0, 0, 0, 0.03); }
 .header .hprofile .hprofile__list a i { position: absolute; height: 39px; line-height: 39px; left: 25px; top: 0; top: 2px; }
 
+.l-footer_help { border-top: 1px solid #e6edf2; }
+
 .footer { font-size: 13px; font-family: areg, sans-serif; font-weight: normal; padding: 20px 0; color: #353458; *zoom: 1; }
 .footer:after { content: " "; display: table; clear: both; }
 .footer .footer__left { float: left; }
@@ -718,7 +720,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .strength { height: 8px; border: 2px solid #95c4d1; background: white; border-radius: 8px; width: 336px; margin: 0 auto; margin-top: 25px; }
 .strength i { display: block; height: 8px; border-top-left-radius: 6px; border-bottom-left-radius: 6px; background: #1ebebb; }
 
-.submit, .udata .udata__button, .mdata .mdata__edit, .mdata .mdata__delete, .pleaseverify .pleaseverify__button { background: #1ebebb; font-size: 20px; letter-spacing: 3px; text-align: center; font-family: bold, sans-serif; font-weight: normal; color: white; text-transform: uppercase; text-decoration: none; cursor: pointer; box-shadow: inset 0 0 0 3px #27e5e1; -webkit-transition: all 0.1s ease; -moz-transition: all 0.1s ease; -o-transition: all 0.1s ease; transition: all 0.1s ease; height: 66px; line-height: 66px; }
+.submit, .udata .udata__button, .mdata .mdata__edit, .mdata .mdata__delete, .pleaseverify .pleaseverify__button { background: #1ebebb; font-size: 20px; letter-spacing: 3px; text-align: center; font-family: bold, sans-serif; font-weight: normal; color: white; text-transform: uppercase; text-decoration: none; cursor: pointer; box-shadow: inset 0 0 0 3px #27e5e1; -webkit-transition: all 0.1s ease; -moz-transition: all 0.1s ease; -o-transition: all 0.1s ease; transition: all 0.1s ease; height: 66px; line-height: 66px; display: block; text-decoration: none; }
+.submit a, .udata .udata__button a, .mdata .mdata__edit a, .mdata .mdata__delete a, .pleaseverify .pleaseverify__button a { color: white; text-decoration: none; }
 .submit:hover, .udata .udata__button:hover, .mdata .mdata__edit:hover, .mdata .mdata__delete:hover, .pleaseverify .pleaseverify__button:hover { background: #179290; }
 .submit i, .udata .udata__button i, .mdata .mdata__edit i, .mdata .mdata__delete i, .pleaseverify .pleaseverify__button i { color: #f8d37b; margin-right: 5px; font-size: 24px; position: relative; top: 2px; vertical-align: middle; }
 .submit:active, .udata .udata__button:active, .mdata .mdata__edit:active, .mdata .mdata__delete:active, .pleaseverify .pleaseverify__button:active { position: relative; top: 2px; }
@@ -967,3 +970,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .upload { display: inline-block; white-space: nowrap; -webkit-user-select: none; margin-top: 23px; }
 .upload .upload__button { width: 100px; height: 20px; line-height: 20px; border-radius: 2px; background: #93c4d2; font-size: 13px; font-family: asemi, sans-serif; font-weight: normal; display: inline-block; cursor: pointer; text-align: center; color: white; }
 .upload .upload__filename { font-family: areg, sans-serif; font-weight: normal; font-size: 13px; color: #353458; display: inline-block; vertical-align: middle; color: #353458; margin-left: 5px; }
+
+.help { *zoom: 1; }
+.help:after { content: " "; display: table; clear: both; }
+.help .help__sidebar { float: left; width: 280px; border-right: 2px solid #e6edf2; padding: 40px 0; }
+.help .help__content { float: left; width: 860px; margin-left: -2px; border-left: 2px solid #e6edf2; padding: 40px 0; }
