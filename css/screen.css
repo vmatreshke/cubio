@@ -92,7 +92,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .hprofile.is-open .hprofile__drop { display: block; background: white; position: absolute; top: 0; right: 0; width: 100%; background: #fafcfd; border: 2px solid #353556; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; padding-top: 77px; z-index: 10; }
 .header .hprofile .hprofile__accounts { cursor: pointer; }
 .header .hprofile .hprofile__accounts h3 { font-weight: normal; text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 11px; font-family: areg, sans-serif; font-weight: normal; }
-.header .hprofile .hprofile__accounts h3 i { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; margin-right: 10px; }
+.header .hprofile .hprofile__accounts h3 i { background: url("../img/svg/cubits.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; display: inline-block; vertical-align: middle; margin-right: 10px; }
 .header .hprofile .hprofile__accounts .hprofile__accountslist { padding: 0 25px; list-style: none; }
 .header .hprofile .hprofile__accounts .hprofile__accountslist li { margin-bottom: 16px; text-align: right; position: relative; line-height: 1; font-size: 15px; font-family: asemi, sans-serif; font-weight: normal; }
 .header .hprofile .hprofile__accounts .hprofile__accountslist li span { color: #00bfbc; margin-left: 4px; }
@@ -488,7 +488,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cashaccount .cashaccount__value { position: relative; z-index: 10; }
 .cashaccount .cashaccount__value h3 { font-weight: normal; text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #353556; margin-bottom: 0; font-family: areg, sans-serif; font-weight: normal; }
 .cashaccount .cashaccount__value h3 i { margin-left: 4px; margin-right: 0; }
-.cashaccount .cashaccount__value h3 i.icon-cube_logo_dark { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; margin-right: 10px; }
+.cashaccount .cashaccount__value h3 i.icon-cube_logo_dark { background: url("../img/svg/cubits.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; display: inline-block; vertical-align: middle; margin-right: 10px; }
 .cashaccount.is-filled .cashaccount__value { line-height: 45px; }
 .cashaccount.is-filled .cashaccount__value .icon-arrowdown { position: relative; top: 7px; }
 .cashaccount.is-filled .cashaccount__money { line-height: 15px; position: relative; top: -10px; }
@@ -497,7 +497,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cash { font-weight: normal; text-align: center; font-size: 16px; text-transform: uppercase; letter-spacing: 2px; color: #353458; margin-bottom: 0; font-family: areg, sans-serif; font-weight: normal; float: right; width: 420px; box-shadow: inset 0 0 0 2px #95c4d1; height: 66px; line-height: 66px; text-align: center; background: white; cursor: pointer; float: left; }
 .cash.is-active, .cash:hover { box-shadow: inset 0 0 0 4px #1ebebb; }
 .cash i { margin-left: 4px; margin-right: 0; }
-.cash i.icon-cube_logo_dark { background: url("../img/svg/cube_logo_dark.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; display: inline-block; vertical-align: middle; margin-right: 10px; }
+.cash i.icon-cube_logo_dark { background: url("../img/svg/cubits.svg") no-repeat 0 0; -moz-background-size: 26px 26px 100%; -webkit-background-size: 26px 26px 100%; background-size: 26px 26px 100%; width: 26px; height: 26px; display: inline-block; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; display: inline-block; vertical-align: middle; margin-right: 10px; }
 
 .confirm { *zoom: 1; }
 .confirm:after { content: " "; display: table; clear: both; }
@@ -696,6 +696,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .helpmeplease .helpmeplease__bottom { border-top: 1px solid #e6edf2; text-align: center; padding: 40px 0; clear: both; }
 .helpmeplease .helpmeplease__bottom strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
 .helpmeplease .helpmeplease__bottom span { color: #1ebebb; }
+
+.scrolltext { white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; overflow: auto; background: #f2f6f8; height: 236px; width: 500px; margin: 0 auto 20px auto; font-size: 13px; line-height: 1.2; border: 1px solid #95c4d1; border-radius: 3px; font-family: amed, sans-serif; font-weight: normal; color: #353458; box-shadow: inset 3px 3px 0 #eaeaea; }
+.scrolltext .scrolltext__content { padding: 15px; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
