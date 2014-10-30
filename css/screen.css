@@ -814,7 +814,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .udata.udata_small tr .udata__key strong { font-family: areg, sans-serif; font-weight: normal; color: #35485e; }
 .udata .udata__icon { width: 70px; text-align: center; font-size: 20px; }
 .udata .udata__icon i { color: #353656; position: relative; top: 4px; }
-.udata .udata__icon i.icon-cube-logo-dark { color: #b1d4dd; opacity: 1; }
+.udata .udata__icon i.icon-cube-logo-dark { color: #b1d4dd; opacity: 1; background: url("../img/svg/cubits.svg") no-repeat 0 0; -moz-background-size: 20px 20px 100%; -webkit-background-size: 20px 20px 100%; background-size: 20px 20px 100%; width: 20px; height: 20px; display: inline-block; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; }
+.udata .udata__icon i.icon-cube-logo-dark:before { content: " "; }
 .udata .udata__key { padding-right: 15px; }
 .udata .udata__key strong { display: block; font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; color: #34495e; font-size: 14px; }
 .udata .udata__key span { display: block; font-family: aital, sans-serif; font-weight: normal; color: #9ea3a6; font-size: 14px; }
