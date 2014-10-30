@@ -1,6 +1,35 @@
 head.ready(function() {
 	$('body').addClass('animateme');
 
+
+
+	$('.help__sidebar a').click(function(event) {
+		$('.help__sidebar a').removeClass('is-active');
+		$(this).addClass('is-active');
+		hr = $(this).attr('href');
+		$('.q').show();
+		$('.text,.q-answer').hide();
+		$(' '+hr).show();
+		return false
+	});
+
+	$('.q a').click(function(event) {
+		$('.help__sidebar a').removeClass('is-active');
+		$(this).addClass('is-active');
+		hr = $(this).attr('href');
+		$('.q-answer,.q').hide();
+		$(' '+hr).show();
+		return false
+	});
+
+	$('.help__back').click(function(event) {
+		$('.q').show();
+		$('.q-answer').hide();
+		return false;
+	});
+
+
+
 	$('.scr__paywithtabs a').click(function(event) {
 		if($(this).hasClass('is-active')){}
 		else{
