@@ -42,6 +42,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .in, .section__content { width: 850px; margin: 0 auto; }
 
+.in_wide { width: 1200px; }
+
 .onoff { width: 50px; height: 30px; font-size: 13px; font-family: amed, sans-serif; font-weight: normal; color: white; height: 30px; line-height: 30px; height: 28px; line-height: 28px; position: relative; display: inline-block; cursor: pointer; -webkit-user-select: none; }
 .onoff input { display: none; }
 .onoff .onoff__bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 4px; background: #ebeff6; background: #48c4c1; border-radius: 28px; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -o-transition: all 0.15s linear; transition: all 0.15s linear; border-color: #50aea1; border-color: transparent; background: #f8f8f8; }

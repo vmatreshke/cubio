@@ -5,9 +5,61 @@
 		width: 280px 
 		border-right: 2px solid #E6EDF2
 		padding: 40px 0 
+		ul
+			list-style: none
+			li
+				border-bottom: 1px solid #E6EDF2 
+				&:last-child
+					border-bottom: none 
+			a
+				display: block
+				font-size: 15px 
+				color: #353458
+				text-decoration: none
+				text-transform: uppercase
+				letter-spacing: 3px  
+				+psemi
+				padding: 20px 0 20px 50px 
+				&.is-active,&:hover
+					background: #FFFFFF 
+			ul
+				li
+					border-bottom: none 
+				a
+					font-size: 15px 
+					text-transform: none
+					+asemi
+					color: #353458  
+					letter-spacing: 0 
+					border-bottom: none 
+					padding: 10px 0 10px 50px 
+					&.is-active,&:hover
+						background: #FFFFFF 
 	.help__content
 		float: left
-		width: 860px 
+		width: 910px 
 		margin-left: -2px 
 		border-left: 2px solid #E6EDF2
 		padding: 40px 0 
+		.text
+			padding: 0 50px
+			h2
+				letter-spacing: 3px 
+				font-size: 21px 
+				font-weight: normal
+				color: #353458 
+				+psemi
+				margin-bottom: 42px 
+		.q
+			a
+				border-bottom: 1px solid #E6EEF2 
+				display: block
+				text-decoration: none
+				padding: 16px 0 
+				font-size: 18px 
+				+areg
+				color: #00BFBC
+			li:last-child
+				a
+					border-bottom: none 
+			 
