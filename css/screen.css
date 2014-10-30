@@ -974,6 +974,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .upload .upload__filename { font-family: areg, sans-serif; font-weight: normal; font-size: 13px; color: #353458; display: inline-block; vertical-align: middle; color: #353458; margin-left: 5px; }
 
 .help { *zoom: 1; }
+.help a { color: #00bfbc; text-decoration: none; }
 .help:after { content: " "; display: table; clear: both; }
 .help .help__sidebar { float: left; width: 280px; border-right: 2px solid #e6edf2; padding: 40px 0; }
 .help .help__sidebar ul { list-style: none; }
@@ -985,7 +986,41 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .help .help__sidebar ul ul a { font-size: 15px; text-transform: none; font-family: asemi, sans-serif; font-weight: normal; color: #353458; letter-spacing: 0; border-bottom: none; padding: 10px 0 10px 50px; }
 .help .help__sidebar ul ul a.is-active, .help .help__sidebar ul ul a:hover { background: white; }
 .help .help__content { float: left; width: 910px; margin-left: -2px; border-left: 2px solid #e6edf2; padding: 40px 0; }
-.help .help__content .text { padding: 0 50px; }
+.help .help__content .text { padding: 0 50px; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
+.help .help__content .text p { margin-bottom: 1em; }
 .help .help__content .text h2 { letter-spacing: 3px; font-size: 21px; font-weight: normal; color: #353458; font-family: semi, sans-serif; font-weight: normal; margin-bottom: 42px; }
+.help .help__content .text h3 { font-size: 21px; font-weight: normal; color: #353458; font-family: semi, sans-serif; font-weight: normal; margin-bottom: 22px; }
+.help .help__content ul, .help .help__content ol { margin: 1em 2em; }
+.help .help__content ul { list-style-type: disc; }
+.help .help__content ol { list-style-type: decimal; }
+.help .help__content .q { list-style: none; margin: 0; padding: 0; }
 .help .help__content .q a { border-bottom: 1px solid #e6eef2; display: block; text-decoration: none; padding: 16px 0; font-size: 18px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; }
 .help .help__content .q li:last-child a { border-bottom: none; }
+.help .help__content .po { margin: 0; padding: 0; }
+.help .help__content .help__back { font-size: 15px; text-transform: uppercase; color: #93c4d2; border: 2px solid #93c4d2; display: inline-block; letter-spacing: 3px; font-size: 15px; font-family: asemi, sans-serif; font-weight: normal; text-decoration: none; margin-bottom: 20px; padding: 12px 18px 12px 12px; }
+.help .help__content .help__back i { font-size: 12px; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); display: inline-block; margin-right: 19px; }
+.help .help__content .tables { width: 100%; }
+.help .help__content .tables td, .help .help__content .tables th { padding: 16px 0; border-bottom: 1px solid #e6edf2; }
+.help .help__content .tables thead td, .help .help__content .tables thead th { font-size: 15px; text-align: left; font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.help .help__content .tables tbody th { font-size: 18px; color: #00bfbc; font-family: areg, sans-serif; font-weight: normal; font-weight: normal; text-align: left; }
+.help .help__content .tables tbody td { color: #353556; font-family: areg, sans-serif; font-weight: normal; color: #353556; font-size: 18px; }
+
+.poster { background: #353557 url(../img/poster.svg) no-repeat 50% 50%; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; height: 470px; -o-background-size: cover; background-size: cover; }
+.poster.poster_team { background: black url(../img/team.jpg) no-repeat 50% 100%; -webkit-background-size: cover; }
+
+.in_about { width: 750px; }
+
+.tabs_wide { margin-bottom: 50px; }
+.tabs_wide li, .tabs_wide a { width: 50%; display: block; float: left; }
+.tabs_wide a { width: 100%; font-size: 21px; padding-bottom: 25px; font-family: asemi, sans-serif; font-weight: normal; }
+
+.companytext h3 { text-align: center; margin-bottom: 36px; font-weight: normal; font-size: 31px; color: #353458; font-family: areg, sans-serif; font-weight: normal; }
+.companytext p { margin-bottom: 1em; font-size: 21px; color: #353458; font-family: areg, sans-serif; font-weight: normal; line-height: 1.4; }
+
+.team ul { list-style: none; margin-right: -3px; margin-bottom: 30px; *zoom: 1; }
+.team ul:after { content: " "; display: table; clear: both; }
+.team .person { float: left; width: 185px; margin-right: 2px; margin-bottom: 2px; overflow: hidden; }
+.team .person img { display: block; }
+.team .person .person__name { height: 50px; line-height: 50px; background: #00bfbc; font-family: asemi, sans-serif; font-weight: normal; text-align: center; font-size: 15px; color: white; }
+.team .person .person__name span { font-size: 12px; color: white; display: block; font-family: areg, sans-serif; font-weight: normal; }
+.team .person.person_co .person__name { line-height: 1.3; padding-top: 8px; height: 42px; }
