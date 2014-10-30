@@ -692,6 +692,11 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .po .po__table .po__fee.is-red { color: #ed1847; }
 .po .po__table .po__duration { font-size: 16px; color: #353458; font-family: semi, sans-serif; font-weight: normal; text-align: center; }
 
+.helpmeplease .helpmeplease__button1, .helpmeplease .helpmeplease__button2 { float: left; margin-bottom: 40px; width: 40%; margin-left: 7%; margin-top: 20px; }
+.helpmeplease .helpmeplease__bottom { border-top: 1px solid #e6edf2; text-align: center; padding: 40px 0; clear: both; }
+.helpmeplease .helpmeplease__bottom strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.helpmeplease .helpmeplease__bottom span { color: #1ebebb; }
+
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
 .reg .reg__welcome strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
