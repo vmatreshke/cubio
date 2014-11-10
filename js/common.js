@@ -1,6 +1,9 @@
 head.ready(function() {
 	$('body').addClass('animateme');
 
+	$('.header__logo').click(function(event) {
+		$('.header__logoswitch').toggleClass('is-open');
+	});
 
 
 	$('.help__sidebar a').click(function(event) {
@@ -58,9 +61,9 @@ head.ready(function() {
 	});
 	
 
-	$('.header__balance').click(function(event) {
-		$('.header__balance').removeClass('is-active');
-		$(this).addClass('is-active');
+	$('.header__balancevalue').click(function(event) {
+		$('.header__balance').toggleClass('is-active');
+		// $(this).addClass('is-active');
 	});
 
 	$('.overlay').height($(document).height() - 70);

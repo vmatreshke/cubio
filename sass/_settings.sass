@@ -28,29 +28,31 @@
 		&.is-active
 			+asemi
 			color: #353556 
-			&:before
-				position: absolute
-				left: 0
-				top: 0
-				bottom: 0
-				width: 4px    
-				content: ' '
-				background: #353556
-				border-top-left-radius: 4px 
-				border-bottom-left-radius: 4px 
+			box-shadow: inset 3px 3px 0 #EAEAEA
+			// border
+			// &:before
+			// 	position: absolute
+			// 	left: 0
+			// 	top: 0
+			// 	bottom: 0
+			// 	width: 4px    
+			// 	content: ' '
+			// 	background: #353556
+			// 	border-top-left-radius: 4px 
+			// 	border-bottom-left-radius: 4px 
 	li:last-child
 		border-bottom: none 
 		a
-			border-bottom-left-radius: 4px 
+			// border-bottom-left-radius: 4px 
 	li:first-child
 		a
-			border-top-left-radius: 4px 
+			// border-top-left-radius: 4px 
 
 
 .settings__blocks
 	float: right
 	margin-top: 25px 
-
+	width: 675px 
 .setting
 	background: #FFFFFF
 	border-radius: 4px 
@@ -68,7 +70,16 @@
 			top: 15px 
 			color: #94C4D1
 			text-decoration: none
-			font-size: 25px  
+			font-size: 20px  
+			background: #95C4D1
+			width: 28px  
+			height: 28px 
+			line-height: 28px 
+			text-align: center
+			border-radius: 28px
+			box-shadow: 0 1px 1px rgba(53, 53, 88, 0.3)
+			color: #fff 
+			text-decoration: none
 	.setting__content
 		padding: 15px 30px  0 30px
 	.setting__subhead
@@ -92,16 +103,20 @@
 		margin-right: 33px 
 		height: 144px 
 		background: #F9FCFD
+		background: #F9FCFD 
 		cursor: pointer
 		text-align: center
 		overflow: hidden
 		.userinfo__avlogo
-			+svg(cubits,80,80)
-			+gray
+			+svg(logoprofile,80,80)
+			// +gray
 			opacity: .4 
 			display: inline-block
 			margin-top: 20px 
 			font-size: 13px 
+			-webkit-background-size: contain 
+			-o-background-size: contain 
+			background-size: contain 
 			margin-bottom: 10px 
 		.userinfo__avimport
 			letter-spacing: 3px 
