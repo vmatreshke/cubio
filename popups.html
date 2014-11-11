@@ -90,6 +90,8 @@
 			<li><a href="#" class="js-popup" data-popup="popup-help">Help</a></li>
 			<li><a href="#" class="js-popup" data-popup="popup-privacy">privacy</a></li>
 			<li><a href="#" class="js-popup" data-popup="popup-toc">toc</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-phone">phone</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-phone1">phone1</a></li>
 		</ul>
 	</div>
 </div>
@@ -631,7 +633,7 @@
 
 
 <!-- begin popup popup_narrow  -->
-<div class="popup popup_nospace is-shown" id="popup-privacy">
+<div class="popup popup_nospace" id="popup-privacy">
 	<div class="popup__close">X</div>
 	<div class="popup__content">
 		<div class="popup__title">Privacy Policy</div>
@@ -843,6 +845,81 @@ You agree that by ticking the box that you have the authority to accept the Term
 
 			</div>
 		</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-phone">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">VERIFY   PHONE   NUMBER</div>
+		<div class="popup__inside">
+			<div class="popup__in">
+				<p>Enter the 6 digit verification code sent to you via SMS.</p>
+			
+				<div class="input input_small">
+					<input type="password" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-ok"></i>
+				</div>
+
+			</div>
+
+
+		</div>
+		<div class="submit">Confirm</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1  is-shown" id="popup-phone1">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">VERIFY   PHONE   NUMBER</div>
+		<div class="popup__inside">
+
+				<div class="phoneverify">
+					<p>In order to complete your transaction, we will need to verify your phone number for security purposes.</p>
+					<p><strong>You will not need to do this again for future transactions.</strong></p>
+			
+					
+					<!-- begin pfield  -->
+					<div class="pfield pfield_small">
+						<div class="pfield__label">
+							Country
+						</div>
+						<div class="pfield__content">
+							<div class="smallselect smallselect_bold smallselect_wide">
+								<div class="smallselect__value">Deutche</div><i class="icon-arrowdown"></i>
+								<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+							</div>
+						</div>
+					</div>
+					<!-- end pfield -->
+					<!-- begin pfield  -->
+					<div class="pfield pfield_small">
+						<div class="pfield__label">
+							Your number
+						</div>
+						<div class="pfield__content">
+							<div class="input input_small input_phone">
+								<span class="input__phonecode">+ 49</span>
+								<input type="text">
+							</div>
+						</div>
+					</div>
+					<!-- end pfield -->
+				</div>
+				<!-- end phone verify -->
+
+
+
+
+		</div>
+		<div class="submit">verify me</div>
 	</div>
 </div>
 <!-- end popup popup_narrow -->

@@ -417,6 +417,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input .input__currency.input__currency_drop.is-opendrop .input__currencydrop li:first-child { border-top: none; }
 .input .input__type { position: absolute; right: 0; top: 0; bottom: 0; text-align: center; line-height: 47px; width: 50px; text-align: center; background: #95c4d1; color: white; font-size: 25px; }
 .input.input_small { width: 340px; margin: 0 auto 15px auto; }
+.input.input_small.input_phone input { padding-left: 70px; }
+.input.input_small.input_phone .input__phonecode { position: absolute; left: 0; top: 0; bottom: 0; background: #95c4d1; border-top-left-radius: 4px; border-bottom-left-radius: 4px; color: white; line-height: 46px; width: 52px; text-align: center; font-family: asemi, sans-serif; font-weight: normal; font-size: 17px; }
+.input.input_small.input_phone .input__phonecode:before { position: absolute; content: " "; top: 2px; bottom: 2px; width: 3px; right: -3px; background: #eaeaea; }
 .input.input_small .input__label { display: block; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; margin-bottom: 10px; }
 .input.input_small .input__label span { display: block; font-size: 14px; font-family: aital, sans-serif; font-weight: normal; color: #a4a4b0; }
 .input.input_small input { font-size: 17px; height: 46px; line-height: 46px; line-height: 1; padding: 0 37px 0 17px; padding-top: 0px; line-height: auto; }
@@ -709,6 +712,10 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .scrolltext { white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; overflow: auto; background: #f2f6f8; height: 236px; width: 500px; margin: 0 auto 20px auto; font-size: 13px; line-height: 1.2; border: 1px solid #95c4d1; border-radius: 3px; font-family: amed, sans-serif; font-weight: normal; color: #353458; box-shadow: inset 3px 3px 0 #eaeaea; }
 .scrolltext .scrolltext__content { padding: 15px; }
 
+.phoneverify { padding-bottom: 2em; }
+.phoneverify p { text-align: center; margin: 0 4em 2em 4em; }
+.phoneverify p strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
+
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
 .reg .reg__welcome strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
@@ -850,6 +857,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .smallselect { display: inline-block; cursor: pointer; box-shadow: inset 0 0 0 2px #95c4d1; position: relative; width: 115px; }
 .smallselect.smallselect_bold .smallselect__value { font-family: asemi, sans-serif; font-weight: normal; text-transform: none; }
 .smallselect.smallselect_normal .smallselect__value { font-family: areg, sans-serif; font-weight: normal; text-transform: none; }
+.smallselect.smallselect_wide { width: auto; float: none; }
 .smallselect .smallselect__value { padding-left: 16px; width: 115px; height: 50px; line-height: 50px; font-size: 17px; font-family: asemi, sans-serif; font-weight: normal; text-transform: uppercase; color: #485878; text-align: left; }
 .smallselect select { position: absolute; opacity: 0; -webkit-appearance: none; width: 100%; height: 100%; z-index: 10; left: 0; top: 0; }
 .smallselect i { position: absolute; right: 17px; font-size: 14px; color: #353556; line-height: 1; top: 13px; margin-top: 4px; }
@@ -897,6 +905,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .pfield { width: 500px; margin: 0 auto; *zoom: 1; margin-bottom: 15px; }
 .pfield:after { content: " "; display: table; clear: both; }
+.pfield.pfield_small { width: 340px; }
+.pfield.pfield_small .pfield__content { width: 223px; }
+.pfield.pfield_small .pfield__content .smallselect { float: none; height: 46px; width: auto; display: block; }
 .pfield .pfield__label { float: left; width: 114px; font-size: 14px; font-family: amed, sans-serif; font-weight: normal; color: #353458; padding-top: 13px; }
 .pfield .pfield__content { float: right; width: 380px; }
 .pfield .pfield__content .input { width: 100%; margin: 0; }
