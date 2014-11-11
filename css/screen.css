@@ -390,6 +390,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .exchange .exchange__col + .exchange__col { float: right; }
 .exchange label { font-size: 19px; display: block; position: relative; margin-bottom: 12px; line-height: 19px; font-family: amed, sans-serif; font-weight: normal; color: #79798c; }
 .exchange label span { font-family: areg, sans-serif; font-weight: normal; font-size: 17px; color: #c5c5c5; position: absolute; right: 0; }
+.exchange .input .error { padding: 10px; font-size: 10px; }
 
 .input { display: block; position: relative; }
 .input input { display: block; padding: 0 23px; border: 2px solid #95c4d1; border-radius: 2px; box-shadow: inset 3px 3px 0 #eaeaea; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; height: 66px; line-height: 66px; width: 100%; font-family: amed, sans-serif; font-weight: normal; font-size: 31px; color: #cbcbcb; color: #353556; }
