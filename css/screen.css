@@ -447,9 +447,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .paywith .paywith__services li, .cashout .paywith__services li { float: left; width: 205px; margin-right: 10px; }
 .paywith .paywith__services li:last-child, .cashout .paywith__services li:last-child { margin: 0; }
 .paywith .paywith__services a, .cashout .paywith__services a { display: block; text-align: center; text-decoration: none; color: #353556; font-size: 70px; height: 66px; line-height: 66px; background: white; border-radius: 2px; box-shadow: inset 0 0 0 2px #95c4d1, 0 0 2px rgba(53, 53, 88, 0.3); }
-.paywith .paywith__services a .icon-skrill, .cashout .paywith__services a .icon-skrill { position: relative; top: -16px; font-size: 100px; }
-.paywith .paywith__services a .icon-sofort, .cashout .paywith__services a .icon-sofort { font-size: 130px; vertical-align: top; line-height: 20px; position: relative; top: -30px; }
-.paywith .paywith__services a .icon-okpay-text, .cashout .paywith__services a .icon-okpay-text, .paywith .paywith__services a .icon-okpay, .cashout .paywith__services a .icon-okpay { font-size: 120px; position: relative; top: -27px; }
+.paywith .paywith__services a .icon-skrill, .cashout .paywith__services a .icon-skrill { position: relative; top: -19px; font-size: 100px; }
+.paywith .paywith__services a .icon-sofort, .cashout .paywith__services a .icon-sofort { font-size: 130px; vertical-align: top; line-height: 20px; position: relative; top: -32px; }
+.paywith .paywith__services a .icon-okpay-text, .cashout .paywith__services a .icon-okpay-text, .paywith .paywith__services a .icon-okpay, .cashout .paywith__services a .icon-okpay { font-size: 120px; position: relative; top: -28px; }
 .paywith .paywith__services a.is-active, .cashout .paywith__services a.is-active, .paywith .paywith__services a:hover, .cashout .paywith__services a:hover { box-shadow: inset 0 0 0 4px #1ebebb; background: #f2fcfb; }
 .paywith .paywith__services a.is-disabled, .cashout .paywith__services a.is-disabled, .paywith .paywith__services a.is-disabled:hover, .cashout .paywith__services a.is-disabled:hover { box-shadow: inset 0 0 0 2px #f6f6f6; background: white; }
 .paywith .paywith__services a.is-disabled i, .cashout .paywith__services a.is-disabled i, .paywith .paywith__services a.is-disabled:hover i, .cashout .paywith__services a.is-disabled:hover i { opacity: 0.4; }
