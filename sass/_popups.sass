@@ -606,3 +606,24 @@
 		strong
 			font-weight: normal
 			+asemi
+.twobuttons
+	+clr
+	.submit
+		float: right
+		width: 50%
+	.cancel
+		float: left
+		width: 50% 
+		@extend .submit 
+		background: #fff !important
+		color: #95C4D1 !important
+		box-shadow: inset 0 0 0 3px #95C4D1 !important
+		border-color: #95C4D1 !important
+		&:hover
+			background: #fff
+		
+.icon_big
+	font-size: 130px 
+	text-align: center
+	color: #179290 
+	line-height: 100px 
