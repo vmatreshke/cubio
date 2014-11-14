@@ -732,6 +732,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .twobuttons .cancel:hover { background: white; }
 
 .icon_big { font-size: 130px; text-align: center; color: #179290; line-height: 100px; }
+.icon_big .icon-ok { color: #27e5e1; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
