@@ -433,6 +433,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input .error:before { width: 20px; height: 20px; background: #f6e0e6; content: " "; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); left: 60px; top: -9px; position: absolute; }
 .input.input_small .error { top: auto; bottom: -50px; }
 .input.input_important input { border-color: #1ebebb; color: #1ebebb; }
+.input.input_error2 input { border-color: #ea294c; }
+.input.input_error2 .error2 { color: #ea294c; font-size: 11px; display: block; padding-top: 4px; white-space: nowrap; }
 
 .errorstatus { position: absolute; right: -245px; width: 230px; bottom: 10px; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #ed1847; padding: 0; line-height: 1; }
 .errorstatus i { font-size: 25px; margin-right: 15px; vertical-align: middle; position: relative; top: 2px; }
