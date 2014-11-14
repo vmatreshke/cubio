@@ -775,9 +775,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cashaccounts .actions .actions__amount { font-size: 21px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; padding-right: 20px; }
 .cashaccounts .actions .actions__amount span { margin-left: 20px; color: #00bfbc; }
 .cashaccounts .actions .actions__currency { font-size: 21px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; }
-.cashaccounts .button { height: 46px; line-height: 46px; padding: 0 15px; border: 2px solid #96c4d0; display: inline-block; margin-left: 10px; border-radius: 2px; text-transform: uppercase; letter-spacing: 3px; color: #353557; text-decoration: none; cursor: pointer; color: #95c4d1; border-color: #95c4d1; font-size: 15px; font-family: semi, sans-serif; font-weight: normal; }
-.cashaccounts .button i { font-size: 20px; vertical-align: middle; display: inline-block; position: relative; top: 2px; }
-.cashaccounts .button:hover { border-color: #73b0c0; }
+.cashaccounts .button { height: 46px; line-height: 46px; padding: 0 15px; border: 2px solid #96c4d0; display: inline-block; margin-left: 10px; border-radius: 2px; text-transform: uppercase; letter-spacing: 3px; color: #353557; text-decoration: none; cursor: pointer; color: #95c4d1; border-color: #95c4d1; font-size: 15px; background: #1ebbb8; color: white; border-color: #27e5e1; font-family: semi, sans-serif; font-weight: normal; }
+.cashaccounts .button i { font-size: 20px; vertical-align: middle; display: inline-block; position: relative; top: 2px; margin-right: 10px; }
+.cashaccounts .button:hover { background: #178f8d; }
 .cashaccounts .showmore { height: 35px; cursor: pointer; line-height: 35px; text-align: center; font-size: 13px; text-decoration: none; font-family: areg, sans-serif; font-weight: normal; color: #353458; background: #f8f8f8; position: relative; margin-top: -1px; }
 .cashaccounts .showmore:hover { background: #f1f8fa; }
 .cashaccounts .transfers { background: white; }
