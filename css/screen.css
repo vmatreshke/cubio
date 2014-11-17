@@ -69,7 +69,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .header__logo .header__logoswitch a { height: 40px; line-height: 40px; border-bottom: 1px solid #e6eef2; text-decoration: none; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #455473; display: block; width: auto; padding-left: 26px; letter-spacing: 0; text-transform: none; }
 .header .header__logo .header__logoswitch a i { margin-right: 24px; font-size: 17px; position: relative; top: 3px; }
 .header .header__logo .header__logoswitch a:hover { background: #fafafa; }
-.header .header__exchange { float: left; padding: 0 23px 0 30px; height: 70px; line-height: 70px; border-right: 1px solid #4c4c69; font-size: 13px; color: white; }
+.header .header__exchange { float: left; padding: 0 23px 0 30px; height: 70px; line-height: 70px; font-size: 13px; color: white; }
 .header .header__exchange i { color: white; margin: 0 9px; font-size: 10px; color: #414d83; color: #918fa0; position: relative; top: 1px; }
 .header .header__balances { height: 70px; position: absolute; width: 300px; left: 50%; margin-left: -150px; text-align: center; }
 .header .header__tumblr { position: relative; display: inline-block; height: 2px; background: #3e4981; width: 15px; cursor: pointer; margin-top: 31px; vertical-align: top; position: absolute; right: 0; top: 0; }
@@ -83,6 +83,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .header__balancevalue { font-size: 32px; font-family: asemi, sans-serif; font-weight: normal; color: #f8cf5e; line-height: 1; display: block; margin-top: 10px; vertical-align: top; min-width: 60px; }
 .header .header__balancevalue span { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; color: #918fa0; text-transform: uppercase; cursor: pointer; display: inline-block; padding-top: 2px; margin-right: 7px; }
 .header .header__balancevalue span.is-active { color: #f8cf5e; }
+.header .header__address { text-transform: uppercase; }
 .header .header__notifications, .header .header__address { float: right; height: 55px; border-left: 1px solid #4c4c69; padding: 0 24px; padding-top: 15px; font-size: 12px; color: white; text-align: center; cursor: pointer; }
 .header .header__notifications:hover, .header .header__address:hover { background: rgba(255, 255, 255, 0.05); }
 .header .header__notifications span, .header .header__address span { display: block; margin-top: -7px; }
@@ -106,6 +107,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .header .hprofile .hprofile__accounts .hprofile__accountslist li { margin-bottom: 16px; text-align: right; position: relative; line-height: 1; font-size: 15px; font-family: asemi, sans-serif; font-weight: normal; }
 .header .hprofile .hprofile__accounts .hprofile__accountslist li span { color: #00bfbc; margin-left: 4px; }
 .header .hprofile .hprofile__accounts .hprofile__accountslist li .hprofile__currency { position: absolute; left: -5px; color: #353458; font-family: asemi, sans-serif; font-weight: normal; font-size: 15px; }
+.header .hprofile .hprofile__accounts:hover { background: #fefefe; }
 .header .hprofile .hprofile__list { list-style: none; }
 .header .hprofile .hprofile__list a { display: block; height: 39px; line-height: 39px; border-top: 1px solid #e6eef2; padding-left: 65px; position: relative; text-decoration: none; color: #353656; font-family: areg, sans-serif; font-weight: normal; font-size: 15px; overflow: hidden; }
 .header .hprofile .hprofile__list a:hover { background: rgba(0, 0, 0, 0.03); }
@@ -540,6 +542,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .table .table__text { color: #353458; font-size: 17px; }
 .table .table__amount { font-family: "Source Code Pro", sans-serif; font-weight: 400; text-align: right; font-size: 17px; color: #0e2354; }
 .table .table__currency { color: #00c7c4; }
+.confirm__amount .table tbody td { text-transform: uppercase; font-family: areg, sans-serif; font-weight: normal; }
 .table.table_confirm { border: none; }
 .table.table_confirm td, .table.table_confirm th { border: none; background: white; }
 .table.table_confirm thead td, .table.table_confirm thead th { border: none; border-bottom: 3px solid #e6eef2; }
@@ -787,6 +790,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .cashaccounts .actions .actions__amount span { margin-left: 30px; }
 .cashaccounts .actions .actions__buttons { text-align: right; padding-right: 30px; }
 .cashaccounts .actions .actions__time { color: #9ea3a6; font-size: 15px; font-family: aital, sans-serif; font-weight: normal; }
+.cashaccounts .actions .actions__empty { text-align: center; font-family: aital, sans-serif; font-weight: normal; color: #999999; font-size: 16px; }
 .cashaccounts .actions .actions__amount { font-size: 21px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; padding-right: 20px; }
 .cashaccounts .actions .actions__amount span { margin-left: 20px; color: #00bfbc; }
 .cashaccounts .actions .actions__currency { font-size: 21px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; }
