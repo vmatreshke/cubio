@@ -1021,6 +1021,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .help .help__sidebar ul ul a { font-size: 15px; text-transform: none; font-family: asemi, sans-serif; font-weight: normal; color: #353458; letter-spacing: 0; border-bottom: none; padding: 10px 0 10px 50px; }
 .help .help__sidebar ul ul a.is-active, .help .help__sidebar ul ul a:hover { background: white; }
 .help .help__content { float: left; width: 910px; margin-left: -2px; border-left: 2px solid #e6edf2; padding: 40px 0; }
+.help .help__content table { margin: 15px 0; }
+.help .help__content table td, .help .help__content table th { text-align: left; background: #e6eef2; border: 1px solid white; padding: 15px; }
+.help .help__content table th { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
 .help .help__content .text { padding: 0 50px; font-size: 15px; font-family: areg, sans-serif; font-weight: normal; color: #353458; }
 .help .help__content .text p { margin-bottom: 1em; }
 .help .help__content .text h2 { letter-spacing: 3px; font-size: 21px; font-weight: normal; color: #353458; font-family: semi, sans-serif; font-weight: normal; margin-bottom: 42px; }
