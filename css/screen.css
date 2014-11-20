@@ -375,6 +375,22 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .afull .afull__descr i { text-align: left; color: #363656; font-size: 30px; display: inline-block; position: relative; top: 2px; line-height: 1.5; margin-right: 10px; vertical-align: middle; }
 .afull .afull__descr strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
 
+.welc, .verif { margin: 25px 0; background: #f9fcfd; box-shadow: 3px 3px 0 #e6e6e6; padding: 25px 30px 25px 45px; position: relative; *zoom: 1; }
+.welc:after, .verif:after { content: " "; display: table; clear: both; }
+
+.welc .welc__close { position: absolute; right: 20px; top: 20px; font-size: 20px; color: #95c4d1; cursor: pointer; }
+.welc .welc__logo { float: left; margin-right: 43px; margin-top: 30px; background: url("../img/svg/cubits1.svg") no-repeat 0 0; -moz-background-size: 50px 50px 100%; -webkit-background-size: 50px 50px 100%; background-size: 50px 50px 100%; width: 50px; height: 50px; display: inline-block; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; display: inline-block; }
+.welc .welc__text { overflow: hidden; }
+.welc .welc__text h3 { font-weight: normal; font-family: semi, sans-serif; font-weight: normal; font-size: 18px; color: #353458; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px; }
+.welc .welc__text p { font-size: 15px; font-family: areg, sans-serif; font-weight: normal; }
+.welc .welc__text p a { color: #00bfbc; text-decoration: none; }
+
+.verif .verif__icon { float: left; margin-right: 30px; border: 1px solid black; border-radius: 50px; width: 50px; height: 50px; font-size: 25px; color: black; text-align: center; line-height: 58px; }
+.verif .verif__text { display: block; float: left; width: 500px; }
+.verif .verif__text strong { font-weight: normal; display: block; margin-bottom: 3px; font-family: amed, sans-serif; font-weight: normal; font-size: 17px; padding-top: 5px; color: #353458; }
+.verif .verif__text span { display: block; font-size: 14px; font-family: areg, sans-serif; font-weight: normal; color: #9ea3a6; }
+.verif .verif__button { display: inline-block; cursor: pointer; font-size: 15px !important; font-family: semi, sans-serif; font-weight: normal; font-family: areg, sans-serif; font-weight: normal; font-family: preg, sans-serif !important; letter-spacing: 2px; padding: 0 25px; height: 50px !important; line-height: 50px !important; letter-spacing: 3px; float: right; }
+
 .tabs { *zoom: 1; margin: 31px 0 25px; list-style: none; font-size: 0; text-align: center; }
 .tabs:after { content: " "; display: table; clear: both; }
 .tabs li { display: inline-block; }
@@ -755,16 +771,16 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .strength { height: 8px; border: 2px solid #95c4d1; background: white; border-radius: 8px; width: 336px; margin: 0 auto; margin-top: 25px; }
 .strength i { display: block; height: 8px; border-top-left-radius: 6px; border-bottom-left-radius: 6px; background: #1ebebb; }
 
-.submit, .twobuttons .cancel, .udata .udata__button, .mdata .mdata__edit, .mdata .mdata__delete, .pleaseverify .pleaseverify__button { background: #1ebebb; font-size: 20px; letter-spacing: 3px; text-align: center; font-family: bold, sans-serif; font-weight: normal; color: white; text-transform: uppercase; text-decoration: none; cursor: pointer; box-shadow: inset 0 0 0 3px #27e5e1; -webkit-transition: all 0.1s ease; -moz-transition: all 0.1s ease; -o-transition: all 0.1s ease; transition: all 0.1s ease; height: 66px; line-height: 66px; display: block; text-decoration: none; }
-.submit a, .twobuttons .cancel a, .udata .udata__button a, .mdata .mdata__edit a, .mdata .mdata__delete a, .pleaseverify .pleaseverify__button a { color: white; text-decoration: none; }
-.submit:hover, .twobuttons .cancel:hover, .udata .udata__button:hover, .mdata .mdata__edit:hover, .mdata .mdata__delete:hover, .pleaseverify .pleaseverify__button:hover { background: #179290; }
-.submit i, .twobuttons .cancel i, .udata .udata__button i, .mdata .mdata__edit i, .mdata .mdata__delete i, .pleaseverify .pleaseverify__button i { color: #f8d37b; margin-right: 5px; font-size: 24px; position: relative; top: 2px; vertical-align: middle; }
-.submit:active, .twobuttons .cancel:active, .udata .udata__button:active, .mdata .mdata__edit:active, .mdata .mdata__delete:active, .pleaseverify .pleaseverify__button:active { position: relative; top: 2px; }
-.fancybox-wrap .submit:active, .fancybox-wrap .twobuttons .cancel:active, .twobuttons .fancybox-wrap .cancel:active, .fancybox-wrap .udata .udata__button:active, .udata .fancybox-wrap .udata__button:active, .fancybox-wrap .mdata .mdata__edit:active, .mdata .fancybox-wrap .mdata__edit:active, .fancybox-wrap .mdata .mdata__delete:active, .mdata .fancybox-wrap .mdata__delete:active, .fancybox-wrap .pleaseverify .pleaseverify__button:active, .pleaseverify .fancybox-wrap .pleaseverify__button:active { top: 0; }
-.submit_subtle.submit, .twobuttons .submit_subtle.cancel, .udata .submit_subtle.udata__button, .mdata .submit_subtle.mdata__edit, .mdata .submit_subtle.mdata__delete, .pleaseverify .submit_subtle.pleaseverify__button { background: #95c4d1; box-shadow: inset 0 0 0 3px #a2d6e4; }
-.submit_small.submit, .twobuttons .submit_small.cancel, .udata .submit_small.udata__button, .mdata .submit_small.mdata__edit, .mdata .submit_small.mdata__delete, .pleaseverify .submit_small.pleaseverify__button { font-size: 16px; height: 50px; line-height: 50px; }
-.submit_pay.submit, .twobuttons .submit_pay.cancel, .udata .submit_pay.udata__button, .mdata .submit_pay.mdata__edit, .mdata .submit_pay.mdata__delete, .pleaseverify .submit_pay.pleaseverify__button { letter-spacing: 0; font-family: amed, sans-serif; font-weight: normal; }
-.submit_pay.submit strong, .twobuttons .submit_pay.cancel strong, .udata .submit_pay.udata__button strong, .mdata .submit_pay.mdata__edit strong, .mdata .submit_pay.mdata__delete strong, .pleaseverify .submit_pay.pleaseverify__button strong { font-family: abold, sans-serif; font-weight: normal; }
+.verif .verif__button, .submit, .twobuttons .cancel, .udata .udata__button, .mdata .mdata__edit, .mdata .mdata__delete, .pleaseverify .pleaseverify__button { background: #1ebebb; font-size: 20px; letter-spacing: 3px; text-align: center; font-family: bold, sans-serif; font-weight: normal; color: white; text-transform: uppercase; text-decoration: none; cursor: pointer; box-shadow: inset 0 0 0 3px #27e5e1; -webkit-transition: all 0.1s ease; -moz-transition: all 0.1s ease; -o-transition: all 0.1s ease; transition: all 0.1s ease; height: 66px; line-height: 66px; display: block; text-decoration: none; }
+.verif .verif__button a, .submit a, .twobuttons .cancel a, .udata .udata__button a, .mdata .mdata__edit a, .mdata .mdata__delete a, .pleaseverify .pleaseverify__button a { color: white; text-decoration: none; }
+.verif .verif__button:hover, .submit:hover, .twobuttons .cancel:hover, .udata .udata__button:hover, .mdata .mdata__edit:hover, .mdata .mdata__delete:hover, .pleaseverify .pleaseverify__button:hover { background: #179290; }
+.verif .verif__button i, .submit i, .twobuttons .cancel i, .udata .udata__button i, .mdata .mdata__edit i, .mdata .mdata__delete i, .pleaseverify .pleaseverify__button i { color: #f8d37b; margin-right: 5px; font-size: 24px; position: relative; top: 2px; vertical-align: middle; }
+.verif .verif__button:active, .submit:active, .twobuttons .cancel:active, .udata .udata__button:active, .mdata .mdata__edit:active, .mdata .mdata__delete:active, .pleaseverify .pleaseverify__button:active { position: relative; top: 2px; }
+.fancybox-wrap .verif .verif__button:active, .verif .fancybox-wrap .verif__button:active, .fancybox-wrap .submit:active, .fancybox-wrap .twobuttons .cancel:active, .twobuttons .fancybox-wrap .cancel:active, .fancybox-wrap .udata .udata__button:active, .udata .fancybox-wrap .udata__button:active, .fancybox-wrap .mdata .mdata__edit:active, .mdata .fancybox-wrap .mdata__edit:active, .fancybox-wrap .mdata .mdata__delete:active, .mdata .fancybox-wrap .mdata__delete:active, .fancybox-wrap .pleaseverify .pleaseverify__button:active, .pleaseverify .fancybox-wrap .pleaseverify__button:active { top: 0; }
+.verif .submit_subtle.verif__button, .submit_subtle.submit, .twobuttons .submit_subtle.cancel, .udata .submit_subtle.udata__button, .mdata .submit_subtle.mdata__edit, .mdata .submit_subtle.mdata__delete, .pleaseverify .submit_subtle.pleaseverify__button { background: #95c4d1; box-shadow: inset 0 0 0 3px #a2d6e4; }
+.verif .submit_small.verif__button, .submit_small.submit, .twobuttons .submit_small.cancel, .udata .submit_small.udata__button, .mdata .submit_small.mdata__edit, .mdata .submit_small.mdata__delete, .pleaseverify .submit_small.pleaseverify__button { font-size: 16px; height: 50px; line-height: 50px; }
+.verif .submit_pay.verif__button, .submit_pay.submit, .twobuttons .submit_pay.cancel, .udata .submit_pay.udata__button, .mdata .submit_pay.mdata__edit, .mdata .submit_pay.mdata__delete, .pleaseverify .submit_pay.pleaseverify__button { letter-spacing: 0; font-family: amed, sans-serif; font-weight: normal; }
+.verif .submit_pay.verif__button strong, .submit_pay.submit strong, .twobuttons .submit_pay.cancel strong, .udata .submit_pay.udata__button strong, .mdata .submit_pay.mdata__edit strong, .mdata .submit_pay.mdata__delete strong, .pleaseverify .submit_pay.pleaseverify__button strong { font-family: abold, sans-serif; font-weight: normal; }
 
 .requestpage { padding-bottom: 40px; }
 .requestpage .tabs { margin-bottom: 34px; }

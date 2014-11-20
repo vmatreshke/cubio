@@ -502,3 +502,87 @@
 			+asemi
 	.afull__table
 		@extend .amore__table
+
+.welc,.verif
+	margin: 25px 0
+	background: #F9FCFD
+	box-shadow: 3px 3px 0 #E6E6E6 
+	padding: 25px 30px 25px 45px 
+	position: relative
+	+clr
+.welc
+	.welc__close
+		position: absolute
+		right: 20px 
+		top: 20px 
+		font-size: 20px 
+		color: #95C4D1 
+		cursor: pointer
+	.welc__logo
+		float: left
+		margin-right: 43px 
+		margin-top: 30px 
+		+svg(cubits1,50,50)
+		-webkit-background-size: contain 
+		-o-background-size: contain 
+		background-size: contain 
+		display: inline-block
+	.welc__text
+		overflow: hidden
+		h3
+			font-weight: normal
+			+psemi
+			font-size: 18px 
+			color: #353458
+			letter-spacing: 3px  
+			text-transform: uppercase
+			margin-bottom: 15px 
+		p
+			font-size: 15px 
+			+areg
+			a
+				color: #00BFBC
+				text-decoration: none 
+.verif
+	.verif__icon
+		float: left
+		margin-right: 30px 
+		border: 1px solid #000
+		border-radius: 50px
+		width: 50px 
+		height: 50px 
+		font-size: 25px 
+		color: #000 
+		text-align: center
+		line-height: 58px 
+	.verif__text
+		display: block
+		float: left
+		width: 500px 
+		strong
+			font-weight: normal
+			display: block
+			margin-bottom: 3px 
+			+amed
+			font-size: 17px 
+			padding-top: 5px 
+			color: #353458 
+		span
+			display: block
+			font-size: 14px 
+			+areg
+			color: #9EA3A6 
+	.verif__button
+		display: inline-block
+		cursor: pointer
+		@extend %submit
+		font-size: 15px !important
+		+psemi
+		+areg
+		font-family: preg, sans-serif !important 
+		letter-spacing: 2px 
+		padding: 0 25px 
+		height: 50px !important 
+		line-height: 50px !important
+		letter-spacing: 3px 
+		float: right
