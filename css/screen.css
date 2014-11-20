@@ -385,7 +385,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .welc .welc__text p { font-size: 15px; font-family: areg, sans-serif; font-weight: normal; }
 .welc .welc__text p a { color: #00bfbc; text-decoration: none; }
 
-.verif .verif__icon { float: left; margin-right: 30px; border: 1px solid black; border-radius: 50px; width: 50px; height: 50px; font-size: 25px; color: black; text-align: center; line-height: 58px; }
+.verif .verif__icon { float: left; margin-right: 41px; border: 1px solid black; border-radius: 50px; width: 50px; height: 50px; font-size: 25px; color: black; text-align: center; line-height: 58px; }
 .verif .verif__text { display: block; float: left; width: 500px; }
 .verif .verif__text strong { font-weight: normal; display: block; margin-bottom: 3px; font-family: amed, sans-serif; font-weight: normal; font-size: 17px; padding-top: 5px; color: #353458; }
 .verif .verif__text span { display: block; font-size: 14px; font-family: areg, sans-serif; font-weight: normal; color: #9ea3a6; }
