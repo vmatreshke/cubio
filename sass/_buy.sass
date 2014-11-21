@@ -473,7 +473,17 @@
 		float: left
 		float: right
 		
-		
+	.selectbank,.cash
+		position: relative
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			content: ' '
+			z-index: -1     
+			box-shadow: 0 0 2px rgba(53, 53, 88, 0.3)
 .selectbank
 	height: 66px
 	line-height: 66px
@@ -481,6 +491,7 @@
 	cursor: pointer
 	background: #fff 
 	position: relative
+	border-radius: 2px
 	&:hover
 		box-shadow: inset 0 0 0 4px #1EBEBB  
 	&.is-active
@@ -672,6 +683,7 @@
 	background: #fff 
 	cursor: pointer
 	float: left
+	border-radius: 2px
 	&.is-active,&:hover
 		box-shadow: inset 0 0 0 4px #1EBEBB
 	i
@@ -767,7 +779,7 @@
 	tbody
 		.confirm__amount &
 			td
-				text-transform: uppercase
+				// text-transform: uppercase
 				+areg
 	&.table_confirm
 		border: none 
