@@ -254,6 +254,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .icon-warning:before { content: "w"; }
 
+.icon-cubewhite:before { content: "x"; }
+
 .activities.activities_keyval { margin-bottom: 20px; }
 
 .a { border-bottom: 1px solid #e6eef2; box-shadow: 0 -1px 0 #e6eef2; cursor: pointer; }
@@ -369,6 +371,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .steps.steps_three .steps__step.steps__3 { right: 0; left: auto; }
 .steps.steps_three.steps_2 .steps__fill { width: 50%; }
 .steps.steps_three.steps_3 .steps__fill { width: 100%; }
+.steps .icon-cubewhite { font-size: 36px; position: relative; top: 7px !important; }
 
 .afull { padding: 0px 30px 0 20px; }
 .afull .afull__descr { font-size: 16px; color: #353458; font-family: areg, sans-serif; font-weight: normal; width: 320px; }
