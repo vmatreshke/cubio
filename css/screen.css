@@ -753,6 +753,15 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .icon_big { font-size: 130px; text-align: center; color: #179290; line-height: 100px; }
 .icon_big .icon-ok { color: #27e5e1; }
 
+.message { margin-bottom: 30px; }
+.message p { margin-bottom: 20px; }
+
+.center { text-align: center; }
+
+.iconmessage { text-align: center; margin: 50px 0; font-size: 16px; }
+.iconmessage strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.iconmessage i { font-size: 30px; vertical-align: middle; position: relative; top: 4px; margin-right: 10px; }
+
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
 .reg .reg__welcome strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
