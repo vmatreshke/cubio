@@ -417,7 +417,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .exchange .input .error { padding: 10px; font-size: 10px; }
 
 .input { display: block; position: relative; }
-.input input { display: block; padding: 0 23px; border: 2px solid #95c4d1; border-radius: 2px; box-shadow: inset 3px 3px 0 #eaeaea; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; height: 66px; line-height: 66px; width: 100%; font-family: amed, sans-serif; font-weight: normal; font-size: 31px; color: #cbcbcb; color: #353556; }
+.input input { display: block; padding: 0 23px; border: 2px solid #95c4d1; border-radius: 2px; box-shadow: inset 3px 3px 0 #eaeaea; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; height: 66px; line-height: 66px; width: 100%; font-family: amed, sans-serif; font-weight: normal; font-size: 31px; color: #cbcbcb; color: #353556; line-height: normal; }
 .input input:focus { border-color: #1ebebb; color: #353556; }
 .input input:focus + .input__currency { background-color: #1ebebb; color: white; }
 .input input[disabled] { color: #cbcbcb !important; }
@@ -446,7 +446,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input.input_small.input_phone .input__phonecode:before { position: absolute; content: " "; top: 2px; bottom: 2px; width: 3px; right: -3px; background: #eaeaea; }
 .input.input_small .input__label { display: block; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #34495e; margin-bottom: 10px; }
 .input.input_small .input__label span { display: block; font-size: 14px; font-family: aital, sans-serif; font-weight: normal; color: #a4a4b0; }
-.input.input_small input { font-size: 17px; height: 46px; line-height: 46px; line-height: 1; padding: 0 37px 0 17px; padding-top: 0px; line-height: auto; }
+.input.input_small input { font-size: 17px; height: 46px; line-height: 46px; line-height: 1; padding: 0 37px 0 17px; padding-top: 0px; line-height: auto; line-height: normal; }
 .input.input_small .input__icon { position: absolute; right: 10px; bottom: 6px; top: auto; font-size: 20px; color: #93c4d2; }
 .input.input_smaller { width: 137px !important; display: inline-block; float: left; }
 .input.input_smaller + .input_smaller { margin-right: 16px; }
@@ -459,6 +459,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .input.input_important input { border-color: #1ebebb; color: #1ebebb; }
 .input.input_error2 input { border-color: #ea294c; }
 .input.input_error2 .error2 { color: #ea294c; font-size: 11px; display: block; padding-top: 4px; white-space: nowrap; }
+.input.input_error2 .input__icon { bottom: 24px; }
 
 .errorstatus { position: absolute; right: -245px; width: 230px; bottom: 10px; font-size: 15px; font-family: amed, sans-serif; font-weight: normal; color: #ed1847; padding: 0; line-height: 1; }
 .errorstatus i { font-size: 25px; margin-right: 15px; vertical-align: middle; position: relative; top: 2px; }
@@ -759,12 +760,18 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .message { margin-bottom: 30px; }
 .message p { margin-bottom: 20px; }
+.message strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
 
 .center { text-align: center; }
 
 .iconmessage { text-align: center; margin: 50px 0; font-size: 16px; }
 .iconmessage strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
 .iconmessage i { font-size: 30px; vertical-align: middle; position: relative; top: 4px; margin-right: 10px; }
+
+.jumio { margin: 0 auto; background: url("../img/svg/jumio.svg") no-repeat 0 0; -moz-background-size: 130px 40px 100%; -webkit-background-size: 130px 40px 100%; background-size: 130px 40px 100%; width: 130px; height: 40px; display: inline-block; margin-bottom: 14px; }
+
+.smallicon { text-align: center; font-size: 14px; color: #00bfbc; }
+.smallicon i { font-size: 25px; margin-right: 8px; vertical-align: middle; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }

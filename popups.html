@@ -96,6 +96,8 @@
 			<li><a href="#" class="js-popup" data-popup="popup-alert">alert1</a></li>
 			<li><a href="#" class="js-popup" data-popup="popup-alert1">alert2</a></li>
 			<li><a href="#" class="js-popup" data-popup="popup-alert2">alert3</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-alert3">alert4 jumio</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-alert3">change password</a></li>
 		</ul>
 	</div>
 </div>
@@ -168,26 +170,29 @@
 	<div class="popup__content">
 		<div class="popup__title">Change password</div>
 		<div class="popup__inside">
-			<div class="input input_small">
+			<div class="input input_small input_error2">
 				<div class="input__label">Current password</div>
 				<input type="text" name="" placeholder="ex. Max Power" id="">
 				<i class="input__icon icon-lock"></i>
+				<div class="error2">Current password is invalid</div>
 				<!-- <div class="error">Please enter your full name</div> -->
 			</div>
 
 			<div class="hr"></div>
 
-			<div class="input input_small">
+			<div class="input input_small input_error2">
 				<div class="input__label">New password <span>(with at least 8 characters and 1 special character)</span></div>
 				<input type="password" name="" placeholder="ex. Max Power" id="">
 				<i class="input__icon icon-lock"></i>
-				<div class="errorstatus is-ok"><i class="icon-help"></i></div>
+				<!-- <div class="errorstatus is-ok"><i class="icon-help"></i></div> -->
+				<div class="error2">Needs a special character</div>
 			</div>
 
-			<div class="input input_small">
+			<div class="input input_small input_error2">
 				<input type="password" name="" placeholder="ex. Max Power" id="">
 				<i class="input__icon icon-lock"></i>
-				<div class="errorstatus"><i class="icon-help"></i>Needs a special character</div>
+				<!-- <div class="errorstatus"><i class="icon-help"></i>Needs a special character</div> -->
+				<div class="error2">Needs a special character</div>
 			</div>
 
 			<div class="strength"><i style="width:70%"></i></div>
@@ -982,7 +987,7 @@ You agree that by ticking the box that you have the authority to accept the Term
 
 
 <!-- begin popup popup_narrow  -->
-<div class="popup popup_nospace is-shown" id="popup-alert2">
+<div class="popup popup_nospace" id="popup-alert2">
 	<div class="popup__close">X</div>
 	<div class="popup__content">
 		<div class="popup__title">REQUEST SENT</div>
@@ -1005,6 +1010,80 @@ You agree that by ticking the box that you have the authority to accept the Term
 <!-- end popup popup_narrow -->
 
 
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow" id="popup-alert3">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">VERIFY   YOUR  ID</div>
+
+			<div class="popup__in">
+				<div class="message center">
+					<p>Verify your ID in less than 2 minutes with</p>
+					<div class="jumio"></div>
+					<p>Simply have a <strong>government issued ID</strong> ready.</p>
+					<div class="smallicon"><i class="icon-lock"></i>SECURE</div>
+				</div>
+				
+
+				
+			</div>
+
+
+
+		<div class="submit">Done</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+<!-- begin popup   -->
+<div class="popup popup_wide is-shown " id="popup-changepass">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Signup</div>
+		<div class="popup__inside">
+			
+			<!-- begin reg  -->
+			<div class="reg">
+				<div class="reg__welcome"><strong>Welcome to Cubio.</strong> Let's get to know each other.</div>
+
+				<div class="input input_small">
+					<div class="input__label">What's your full name?</div>
+					<input type="text" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-user"></i>
+					<div class="error">Please enter your full name</div>
+				</div>
+
+				<div class="hr"></div>
+
+				<div class="input input_small">
+					<div class="input__label">Your desired password? <span>(with at least 8 characters and 1 special character)</span></div>
+					<input type="password" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-lock"></i>
+					<div class="errorstatus is-ok"><i class="icon-ok"></i></div>
+				</div>
+
+				<div class="input input_small">
+					<input type="password" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-lock"></i>
+					<div class="errorstatus"><i class="icon-close"></i>Passwords don't match</div>
+				</div>
+
+				<div class="strength"><i style="width:70%"></i></div>
+
+
+
+
+				<div class="submit">START   USING   CUBIO   WALLET</div>
+			</div>
+			<!-- end reg -->
+		
+		</div>
+
+	</div>
+</div>
+<!-- end popup  -->
 
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
