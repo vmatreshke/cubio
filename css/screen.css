@@ -492,7 +492,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .paywith .paywith__services a.cashaccountoption.is-filled span b, .cashout .paywith__services a.cashaccountoption.is-filled span b { font-weight: normal; color: #1ebebb; }
 .paywith.paywith_dos .paywith__services li, .paywith_dos.cashout .paywith__services li { width: 420px; }
 .paywith.paywith_dos .paywith__services li + li, .paywith_dos.cashout .paywith__services li + li { float: right; width: 420px; }
-.paywith.paywith_dos .paywith__services .paywith__text, .paywith_dos.cashout .paywith__services .paywith__text { font-size: 16px; text-transform: uppercase; color: #353458; font-family: proxima, sans-serif; font-weight: normal; letter-spacing: 3px; }
+.paywith.paywith_dos .paywith__services .paywith__text, .paywith_dos.cashout .paywith__services .paywith__text { font-size: 16px; text-transform: uppercase; line-height: 66px; color: #353458; font-family: proxima, sans-serif; font-weight: normal; letter-spacing: 3px; }
 
 .cashout .cashaccount { width: 420px; }
 .cashout .selectbank { width: 420px; float: left; float: right; }
