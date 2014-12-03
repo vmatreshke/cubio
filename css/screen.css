@@ -288,7 +288,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .a .a__table td.a__title strong { font-family: asemi, sans-serif; font-weight: normal; font-weight: normal; }
 .a .a__table td.a__title.a__title_short { width: auto; }
 .a .a__table td.a__report { text-align: right; width: 170px; padding-left: 60px; }
-.a .a__table td.a__report a { display: block; border: 2px solid #95c4d1; border-radius: 3px; letter-spacing: 3px; font-family: asemi, sans-serif; font-weight: normal; text-decoration: none; color: #93c4d2; font-size: 14px; padding: 0 20px; height: 45px; line-height: 45px; text-transform: uppercase; font-weight: normal; white-space: nowrap; }
+.a .a__table td.a__report.a__invoice { border-color: #1ebebb; color: #1ebebb; }
+.a .a__table td.a__report.a__invoice a { border-color: #1ebebb; color: #1ebebb; }
+.a .a__table td.a__report a { display: block; border: 2px solid #95c4d1; border-radius: 3px; letter-spacing: 3px; font-family: asemi, sans-serif; font-weight: normal; text-align: center; text-decoration: none; color: #93c4d2; font-size: 14px; padding: 0 20px; height: 45px; line-height: 45px; text-transform: uppercase; font-weight: normal; white-space: nowrap; }
 .a .a__table td.a__reporttitle { text-align: center; color: #93c4d2; }
 .a .a__table td.a__money { font-size: 16px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; text-align: right; }
 .a .a__table td.a__money span { font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; }
