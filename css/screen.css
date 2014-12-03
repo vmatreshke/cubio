@@ -952,11 +952,12 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .payoutsform { margin: 0 auto; width: 480px; }
 
 .pb { padding-bottom: 15px; }
-.pb .pb__buttons { margin-left: 30px; }
+.pb .pfields { background: #fafcfd; margin-top: 25px; padding-top: 22px; box-shadow: inset 0 0 0 3px #eaeaea; }
+.pb .pb__buttons { margin-left: 30px; text-align: center; }
 .pb .pb__buttonwrap { display: inline-block; padding: 20px 50px; background: white; box-shadow: inset 3px 3px 0 #eaeaea; cursor: pointer; margin-right: 30px; }
 .pb .pb__buttonwrap.is-active { box-shadow: inset 0 0 0 2px #1ebebb, inset 5px 5px 0 #eaeaea; border-radius: 2px; }
 .pb .pb__title { font-family: amed, sans-serif; font-weight: normal; font-size: 14px; color: #353458; text-align: center; margin-bottom: 13px; }
-.pb .pb__button { display: inline-block; background: #1ebebb; border: 2px solid #27e5e1; color: white; height: 46px; cursor: pointer; line-height: 46px; text-decoration: none; font-size: 16px; font-family: asemi, sans-serif; font-weight: normal; width: 195px; text-align: center; }
+.pb .pb__button { display: inline-block; background: #1ebebb; border: 2px solid #27e5e1; color: white; height: 46px; cursor: pointer; line-height: 46px; text-decoration: none; font-size: 16px; font-family: asemi, sans-serif; font-weight: normal; width: 195px; background: #353556; border: none; color: white; text-align: center; }
 .pb .pb__button i { color: #f7ce67; font-size: 20px; vertical-align: middle; margin-right: 10px; position: relative; top: 2px; }
 .pb .hr { margin: 25px 0; }
 
