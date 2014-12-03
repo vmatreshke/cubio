@@ -763,6 +763,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .message { margin-bottom: 30px; }
 .message p { margin-bottom: 20px; }
 .message strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.message.message_sep { background: white; margin: 25px 0; }
+.message.message_sep .message__title { font-family: proxima, sans-serif; font-weight: normal; font-size: 18px; color: #353458; text-align: center; text-transform: uppercase; font-weight: normal; padding-top: 25px; letter-spacing: 3px; margin: 0px 0 25px 0; }
+.message.message_sep .icon_big { margin-bottom: 30px; }
 
 .center { text-align: center; }
 
@@ -958,6 +961,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .pb .pb__buttonwrap.is-active { box-shadow: inset 0 0 0 2px #1ebebb, inset 5px 5px 0 #eaeaea; border-radius: 2px; }
 .pb .pb__title { font-family: amed, sans-serif; font-weight: normal; font-size: 14px; color: #353458; text-align: center; margin-bottom: 13px; }
 .pb .pb__button { display: inline-block; background: #1ebebb; border: 2px solid #27e5e1; color: white; height: 46px; cursor: pointer; line-height: 46px; text-decoration: none; font-size: 16px; font-family: asemi, sans-serif; font-weight: normal; width: 195px; background: #353556; border: none; color: white; text-align: center; }
+.pb .pb__button.is-disabled { opacity: 0.5; cursor: default; }
 .pb .pb__button i { color: #f7ce67; font-size: 20px; vertical-align: middle; margin-right: 10px; position: relative; top: 2px; }
 .pb .hr { margin: 25px 0; }
 
