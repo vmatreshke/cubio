@@ -290,7 +290,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .a .a__table td.a__report { text-align: right; width: 170px; padding-left: 60px; }
 .a .a__table td.a__report.a__invoice { border-color: #1ebebb; color: #1ebebb; }
 .a .a__table td.a__report.a__invoice a { border-color: #1ebebb; color: #1ebebb; }
-.a .a__table td.a__report a { display: block; border: 2px solid #95c4d1; border-radius: 3px; letter-spacing: 3px; font-family: asemi, sans-serif; font-weight: normal; text-align: center; text-decoration: none; color: #93c4d2; font-size: 14px; padding: 0 20px; height: 45px; line-height: 45px; text-transform: uppercase; font-weight: normal; white-space: nowrap; }
+.a .a__table td.a__report a { display: block; border: 2px solid #95c4d1; border-radius: 3px; letter-spacing: 3px; font-family: asemi, sans-serif; font-weight: normal; text-align: center; text-decoration: none; color: #93c4d2; font-size: 14px; padding: 0 20px; height: 45px; line-height: 45px; text-transform: uppercase; font-weight: normal; white-space: nowrap; border-color: #1ebebb; color: #1ebebb; }
 .a .a__table td.a__reporttitle { text-align: center; color: #93c4d2; }
 .a .a__table td.a__money { font-size: 16px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; text-align: right; }
 .a .a__table td.a__money span { font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; }
@@ -912,7 +912,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .udata .udata__alt .udata__icon i { color: #94c4d1; }
 .udata .udata__alt .udata__key strong { color: #94c4d1; }
 .udata .udata__button { display: inline-block; cursor: pointer; font-size: 15px; font-family: semi, sans-serif; font-weight: normal; letter-spacing: 2px; width: 115px; height: 50px; line-height: 50px; }
-.udata .udata__button.udata__button_alt { background: white; box-shadow: inset 0 0 0 2px #95c4d1; color: #95c4d1; }
+.udata .udata__button.udata__button_alt { background: white; box-shadow: inset 0 0 0 2px #1ebebb; color: #95c4d1; color: #1ebebb; }
 .udata .udata__imgwrap { background: #f9fcfd; width: 514px; text-align: center; padding: 15px 0; margin: 14px auto; }
 .udata .udata__info h3 { font-size: 24px; font-weight: normal; color: #353458; line-height: 1; font-family: asemi, sans-serif; font-weight: normal; }
 .udata .udata__info p { font-family: areg, sans-serif; font-weight: normal; font-size: 15px; color: #2a2946; margin-bottom: 1em; }
@@ -935,7 +935,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .mdata .mdata__table th { text-align: left; width: 140px; background: #f9fcfd; font-weight: normal; font-family: areg, sans-serif; font-weight: normal; }
 .mdata .mdata__table td { background: #e6edf2; font-family: asemi, sans-serif; font-weight: normal; }
 .mdata .mdata__buttons { float: right; width: 110px; padding-top: 13px; }
-.mdata .mdata__edit, .mdata .mdata__delete { height: 50px; line-height: 50px; letter-spacing: 2px; background: white; color: #95c4d1; display: block; float: none; margin: 0; font-family: asemi, sans-serif; font-weight: normal; font-size: 14px; display: block; box-shadow: inset 0 0 0 2px #95c4d1; display: inline-block; display: block; margin-bottom: 12px; }
+.mdata .mdata__edit, .mdata .mdata__delete { height: 50px; line-height: 50px; letter-spacing: 2px; background: white; color: #95c4d1; display: block; float: none; margin: 0; font-family: asemi, sans-serif; font-weight: normal; font-size: 14px; display: block; box-shadow: inset 0 0 0 2px #1ebebb; display: inline-block; display: block; color: #1ebebb; margin-bottom: 12px; }
 .mdata .mdata__edit:hover, .mdata .mdata__delete:hover { background: white; }
 .mdata .mdata__delete { color: #ea294c; box-shadow: inset 0 0 0 2px #ea294c; }
 
