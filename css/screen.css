@@ -990,6 +990,15 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .plugins .plugin { width: 30%; margin-right: 3%; display: inline-block; vertical-align: top; background: white; margin-bottom: 32px; }
 .plugins .plugin__logo { height: 118px; position: relative; }
 .plugins .plugin__logo .plugin__logoholder { position: absolute; top: 15px; right: 15px; bottom: 15px; left: 15px; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; }
+.plugins .plugin__logo .plugin__logoholder.plugin__wp { background-image: url(../img/svg/p-wp.svg); }
+.plugins .plugin__logo .plugin__logoholder.plugin__ma { background-image: url(../img/svg/p-ma.svg); }
+.plugins .plugin__logo .plugin__logoholder.plugin__os { background-image: url(../img/svg/p-os.svg); }
+.plugins .plugin__logo .plugin__logoholder.plugin__woo { background-image: url(../img/svg/p-woo.svg); }
+.plugins .plugin__logo .plugin__logoholder.plugin__presta { background-image: url(../img/svg/p-presta.svg); }
+.plugins .plugin__logo .plugin__logoholder.plugin__shopify { background-image: url(../img/svg/p-shopify.svg); }
+.plugins .plugin__logo .plugin__logoholder.plugin__opencart { background-image: url(../img/svg/p-opencart.png); }
+.plugins .plugin__logo .plugin__logoholder.plugin__wpe { background-image: url(../img/svg/p-wpe.svg); }
+.plugins .plugin__logo .plugin__logoholder.plugin__shopware { background-image: url(../img/svg/p-shopware.svg); }
 .plugins .plugin__install { height: 48px; line-height: 48px; text-align: center; text-decoration: none; cursor: pointer; color: white; text-transform: uppercase; background: #00bfbc; font-family: asemi, sans-serif; font-weight: normal; font-size: 15px; letter-spacing: 3px; border: 2px solid #27e5e1; }
 .plugins .plugin__install:hover { background: #008c8a; }
 
