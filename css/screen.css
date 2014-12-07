@@ -405,7 +405,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .tabs.tabs_small a { text-transform: none; width: 200px; letter-spacing: 0; }
 
 .tabs__wrap { position: relative; }
-.tabs__wrap i { position: absolute; right: 20%; color: #94c4d1; font-size: 30px; cursor: pointer; top: 0; }
+.tabs__wrap i { position: absolute; right: 20%; color: #94c4d1; font-size: 30px; cursor: pointer; top: 0; color: #94c4d1; text-decoration: none; font-size: 20px; background: #1fbfbb; width: 28px; height: 28px; line-height: 28px; text-align: center; border-radius: 28px; box-shadow: 0 1px 1px rgba(53, 53, 88, 0.3); color: white; text-decoration: none; font-style: normal; font-family: asemi, sans-serif; font-weight: normal; }
 
 .hr { border-top: 1px solid #e6eef2; margin: 10px 0; }
 
@@ -882,7 +882,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .setting { background: white; border-radius: 4px; margin-bottom: 35px; }
 .setting .setting__header { font-size: 19px; font-family: asemi, sans-serif; font-weight: normal; color: #353458; padding: 16px 0 16px 26px; border-bottom: 1px solid #353556; position: relative; }
-.setting .setting__header .setting__add { position: absolute; right: 70px; top: 15px; color: #94c4d1; text-decoration: none; font-size: 20px; background: #95c4d1; width: 28px; height: 28px; line-height: 28px; text-align: center; border-radius: 28px; box-shadow: 0 1px 1px rgba(53, 53, 88, 0.3); color: white; text-decoration: none; }
+.setting .setting__header .setting__add { position: absolute; right: 70px; top: 15px; color: #94c4d1; text-decoration: none; font-size: 20px; background: #1fbfbb; width: 28px; height: 28px; line-height: 28px; text-align: center; border-radius: 28px; box-shadow: 0 1px 1px rgba(53, 53, 88, 0.3); color: white; text-decoration: none; }
 .setting .setting__content { padding: 15px 30px 0 30px; }
 .setting .setting__subhead { font-size: 16px; font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; color: #353458; margin-bottom: 5px; margin-top: 20px; padding-bottom: 9px; border-bottom: 1px solid #e6edf2; }
 .setting .hr { margin: 15px 0; border-top: 1px solid #e6edf2; }
