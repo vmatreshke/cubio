@@ -405,7 +405,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .tabs.tabs_small a { text-transform: none; width: 200px; letter-spacing: 0; }
 
 .tabs__wrap { position: relative; }
-.tabs__wrap i { position: absolute; right: 20%; color: #94c4d1; font-size: 30px; cursor: pointer; top: 0; color: #94c4d1; text-decoration: none; font-size: 20px; background: #1fbfbb; width: 28px; height: 28px; line-height: 28px; text-align: center; border-radius: 28px; box-shadow: 0 1px 1px rgba(53, 53, 88, 0.3); color: white; text-decoration: none; font-style: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.tabs__wrap .tabs__add i { position: absolute; right: 20%; color: #94c4d1; font-size: 30px; cursor: pointer; top: 0; color: #94c4d1; text-decoration: none; font-size: 20px; background: #1fbfbb; width: 28px; height: 28px; line-height: 28px; text-align: center; border-radius: 28px; box-shadow: 0 1px 1px rgba(53, 53, 88, 0.3); color: white; text-decoration: none; font-style: normal; font-family: asemi, sans-serif; font-weight: normal; }
+.tabs__wrap .tabs__help i { position: absolute; right: 20%; color: #94c4d1; font-size: 24px; text-decoration: none; top: 0; cursor: pointer; z-index: 5; }
 
 .hr { border-top: 1px solid #e6eef2; margin: 10px 0; }
 
@@ -955,6 +956,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .pleaseverify .pleaseverify__button { display: inline-block; cursor: pointer; font-size: 15px; font-family: semi, sans-serif; font-weight: normal; letter-spacing: 2px; padding: 0 15px; height: 50px; line-height: 50px; letter-spacing: 3px; float: right; }
 
 .payoutsform { margin: 0 auto; width: 480px; }
+
+.payoutsform__wrapper { background: #f9fcfd; box-shadow: 3px 3px 0 #e6e6e6; margin: 25px 0; padding: 25px 0 1px 0; }
+.payoutsform__wrapper .payoutsform { position: relative; right: 20px; }
 
 .pb { padding-bottom: 15px; }
 .pb .pfields { background: #fafcfd; margin-top: 25px; padding-top: 22px; box-shadow: inset 0 0 0 3px #eaeaea; }
