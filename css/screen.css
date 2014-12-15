@@ -280,11 +280,12 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .a .a__table td.a__status span.is-pending { color: #f7ce67; border-color: #f7ce67; }
 .a .a__table td.a__status span.is-aborted { color: #ea294c; border-color: #ea294c; }
 .a .a__table td.a__status span.is-cancelled { color: #aaaaaa; border-color: #aaaaaa; }
-.a .a__table td.a__date { width: 190px; font-size: 16px; }
+.a .a__table td.a__date { width: 130px; font-size: 16px; }
 .a .a__table td.a__date .date { display: inline-block; font-family: proxima, sans-serif; font-weight: normal; font-size: 17px; text-align: center; line-height: 0.9; text-transform: uppercase; vertical-align: middle; }
 .a .a__table td.a__date .date strong { display: block; font-family: asemi, sans-serif; font-weight: normal; font-size: 30px; }
 .a .a__table td.a__date .time { display: inline-block; vertical-align: middle; margin-left: 12px; }
-.a .a__table td.a__title { width: 380px; font-size: 16px; }
+.a .a__table td.a__title { width: 380px; font-size: 16px; width: 260px; width: 220px; }
+.a .a__table td.a__title div { width: 180px; overflow: hidden; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
 .a .a__table td.a__title strong { font-family: asemi, sans-serif; font-weight: normal; font-weight: normal; }
 .a .a__table td.a__title.a__title_short { width: auto; }
 .a .a__table td.a__report { text-align: right; width: 170px; padding-left: 60px; }
