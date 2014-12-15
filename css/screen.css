@@ -399,7 +399,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .tabs:after { content: " "; display: table; clear: both; }
 .tabs li { display: inline-block; }
 .tabs a { display: inline-block; width: 324px; font-size: 17px; font-family: proxima, sans-serif; font-weight: normal; color: #b3b3bc; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid #cdcdd4; text-align: center; letter-spacing: 3px; padding-bottom: 10px; padding-top: 2px; }
-.tabs a.is-active { color: #353458; font-family: semi, sans-serif; font-weight: normal; border-bottom-color: #353458; }
+.tabs a.is-active { color: #353458; font-family: semi, sans-serif; font-weight: normal; border-bottom-color: #353458; border-bottom-color: #1ebebb; }
 .tabs a:hover { color: #353458; border-bottom-color: #353458; }
 .tabs.tabs_small { margin: 18px 0 24px 0; }
 .tabs.tabs_small a { text-transform: none; width: 200px; letter-spacing: 0; }
