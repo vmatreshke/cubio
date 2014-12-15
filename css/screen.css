@@ -271,7 +271,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .a .a__table td.a__descr strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
 .a .a__table td.a__descr span { display: block; padding-top: 5px; font-family: aital, sans-serif; font-weight: normal; font-size: 16px; color: #9ea3a6; }
 .a .a__table td.a__time { font-size: 14px; color: #9ea3a6; font-family: areg, sans-serif; font-weight: normal; }
-.a .a__table td.a__amount { text-align: right; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; width: 160px; }
+.a .a__table td.a__amount { text-align: right; font-size: 16px; font-family: areg, sans-serif; font-weight: normal; color: #00bfbc; width: 160px; white-space: nowrap; }
+.a .a__table td.a__amount .a__sign { float: left; margin-left: 10px; }
 .a .a__table td.a__amount strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; margin-left: 20px; }
 .a .a__table td.a__amount.is-minus { color: #ea294c; }
 .a .a__table td.a__status { padding-right: 50px; }
