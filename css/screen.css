@@ -254,6 +254,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .icon-cubewhite:before { content: "x"; }
 
+.icon-present:before { content: "y"; }
+
 .activities.activities_keyval { margin-bottom: 20px; }
 
 .a { border-bottom: 1px solid #e6eef2; box-shadow: 0 -1px 0 #e6eef2; cursor: pointer; }
