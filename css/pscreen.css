@@ -154,6 +154,19 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .donthave { text-align: center; padding: 10px 0; border-top: 1px solid #ebeff7; font-size: 13px; font-family: areg, sans-serif; font-weight: normal; }
 .donthave a { text-decoration: none; font-family: asemi, sans-serif; font-weight: normal; color: #00bfbc; }
 
+.rememberme { width: 340px; margin: 0 auto; text-align: left; margin-bottom: 20px; *zoom: 1; }
+.rememberme:after { content: " "; display: table; clear: both; }
+.rememberme .field { padding-left: 0; float: left; width: 50%; margin: 0; }
+.rememberme .forgotpassword { float: right; font-family: asemi, sans-serif; font-weight: normal; padding-top: 3px; }
+.rememberme .forgotpassword a { text-decoration: none; color: #00bfbc; font-size: 13px; }
+
+.field_check .label { display: inline-block; font-size: 15px; color: #353556; }
+
+.checkbox { display: inline-block; vertical-align: middle; margin-right: 11px; }
+.checkbox input { display: none; }
+.checkbox i { display: inline-block; width: 20px; height: 20px; background: #00bfbc; box-shadow: inset 0 0 0 2px #bccdd5; }
+.checkbox input:checked + i { background: #bccdd5; }
+
 @font-face { font-family: iconset; src: url("fonts/untitled-font-2.eot"); src: url("fonts/untitled-font-2.eot?#iefix") format("embedded-opentype"), url("fonts/untitled-font-2.woff") format("woff"), url("fonts/untitled-font-2.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 [data-icon]:before { font-family: iconset !important; content: attr(data-icon); font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: red; }
