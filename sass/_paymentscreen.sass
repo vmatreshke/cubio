@@ -1,3 +1,4 @@
+
 .ps
 	+clr
 	margin-top: 25px 
@@ -51,19 +52,20 @@
 	.scr__pic
 		position: relative
 		min-height: 30px 
-		background: #fff 
-		min-height: 120px 
+		background: #353557 
+		min-height: 150px 
 		img
 			display: block
 			width: 100% 
 			opacity: .3
+
 	.scr__textual
 		position: absolute
 		width: 300px 
 		margin-left: -150px 
 		left: 50%
 		top: 50%
-		margin-top: -25px   
+		margin-top: -17px   
 		text-align: center
 		.scr__title
 			+abold
@@ -71,9 +73,13 @@
 			text-transform: uppercase
 			color: #E6EEEF 
 			// padding: 4px 10px
-			// border: 2px solid #FFFFFF
+			border: 2px solid #E6EEEF
 			display: inline-block
-			color: #353458 
+			color: #E6EEEF 
+			padding: 0 10px
+			height: 30px
+			line-height: 30px   
+			border-radius: 2px
 			// text-shadow: 1px 1px 0 #fff 
 		.scr__url
 			font-size: 15px 
@@ -82,19 +88,26 @@
 			 
 	.scr__timeleft
 		position: absolute
-		right: 5px 
-		top: 5px 
+		// right: 5px 
+		// top: 5px 
+		bottom: -14px
+		right: 3px
+		height: 14px
+		line-height: 14px  
 		font-size: 13px 
+		font-size: 8px 
 		+aital
 		z-index: 30 
 		color: #747370
+		color: #31536B 
 		i
 			display: inline-block
 			margin-right: 4px 
 			position: relative
-			top: 2px 
+			top: 1px 
+			color: #31536B 
 	.scr__timer
-		height: 10px 
+		height: 14px 
 		position: relative
 		margin-bottom: 14px 
 		b
@@ -102,13 +115,13 @@
 			right: 0
 			top: 0
 			bottom: 0
-			height: 10px    
+			height: 14px    
 			background: #00C7C4 
 	.scr__table
 		width: 400px 
 		margin-left: 22px 
 		margin-bottom: 25px 
-		thead
+		thead,tfoot
 			th
 				text-align: left
 				font-size: 16px 
@@ -116,13 +129,17 @@
 				+asemi
 				color: #353458 
 				padding-bottom: 6px 
+				padding-top: 6px 
 			td
 				text-align: right
 				font-size: 16px 
 				padding-bottom: 6px 
+				padding-top: 6px 
 				+asemi
+				color: #00C7C4 
 				span
 					color: #00C7C4 
+					color: #353458 
 		tbody
 			th
 				text-align: left
@@ -135,13 +152,31 @@
 				font-size: 16px 
 				+areg
 
-
+.scr__twofactor
+	padding-top: 30px 
+	text-align: center
+	margin-bottom: 17px 
+	i
+		display: inline-block
+		vertical-align: middle
+		width: 28px 
+		height: 28px 
+		background: url(../img/twofactor.png) no-repeat 0 0
+	span
+		display: block
+		font-size: 15px 
+		color: #353458
+		margin-top: 10px 
+		+amed
 
 .scr__paywith
 	box-shadow: inset 2px 2px 0 #EBEBEB
 	background: #FFFFFF 
 	.scr__paywithcontent
 		padding: 20px 15px 
+		min-height: 286px - 40px - 40px
+		&.is-send
+			min-height: 0 
 	.scr__paywithcontent_login
 		padding: 25px 15px 25px 15px
 		.input__label
@@ -173,9 +208,11 @@
 				border-color: #353556  
 	.scr__send
 		text-align: center
-		width: 260px 
+		width: 250px 
 		display: inline-block
 		vertical-align: middle
+		border-bottom: 1px solid #EAEAEA 
+		
 		label
 			display: block
 			text-align: center
@@ -186,16 +223,22 @@
 			strong
 				font-weight: normal
 				+asemi
+				color: #00BFBC 
+				span
+					color: #353556 
+
 		input
-			border: 2px solid #95C4D1 
+			// border: 2px solid #95C4D1 
 			width: 100%
 			text-align: center
 			padding: 10px  
 			font-size: 12px 
-			+asemi
-			color: #353458 
+			color: #00BFBC 
+			// +asemi
+			color: #00BFBC 
 			+box
 			background: #FAFCFD 
+			background: transparent 
 	.scr__qr
 		display: inline-block
 		vertical-align: middle
@@ -236,6 +279,41 @@
 	padding-top: 60px 
 	padding-left: 30px 
 	padding-right: 30px 
+	box-shadow: inset 3px 3px 0 #EBEBEB
+	background: #F8F7F7 
+	&.is-return
+		background: #F8F2F5 
+		min-height: 240px - 70px
+		padding-top: 70px 
+		.scr__messagetext
+			text-align: center
+			width: auto
+			display: block
+			font-size: 14px 
+			color: #353458 
+	&.is-success
+		background: #fff 
+		padding-top: 30px 
+		.scr__messagetext
+			text-align: center
+			width: auto
+			display: block
+			font-size: 16px 
+			color: #353458 
+			padding-bottom: 30px 
+			strong
+				+asemi
+				color: #1EBEBB 
+				span
+					color: #353458 
+		.scr__messagetitle
+			color: #1EBEBB 
+			span
+				display: block
+			i
+				font-size: 80px 
+				display: inline-block
+				line-height: 1 
 	.scr__messagetitle
 		+asemi
 		font-size: 19px 
@@ -245,9 +323,13 @@
 		text-align: center
 		&.is-ok
 			color: #00BFBC 
+		&.is-expired
+			color: #EA294A 
 	.scr__messagebox
-		border: 2px solid #F7CE67 
+		border: 1px solid #F7CE67 
 		padding: 10px 0 10px 10px
+		strong
+			+asemi
 	.scr__messageicon
 		font-size: 30px 
 		color: #EFD172
@@ -263,6 +345,7 @@
 		display: inline-block
 		vertical-align: middle
 		width: 87%
+		
 		a
 			text-decoration: none
 			+amed
@@ -603,11 +686,14 @@
 	.label
 		display: inline-block
 		font-size: 15px 
-		color: #353556 
+		color: #353556
+		position: relative
+		top: 2px
 .checkbox
 	display: inline-block
 	vertical-align: middle
 	margin-right: 11px
+	cursor: pointer
 	input
 		display: none
 	i
@@ -616,5 +702,10 @@
 		height: 20px 
 		background: #00BFBC 
 		box-shadow: inset 0 0 0 2px #BCCDD5
+		
+		text-align: center
+		line-height: 25px
+		color: #00BFBC  
 	input:checked+i
-		background: #BCCDD5
+		// background: #BCCDD5
+		color: #fff  
